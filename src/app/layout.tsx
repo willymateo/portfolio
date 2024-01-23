@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 
 import { ralewayVariable } from "@/shared/fonts";
@@ -14,7 +15,10 @@ interface Props {
 
 const RootLayout = ({ children }: Readonly<Props>) => (
   <html lang="en">
-    <body className={ralewayVariable.className}>{children}</body>
+    <body className={ralewayVariable.className}>
+      {children}
+      <Analytics />
+    </body>
   </html>
 );
 
