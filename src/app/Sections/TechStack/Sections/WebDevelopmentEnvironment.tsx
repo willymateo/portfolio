@@ -4,42 +4,42 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const WebDevelopmentEnvironment = () => (
   <div className="flex flex-col flex-wrap gap-3">
-    <p>Web development</p>
+    <h3 className="text-2xl">Web development environment</h3>
 
-    <div className="flex flex-row flex-wrap gap-10">
-      <div className="flex flex-row flex-wrap gap-3">
-        <FontAwesomeIcon icon={faGit} className="w-[24px] h-[24px]" />
-        <p>Git</p>
-      </div>
-
-      <div className="flex flex-row flex-wrap gap-3">
-        <Github />
-        <p>Github</p>
-      </div>
-
-      <div className="flex flex-row flex-wrap gap-3">
-        <GitlabFull />
-        <p>GitLab</p>
-      </div>
-
-      <div className="flex flex-row flex-wrap gap-3">
-        <Bitbucket />
-        <p>Bitbucket</p>
-      </div>
-
-      <div className="flex flex-row flex-wrap gap-3">
-        <FontAwesomeIcon icon={faJira} className="w-[24px] h-[24px]" />
-        <p>Jira</p>
-      </div>
-
-      <div className="flex flex-row flex-wrap gap-3">
+    <div className="flex flex-row flex-wrap gap-x-10 gap-y-3">
+      <div className="flex flex-row items-center justify-center flex-wrap gap-3">
         <Linux />
-        <p>Linux</p>
+        <p className="text-center">Linux</p>
       </div>
 
-      <div className="flex flex-row flex-wrap gap-3">
+      <div className="flex flex-row items-center justify-center flex-wrap gap-3">
+        <FontAwesomeIcon icon={faGit} className="w-[24px] h-[24px]" />
+        <p className="text-center">Git</p>
+      </div>
+
+      <div className="flex flex-row items-center justify-center flex-wrap gap-3">
+        <Github />
+        <p className="text-center">Github</p>
+      </div>
+
+      <div className="flex flex-row items-center justify-center flex-wrap gap-3">
+        <GitlabFull />
+        <p className="text-center">GitLab</p>
+      </div>
+
+      <div className="flex flex-row items-center justify-center flex-wrap gap-3">
+        <Bitbucket />
+        <p className="text-center">Bitbucket</p>
+      </div>
+
+      <div className="flex flex-row items-center justify-center flex-wrap gap-3">
+        <FontAwesomeIcon icon={faJira} className="w-[24px] h-[24px]" />
+        <p className="text-center">Jira</p>
+      </div>
+
+      <div className="flex flex-row items-center justify-center flex-wrap gap-3">
         <Book />
-        <p>Notion</p>
+        <p className="text-center">Notion</p>
       </div>
     </div>
   </div>

@@ -6,7 +6,7 @@ import { AboutMe } from "./Sections/AboutMe";
 import { Welcome } from "./Sections/Welcome";
 
 const Home = () => (
-  <main className="min-h-screen flex flex-col items-strech justify-center px-10 gap-20">
+  <main className="min-h-screen flex flex-col items-strech justify-center px-10 gap-20 pb-20">
     <Welcome />
     <AboutMe />
     <TechStack />
