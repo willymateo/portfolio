@@ -1,23 +1,29 @@
 import { GithubCircle, Linkedin, Mail } from "iconoir-react";
 import Link from "next/link";
 
-const SocialNetworks = () => (
-  <ul className="flex flex-row items-center justify-center flex-wrap gap-10">
-    <li className="bg-black bg-opacity-20 rounded-full p-2 hover:shadow-2xl">
-      <Link href="https://www.linkedin.com/in/willymateo/" target="_blank">
-        <Linkedin />
+import { EMAIL } from "@/shared/constants";
+
+interface Props {
+  itemsClassName?: string;
+}
+
+const SocialNetworks = ({ itemsClassName = "" }: Props) => (
+  <ul className="flex flex-row items-center justify-center flex-wrap gap-x-10 gap-y-3">
+    <li className={`bg-black bg-opacity-20 rounded-full p-5 hover:shadow-2xl ${itemsClassName}`}>
+      <Link href="https://www.linkedin.com/in/willymateo/" target="_blank" rel="noreferrer">
+        <Linkedin className="text-xl" />
       </Link>
     </li>
 
-    <li className="bg-black bg-opacity-20 rounded-full p-2 hover:shadow-2xl">
-      <Link href="https://github.com/willymateo" target="_blank">
-        <GithubCircle />
+    <li className={`bg-black bg-opacity-20 rounded-full p-5 hover:shadow-2xl ${itemsClassName}`}>
+      <Link href="https://github.com/willymateo" target="_blank" rel="noreferrer">
+        <GithubCircle className="text-xl" />
       </Link>
     </li>
 
-    <li className="bg-black bg-opacity-20 rounded-full p-2 hover:shadow-2xl">
-      <Link href="mailto:matheoowilly@gmail.com" target="_blank">
-        <Mail />
+    <li className={`bg-black bg-opacity-20 rounded-full p-5 hover:shadow-2xl ${itemsClassName}`}>
+      <Link href={`mailto:${EMAIL}`} target="_blank" rel="noreferrer">
+        <Mail className="text-xl" />
       </Link>
     </li>
   </ul>
