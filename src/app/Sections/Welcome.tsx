@@ -15,8 +15,8 @@ const Welcome = () => (
 
     <Image
       alt="Willy Mateo profile photo"
+      src="/images/profile.jpeg"
       className="rounded-full"
-      src="/profile.jpeg"
       height={400}
       width={400}
     />
