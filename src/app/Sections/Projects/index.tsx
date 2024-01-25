@@ -1,8 +1,13 @@
+import Link from "next/link";
+
+import { SECTIONS } from "../constants";
 import { Card } from "./Card";
 
 const Projects = () => (
-  <div className="flex flex-col gap-8">
-    <h2 className="text-4xl font-bold">Projects</h2>
+  <div id={SECTIONS.PROJECTS} className="flex flex-col gap-8">
+    <h2 className="text-4xl font-bold">
+      <Link href={`#${SECTIONS.PROJECTS}`}>Projects</Link>
+    </h2>
 
     <div className="flex flex-col gap-5">
       <Card
