@@ -1,3 +1,4 @@
+import { PrimaryButton } from "@/app/shared/Buttons/Primary";
 import { Www } from "iconoir-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -46,14 +47,12 @@ const Card = ({
 
       {websiteUrl && (
         <div className="flex flex-row justify-end gap-3">
-          <Link
-            className="flex flex-row flex-wrap items-center justify-center gap-x-3 gap-y-2"
-            href={websiteUrl}
-            rel="noreferrer"
-            target="_blank">
-            <Www />
+          <Link href={websiteUrl} rel="noreferrer" target="_blank">
+            <PrimaryButton>
+              <Www />
 
-            <span className="text-center">Go to website</span>
+              <span className="text-center">Go to website</span>
+            </PrimaryButton>
           </Link>
         </div>
       )}
