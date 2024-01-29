@@ -2,11 +2,11 @@ import { GitlabFull, Bitbucket, Github, Linux, Book } from "iconoir-react";
 import { faGit, faJira } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import { Technologies } from "@/app/shared/Technologies";
 import { Tag } from "@/app/shared/Tag";
-import { Section } from "./Section";
 
 const WebDevelopmentEnvironment = () => (
-  <Section title="Web development environment">
+  <Technologies title="Web development environment">
     <Tag>
       <Linux />
       <p className="text-center">Linux</p>
@@ -35,7 +35,7 @@ const WebDevelopmentEnvironment = () => (
       <Book />
       <p className="text-center">Notion</p>
     </Tag>
-  </Section>
+  </Technologies>
 );
 
 export { WebDevelopmentEnvironment };

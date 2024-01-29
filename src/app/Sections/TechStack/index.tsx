@@ -15,7 +15,7 @@ const TechStack = () => (
       <Link href={`#${SECTIONS.TECH_STACK}`}>Tech stack</Link>
     </h2>
 
-    <div className="flex flex-col gap-10">
+    <div className="flex flex-col gap-8">
       <ProgrammingLanguages />
       <FrontEnd />
       <BackEnd />

@@ -1,10 +1,11 @@
-import { PrimaryButton } from "@/app/shared/Buttons/Primary";
 import { Www } from "iconoir-react";
 import Image from "next/image";
 import Link from "next/link";
 
+import { PrimaryButton } from "@/app/shared/Buttons/Primary";
+
 interface Props {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   description?: string;
   websiteUrl?: string;
   imgUrl?: string;
@@ -20,7 +21,7 @@ const Card = ({
   title = "",
   children,
 }: Props) => (
-  <div className="flex flex-row justify-center flex-wrap gap-x-8 gap-y-3">
+  <div className="flex flex-row justify-center align-center flex-wrap gap-x-8 gap-y-3">
     <Link
       className={websiteUrl ? "" : "pointer-events-none"}
       href={websiteUrl}

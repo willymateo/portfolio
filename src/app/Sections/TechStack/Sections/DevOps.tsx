@@ -2,11 +2,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCloud } from "@fortawesome/free-solid-svg-icons";
 import { faAws } from "@fortawesome/free-brands-svg-icons";
 
+import { Technologies } from "@/app/shared/Technologies";
 import { Tag } from "@/app/shared/Tag";
-import { Section } from "./Section";
 
 const DevOps = () => (
-  <Section title="DevOps">
+  <Technologies title="DevOps">
     <Tag>
       <FontAwesomeIcon icon={faAws} className="w-[24px] h-[24px]" />
       <p className="text-center">EC2 in AWS</p>
@@ -35,7 +35,7 @@ const DevOps = () => (
       <FontAwesomeIcon icon={faCloud} className="w-[24px] h-[24px]" />
       <p className="text-center">Netlify</p>
     </Tag>
-  </Section>
+  </Technologies>
 );
 
 export { DevOps };

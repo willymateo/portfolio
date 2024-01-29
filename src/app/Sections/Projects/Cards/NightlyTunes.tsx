@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCloud } from "@fortawesome/free-solid-svg-icons";
 import { LaptopDevMode } from "iconoir-react";
 
-import { Technologies } from "./Card/Technologies";
+import { Technologies } from "@/app/shared/Technologies";
 import { Tag } from "@/app/shared/Tag";
 import { Card } from "./Card";
 
@@ -11,7 +11,7 @@ const isDark = false;
 
 const NightlyTunes = () => (
   <Card
-    description="NameGenius is a web application that allows you to generate random names for your projects, companies, and more. It is built with React and TailwindCSS."
+    description="A music library that allows you to listen your favorite songs and discover new ones. It uses the Napster API to search for songs and artists, and the Vime library to play the songs. You can use this web app in English or Spanish and it supports both light and dark mode."
     imgUrl={
       isDark ? "/images/nightly-tunes-dark-banner.png" : "/images/nightly-tunes-light-banner.png"
     }

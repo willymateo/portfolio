@@ -2,11 +2,11 @@ import { faCss3, faReact, faSass } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Html5, Css3, LaptopDevMode } from "iconoir-react";
 
+import { Technologies } from "@/app/shared/Technologies";
 import { Tag } from "@/app/shared/Tag";
-import { Section } from "./Section";
 
 const FrontEnd = () => (
-  <Section title="Front-end">
+  <Technologies title="Front-end">
     <Tag>
       <FontAwesomeIcon icon={faReact} className="w-[24px] h-[24px]" />
       <p className="text-center">React Js</p>
@@ -35,7 +35,7 @@ const FrontEnd = () => (
       <LaptopDevMode />
       <p className="text-center">Chakra UI</p>
     </Tag>
-  </Section>
+  </Technologies>
 );
 
 export { FrontEnd };
