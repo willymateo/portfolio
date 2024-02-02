@@ -36,7 +36,7 @@ const GetInTouch = () => {
           <div className="flex flex-row items-center justify-center flex-wrap gap-x-10 gap-y-3 rounded-xl bg-black bg-opacity-20 p-5 max-w-full">
             <span className="text-ellipsis overflow-hidden whitespace-nowrap">{EMAIL}</span>
 
-            <div className="flex flex-row gap-5">
+            <div className="flex flex-row items-center justify-center flex-wrap gap-5">
               <Link href={`mailto:${EMAIL}`} target="_blank" rel="noreferrer">
                 <SendMail />
               </Link>
@@ -48,6 +48,8 @@ const GetInTouch = () => {
               )}
             </div>
           </div>
+
+          <p>Or</p>
 
           <SocialNetworks itemsClassName="p-3" />
         </div>

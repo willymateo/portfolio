@@ -21,7 +21,7 @@ const Card = ({
   title = "",
   children,
 }: Props) => (
-  <div className="flex flex-row justify-center align-center flex-wrap gap-x-8 gap-y-3">
+  <div className="flex flex-col justify-center items-center flex-wrap gap-x-8 gap-y-3 lg:flex-row">
     <Link
       className={websiteUrl ? "" : "pointer-events-none"}
       href={websiteUrl}
