@@ -1,8 +1,13 @@
 import { JournalPage } from "iconoir-react";
+import Link from "next/link";
+
+import { SECTIONS } from "./constants";
 
 const AboutMe = () => (
-  <div className="flex flex-col gap-8">
-    <h2 className="text-4xl font-bold">About me</h2>
+  <div id={SECTIONS.ABOUT_ME} className="flex flex-col gap-8">
+    <h2 className="text-4xl font-bold">
+      <Link href={`#${SECTIONS.ABOUT_ME}`}>About Me</Link>
+    </h2>
 
     <div className="flex flex-col gap-5">
       <div className="flex flex-col">

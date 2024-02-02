@@ -1,38 +1,41 @@
 import { faCss3, faReact, faSass } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Html5, Css3 } from "iconoir-react";
+import { Html5, Css3, LaptopDevMode } from "iconoir-react";
+
+import { Technologies } from "@/app/shared/Technologies";
+import { Tag } from "@/app/shared/Tag";
 
 const FrontEnd = () => (
-  <div className="flex flex-col flex-wrap gap-3">
-    <h3 className="text-2xl">Front-end</h3>
-
-    <div className="flex flex-row flex-wrap gap-x-10 gap-y-3">
-      <div className="flex flex-row items-center justify-center flex-wrap gap-3">
-        <Html5 />
-        <p className="text-center">HTML-5</p>
-      </div>
-
-      <div className="flex flex-row items-center justify-center flex-wrap gap-3">
-        <Css3 />
-        <p className="text-center">CSS 3</p>
-      </div>
-
-      <div className="flex flex-row items-center justify-center flex-wrap gap-3">
-        <FontAwesomeIcon icon={faSass} className="w-[24px] h-[24px]" />
-        <p className="text-center">Sass</p>
-      </div>
-
-      <div className="flex flex-row items-center justify-center flex-wrap gap-3">
-        <FontAwesomeIcon icon={faCss3} className="w-[24px] h-[24px]" />
-        <p className="text-center">Tailwind CSS</p>
-      </div>
-
-      <div className="flex flex-row items-center justify-center flex-wrap gap-3">
-        <FontAwesomeIcon icon={faReact} className="w-[24px] h-[24px]" />
-        <p className="text-center">React Js</p>
-      </div>
-    </div>
-  </div>
+  <Technologies title="Front-end">
+    <Tag>
+      <FontAwesomeIcon icon={faReact} className="w-[24px] h-[24px]" />
+      <p className="text-center">React Js</p>
+    </Tag>
+    <Tag>
+      <LaptopDevMode />
+      <p className="text-center">Next Js</p>
+    </Tag>
+    <Tag>
+      <Html5 />
+      <p className="text-center">HTML-5</p>
+    </Tag>
+    <Tag>
+      <Css3 />
+      <p className="text-center">CSS 3</p>
+    </Tag>
+    <Tag>
+      <FontAwesomeIcon icon={faSass} className="w-[24px] h-[24px]" />
+      <p className="text-center">Sass</p>
+    </Tag>
+    <Tag>
+      <FontAwesomeIcon icon={faCss3} className="w-[24px] h-[24px]" />
+      <p className="text-center">Tailwind CSS</p>
+    </Tag>
+    <Tag>
+      <LaptopDevMode />
+      <p className="text-center">Chakra UI</p>
+    </Tag>
+  </Technologies>
 );
 
 export { FrontEnd };
