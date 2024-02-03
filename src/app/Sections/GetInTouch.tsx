@@ -4,6 +4,7 @@ import { ClipboardCheck, Developer, PasteClipboard, SendMail } from "iconoir-rea
 import Link from "next/link";
 
 import { SocialNetworks } from "@/app/shared/SocialNetworks";
+import { DinamicQuote } from "../shared/DinamicQuote";
 import { copyTextToClipBoard } from "@/shared/utils";
 import { useActive } from "@/hooks/useActive";
 import { EMAIL } from "@/shared/constants";
@@ -32,26 +33,30 @@ const GetInTouch = () => {
           <span>!</span>
         </h3>
 
-        <div className="flex flex-col items-center gap-5">
-          <div className="flex flex-row items-center justify-center flex-wrap gap-x-10 gap-y-3 rounded-xl bg-black bg-opacity-20 p-5 max-w-full">
-            <span className="text-ellipsis overflow-hidden whitespace-nowrap">{EMAIL}</span>
+        <div className="flex flex-col items-stretch justify-center gap-10 lg:flex-row lg:flex-wrap">
+          <DinamicQuote className="flex-1" />
 
-            <div className="flex flex-row items-center justify-center flex-wrap gap-5">
-              <Link href={`mailto:${EMAIL}`} target="_blank" rel="noreferrer">
-                <SendMail />
-              </Link>
+          <div className="flex-1 flex flex-col items-center gap-5">
+            <div className="flex flex-row items-center justify-center flex-wrap gap-x-10 gap-y-3 rounded-xl bg-black bg-opacity-20 p-5 max-w-full">
+              <span className="text-ellipsis overflow-hidden whitespace-nowrap">{EMAIL}</span>
 
-              {isCopied ? (
-                <ClipboardCheck className="cursor-pointer" />
-              ) : (
-                <PasteClipboard onClick={handleClickCopy} className="cursor-pointer" />
-              )}
+              <div className="flex flex-row items-center justify-center flex-wrap gap-5">
+                <Link href={`mailto:${EMAIL}`} target="_blank" rel="noreferrer">
+                  <SendMail />
+                </Link>
+
+                {isCopied ? (
+                  <ClipboardCheck className="cursor-pointer" />
+                ) : (
+                  <PasteClipboard onClick={handleClickCopy} className="cursor-pointer" />
+                )}
+              </div>
             </div>
+
+            <p>Or</p>
+
+            <SocialNetworks itemsClassName="p-3" />
           </div>
-
-          <p>Or</p>
-
-          <SocialNetworks itemsClassName="p-3" />
         </div>
       </div>
     </div>

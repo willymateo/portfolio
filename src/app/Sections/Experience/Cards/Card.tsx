@@ -27,7 +27,7 @@ const Card = ({
   children,
   endDate,
 }: Props) => (
-  <div className="flex flex-col gap-x-16 gap-y-3 sm:flex-row sm:flex-wrap ">
+  <div className="flex flex-col gap-x-16 gap-y-3 sm:flex-row sm:flex-wrap">
     <div className="flex flex-col gap-3">
       <Link
         className={enterpriseWebUrl ? "" : "pointer-events-none"}

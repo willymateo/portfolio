@@ -2,6 +2,7 @@ import { JournalPage } from "iconoir-react";
 import Link from "next/link";
 
 import { PrimaryButton } from "../shared/Buttons/Primary";
+import { DinamicQuote } from "../shared/DinamicQuote";
 import { SECTIONS } from "./constants";
 
 const AboutMe = () => (
@@ -13,10 +14,7 @@ const AboutMe = () => (
     <div className="flex flex-col items-start gap-5">
       <div className="flex flex-col">
         <h3 className="text-2xl">Hello there! My name is Willy Mateo</h3>
-        <p className="italic text-slate-700">
-          “If you are not going to tell the world who you are, the world is not going to tell you,
-          how good you are.”
-        </p>
+        <DinamicQuote />
       </div>
 
       <p>
