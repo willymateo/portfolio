@@ -4,7 +4,7 @@ import { SocialNetworks } from "../shared/SocialNetworks";
 import { animaticSCBold } from "@/shared/fonts";
 
 const Welcome = () => (
-  <div className="h-screen flex flex-col items-center justify-center justify-items-center gap-10 sm:grid sm:grid-cols-[5fr_4fr]">
+  <div className="min-h-screen flex flex-col items-center justify-center justify-items-center gap-10 sm:grid sm:grid-cols-[5fr_4fr] py-20">
     <Image
       className="rounded-full sm:order-2"
       alt="Willy Mateo profile photo"

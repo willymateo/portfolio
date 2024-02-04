@@ -1,5 +1,6 @@
 import { intlFormat, isValid } from "date-fns";
 import Image from "next/image";
+import Link from "next/link";
 
 import { Technologies } from "@/app/shared/Technologies";
 
@@ -7,6 +8,7 @@ interface Props {
   children?: React.ReactNode;
   enterpriseImgUrl?: string;
   enterpriseImgAlt?: string;
+  enterpriseWebUrl?: string;
   enterpriseName?: string;
   activities?: string[];
   jobTitle?: string;
@@ -15,6 +17,7 @@ interface Props {
 }
 
 const Card = ({
+  enterpriseWebUrl = "",
   enterpriseImgUrl = "",
   enterpriseImgAlt = "",
   enterpriseName = "",
@@ -24,9 +27,15 @@ const Card = ({
   children,
   endDate,
 }: Props) => (
-  <div className="flex flex-row justify-start align-center flex-wrap gap-x-16 gap-y-3">
+  <div className="flex flex-col gap-x-16 gap-y-3 sm:flex-row sm:flex-wrap">
     <div className="flex flex-col gap-3">
-      <h3 className="text-2xl">{enterpriseName}</h3>
+      <Link
+        className={enterpriseWebUrl ? "" : "pointer-events-none"}
+        href={enterpriseWebUrl}
+        rel="noreferrer"
+        target="_blank">
+        <h3 className="text-2xl">{enterpriseName}</h3>
+      </Link>
 
       <div className="flex flex-col">
         <h4 className="text-xl">{jobTitle}</h4>
@@ -46,13 +55,19 @@ const Card = ({
       </div>
 
       <div className="flex flex-col items-center">
-        <Image
-          className="object-contain"
-          src={enterpriseImgUrl}
-          alt={enterpriseImgAlt}
-          height={200}
-          width={150}
-        />
+        <Link
+          className={`py-10 ${enterpriseWebUrl ? "" : "pointer-events-none"}`}
+          href={enterpriseWebUrl}
+          rel="noreferrer"
+          target="_blank">
+          <Image
+            className="object-contain"
+            src={enterpriseImgUrl}
+            alt={enterpriseImgAlt}
+            height={200}
+            width={150}
+          />
+        </Link>
       </div>
     </div>
 

@@ -1,6 +1,8 @@
 import { JournalPage } from "iconoir-react";
 import Link from "next/link";
 
+import { PrimaryButton } from "../shared/Buttons/Primary";
+import { DinamicQuote } from "../shared/DinamicQuote";
 import { SECTIONS } from "./constants";
 
 const AboutMe = () => (
@@ -9,28 +11,28 @@ const AboutMe = () => (
       <Link href={`#${SECTIONS.ABOUT_ME}`}>About Me</Link>
     </h2>
 
-    <div className="flex flex-col gap-5">
+    <div className="flex flex-col items-start gap-5">
       <div className="flex flex-col">
         <h3 className="text-2xl">Hello there! My name is Willy Mateo</h3>
-        <p className="italic text-slate-700">
-          “If you are not going to tell the world who you are, the world is not going to tell you,
-          how good you are.”
-        </p>
+        <DinamicQuote />
       </div>
 
       <p>
-        Since I was a child, computers caught my attention. So, my life as a programmer started in
-        2015 in school, currently, I am studying Engineering in Computer Science at ESPOL and I'm
-        sure that this is what I would love to dedicate my whole life. One of my biggest motivations
-        is to learn for myself how the Internet works. So, I spend my free time improving my coding
-        skills.
+        From an early age, I've been captivated by computers, igniting my journey as a programmer
+        back in 2015 during high school. Today, as a Computer Engineer with a degree from ESPOL, I
+        am resolute in my commitment to dedicating my life to this field. My enduring passion lies
+        in unraveling the intricacies of the Internet, propelling me deeper into the realm of
+        software development. During my leisure hours, I diligently hone my coding prowess, driven
+        by an insatiable thirst for knowledge and improvement.
       </p>
 
-      <button className="flex flex-row gap-3 rounded-xl bg-red">
-        <JournalPage />
+      <Link href="/docs/CV.pdf" rel="noreferrer" target="_blank">
+        <PrimaryButton>
+          <JournalPage />
 
-        <span>Download Resume</span>
-      </button>
+          <span className="text-center">Download resume</span>
+        </PrimaryButton>
+      </Link>
     </div>
   </div>
 );

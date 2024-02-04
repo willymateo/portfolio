@@ -1,10 +1,11 @@
 enum SECTIONS {
-  WELCOME = "welcome",
+  GET_IN_TOUCH = "get-in-touch",
+  TECH_STACK = "tech-stack",
+  EXPERIENCE = "experience",
   ABOUT_ME = "about-me",
   PROJECTS = "projects",
-  EXPERIENCE = "experience",
-  TECH_STACK = "tech-stack",
-  GET_IN_TOUCH = "get-in-touch",
+  HOBBIES = "hobbies",
+  WELCOME = "welcome",
 }
 
 export { SECTIONS };

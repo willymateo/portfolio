@@ -15,6 +15,7 @@ const ACTIVITIES = [
 const ShippifyInc = () => (
   <Card
     enterpriseImgUrl="/images/shippify-logo.svg"
+    enterpriseWebUrl="https://www.shippify.co"
     enterpriseImgAlt="Shippify Inc logo"
     startDate={new Date(2022, 8, 20)}
     jobTitle="Full-stack developer"
