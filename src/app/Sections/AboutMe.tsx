@@ -26,11 +26,13 @@ const AboutMe = () => (
         by an insatiable thirst for knowledge and improvement.
       </p>
 
-      <PrimaryButton>
-        <JournalPage />
+      <Link href="/docs/CV.pdf" rel="noreferrer" target="_blank">
+        <PrimaryButton>
+          <JournalPage />
 
-        <span className="text-center">Download resume</span>
-      </PrimaryButton>
+          <span className="text-center">Download resume</span>
+        </PrimaryButton>
+      </Link>
     </div>
   </div>
 );
