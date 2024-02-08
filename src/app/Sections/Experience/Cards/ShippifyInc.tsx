@@ -1,6 +1,7 @@
 import { faAws, faNode, faNodeJs, faReact, faSquareJs } from "@fortawesome/free-brands-svg-icons";
-import { faDatabase, faServer } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faServer } from "@fortawesome/free-solid-svg-icons";
+import { Database } from "iconoir-react";
 
 import { Tag } from "@/app/shared/Tag";
 import { Card } from "./Card";
@@ -42,7 +43,7 @@ const ShippifyInc = () => (
       <p className="text-center">REST APIs</p>
     </Tag>
     <Tag>
-      <FontAwesomeIcon icon={faDatabase} className="w-[24px] h-[24px]" />
+      <Database />
       <p className="text-center">MySQL</p>
     </Tag>
     <Tag>

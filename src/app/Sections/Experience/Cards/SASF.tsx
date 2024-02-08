@@ -1,7 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSquareJs } from "@fortawesome/free-brands-svg-icons";
-import { faDatabase } from "@fortawesome/free-solid-svg-icons";
-import { Css3, Html5 } from "iconoir-react";
+import { Css3, Database, Html5 } from "iconoir-react";
 
 import { Tag } from "@/app/shared/Tag";
 import { Card } from "./Card";
@@ -35,11 +34,11 @@ const SASF = () => (
       <p className="text-center">CSS 3</p>
     </Tag>
     <Tag>
-      <FontAwesomeIcon icon={faDatabase} className="w-[24px] h-[24px]" />
+      <Database />
       <p className="text-center">Oracle</p>
     </Tag>
     <Tag>
-      <FontAwesomeIcon icon={faDatabase} className="w-[24px] h-[24px]" />
+      <Database />
       <p className="text-center">PL/SQL</p>
     </Tag>
   </Card>
