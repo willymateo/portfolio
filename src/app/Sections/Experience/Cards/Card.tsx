@@ -1,4 +1,5 @@
 import { intlFormat, isValid } from "date-fns";
+import { City } from "iconoir-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -55,19 +56,29 @@ const Card = ({
       </div>
 
       <div className="flex flex-col items-center">
-        <Link
-          className={`py-10 ${enterpriseWebUrl ? "" : "pointer-events-none"}`}
-          href={enterpriseWebUrl}
-          rel="noreferrer"
-          target="_blank">
-          <Image
-            className="object-contain"
-            src={enterpriseImgUrl}
-            alt={enterpriseImgAlt}
-            height={200}
-            width={150}
-          />
-        </Link>
+        {enterpriseImgUrl ? (
+          <Link
+            className={`py-10 ${enterpriseWebUrl ? "" : "pointer-events-none"}`}
+            href={enterpriseWebUrl}
+            rel="noreferrer"
+            target="_blank">
+            <Image
+              className="object-contain"
+              src={enterpriseImgUrl}
+              alt={enterpriseImgAlt}
+              height={200}
+              width={150}
+            />
+          </Link>
+        ) : (
+          <Link
+            className={`py-10 ${enterpriseWebUrl ? "" : "pointer-events-none"}`}
+            href={enterpriseWebUrl}
+            rel="noreferrer"
+            target="_blank">
+            <City className="text-5xl" />
+          </Link>
+        )}
       </div>
     </div>
 

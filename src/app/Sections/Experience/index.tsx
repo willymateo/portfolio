@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+import { ContabilySA } from "./Cards/ContabillySA";
 import { ShippifyInc } from "./Cards/ShippifyInc";
 import { SECTIONS } from "../constants";
 import { SASF } from "./Cards/SASF";
@@ -13,6 +14,7 @@ const Experience = () => (
     <div className="flex flex-col gap-16">
       <ShippifyInc />
       <SASF />
+      <ContabilySA />
     </div>
   </div>
 );
