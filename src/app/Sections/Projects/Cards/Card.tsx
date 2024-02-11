@@ -39,7 +39,13 @@ const Card = ({
     <div className="flex-1 flex flex-col justify-between gap-3">
       <div className="flex flex-col gap-3">
         <div className="flex flex-col gap-1">
-          <h3 className="text-2xl">{title}</h3>
+          <Link
+            className={websiteUrl ? "" : "pointer-events-none"}
+            href={websiteUrl}
+            rel="noreferrer"
+            target="_blank">
+            <h3 className="text-2xl">{title}</h3>
+          </Link>
           <p>{description}</p>
         </div>
 

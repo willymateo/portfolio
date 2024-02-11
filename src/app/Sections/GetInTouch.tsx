@@ -27,10 +27,8 @@ const GetInTouch = () => {
       </h2>
 
       <div className="flex flex-col gap-5">
-        <h3 className="flex flex-row gap-2 items-center text-2xl">
-          <span>Let's build something together</span>
-          <Developer />
-          <span>!</span>
+        <h3 className="text-2xl">
+          Let's build something together <Developer className="inline-block" /> !
         </h3>
 
         <div className="flex flex-col items-stretch justify-center gap-10 lg:flex-row lg:flex-wrap">
