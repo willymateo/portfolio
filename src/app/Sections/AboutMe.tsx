@@ -18,12 +18,13 @@ const AboutMe = () => (
       </div>
 
       <p>
-        From an early age, I've been captivated by computers, igniting my journey as a programmer
-        back in 2015 during high school. Today, as a Computer Engineer with a degree from ESPOL, I
-        am resolute in my commitment to dedicating my life to this field. My enduring passion lies
-        in unraveling the intricacies of the Internet, propelling me deeper into the realm of
-        software development. During my leisure hours, I diligently hone my coding prowess, driven
-        by an insatiable thirst for knowledge and improvement.
+        As an accomplished Computer Science Engineer with over four years of dedicated experience in
+        full-stack development, I bring a robust skill set focused on React, Node.js, Express, and
+        JavaScript technologies. I also have knowledge in React Native, TypeScript, and the use of
+        agile methodologies to deliver superior results. Recognized for consistently achieving
+        performance excellence, I am committed to upholding the highest standards of clean code
+        practices. Among my most outstanding achievements is the development of automated actions
+        within a logistics system to significantly reduce users' time and improve their experience.
       </p>
 
       <Link href="/docs/CV.pdf" rel="noreferrer" target="_blank">
