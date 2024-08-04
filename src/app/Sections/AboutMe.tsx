@@ -19,12 +19,14 @@ const AboutMe = () => (
 
       <p>
         As an accomplished Computer Science Engineer with over four years of dedicated experience in
-        full-stack development, I bring a robust skill set focused on React, Node.js, Express, and
-        JavaScript technologies. I also have knowledge in React Native, TypeScript, and the use of
-        agile methodologies to deliver superior results. Recognized for consistently achieving
-        performance excellence, I am committed to upholding the highest standards of clean code
-        practices. Among my most outstanding achievements is the development of automated actions
-        within a logistics system to significantly reduce users' time and improve their experience.
+        full-stack development, I bring a robust skill set focused on React, NextJs, NodeJs,
+        Express, TypeScript, JavaScript, Redux, MySQL, PostgreSQL, Material UI and Tailwind CSS
+        technologies. I also have knowledge in AWS, Firebase, Docker, Terraform, React Native, and
+        the use of agile methodologies to deliver superior results. Recognized for consistently
+        achieving performance excellence, I am committed to upholding the highest standards of clean
+        code practices. Among my most outstanding achievements is the development of automated
+        actions within a logistics system to significantly reduce users' time and improve their
+        experience.
       </p>
 
       <Link href="/docs/CV.pdf" rel="noreferrer" target="_blank">

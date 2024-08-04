@@ -5,8 +5,9 @@ import { ProgrammingLanguages } from "./Sections/ProgrammingLanguages";
 import { Databases } from "./Sections/DataBases";
 import { FrontEnd } from "./Sections/FrontEnd";
 import { BackEnd } from "./Sections/BackEnd";
-import { Mobile } from "./Sections/Mobile";
 import { DevOps } from "./Sections/DevOps";
+import { Mobile } from "./Sections/Mobile";
+import { Cloud } from "./Sections/Cloud";
 import { SECTIONS } from "../constants";
 
 const TechStack = () => (
@@ -21,6 +22,7 @@ const TechStack = () => (
       <BackEnd />
       <Mobile />
       <Databases />
+      <Cloud />
       <DevOps />
       <WebDevelopmentEnvironment />
     </div>

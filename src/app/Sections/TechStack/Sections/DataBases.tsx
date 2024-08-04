@@ -17,6 +17,10 @@ const Databases = () => (
       <Database />
       <p className="text-center">Mongo DB</p>
     </Tag>
+    <Tag>
+      <Database />
+      <p className="text-center">Firestore</p>
+    </Tag>
   </Technologies>
 );
 
