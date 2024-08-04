@@ -1,8 +1,10 @@
 import { Rocket } from "iconoir-react";
 import Image from "next/image";
+import Link from "next/link";
 
 import { PrimaryButton } from "../shared/Buttons/Primary";
 import { animaticSCBold } from "@/shared/fonts";
+import { SECTIONS } from "./constants";
 
 const Hero = () => (
   <div className="min-h-screen flex flex-col items-center justify-center justify-items-center gap-10 sm:grid sm:grid-cols-[5fr_4fr] py-20">
@@ -31,8 +33,13 @@ const Hero = () => (
         <h2 className="text-xl sm:text-3xl text-center">Let’s build something amazing together.</h2>
 
         <div className="flex flex-row justify-center items-center gap-5 flex-wrap">
-          <PrimaryButton>Explore my work</PrimaryButton>
-          <PrimaryButton>Get in touch</PrimaryButton>
+          <Link href={`#${SECTIONS.EXPERIENCE}`}>
+            <PrimaryButton>Explore my work</PrimaryButton>
+          </Link>
+
+          <Link href={`#${SECTIONS.GET_IN_TOUCH}`}>
+            <PrimaryButton>Get in touch</PrimaryButton>
+          </Link>
         </div>
       </div>
     </div>

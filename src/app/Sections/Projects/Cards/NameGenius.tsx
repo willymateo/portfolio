@@ -19,7 +19,7 @@ const NameGenius = () => (
     <Technologies>
       <Tag>
         <FontAwesomeIcon icon={faReact} className="w-[24px] h-[24px]" />
-        <p className="text-center">React Js</p>
+        <p className="text-center">React</p>
       </Tag>
       <Tag>
         <LaptopDevMode />

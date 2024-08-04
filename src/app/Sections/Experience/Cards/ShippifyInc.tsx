@@ -1,7 +1,15 @@
-import { faAws, faNode, faNodeJs, faReact, faSquareJs } from "@fortawesome/free-brands-svg-icons";
+import { faCloud, faServer } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faServer } from "@fortawesome/free-solid-svg-icons";
-import { Database } from "iconoir-react";
+import { Code, Database, LaptopDevMode } from "iconoir-react";
+import {
+  faSquareJs,
+  faGithub,
+  faDocker,
+  faNodeJs,
+  faReact,
+  faNode,
+  faAws,
+} from "@fortawesome/free-brands-svg-icons";
 
 import { Tag } from "@/app/shared/Tag";
 import { Card } from "./Card";
@@ -27,8 +35,20 @@ const ShippifyInc = () => (
       <p className="text-center">JavaScript</p>
     </Tag>
     <Tag>
+      <Code />
+      <p className="text-center">TypeScript</p>
+    </Tag>
+    <Tag>
       <FontAwesomeIcon icon={faReact} className="w-[24px] h-[24px]" />
-      <p className="text-center">React Js</p>
+      <p className="text-center">React</p>
+    </Tag>
+    <Tag>
+      <FontAwesomeIcon icon={faReact} className="w-[24px] h-[24px]" />
+      <p className="text-center">Redux</p>
+    </Tag>
+    <Tag>
+      <LaptopDevMode />
+      <p className="text-center">SSR</p>
     </Tag>
     <Tag>
       <FontAwesomeIcon icon={faNode} className="w-[24px] h-[24px]" />
@@ -47,8 +67,24 @@ const ShippifyInc = () => (
       <p className="text-center">MySQL</p>
     </Tag>
     <Tag>
+      <Database />
+      <p className="text-center">Firebase</p>
+    </Tag>
+    <Tag>
       <FontAwesomeIcon icon={faAws} className="w-[24px] h-[24px]" />
-      <p className="text-center">CloudWatch in AWS</p>
+      <p className="text-center">AWS</p>
+    </Tag>
+    <Tag>
+      <FontAwesomeIcon icon={faDocker} className="w-[24px] h-[24px]" />
+      <p className="text-center">Docker</p>
+    </Tag>
+    <Tag>
+      <FontAwesomeIcon icon={faCloud} className="w-[24px] h-[24px]" />
+      <p className="text-center">Terraform</p>
+    </Tag>
+    <Tag>
+      <FontAwesomeIcon icon={faGithub} className="w-[24px] h-[24px]" />
+      <p className="text-center">Github Actions</p>
     </Tag>
   </Card>
 );

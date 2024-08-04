@@ -14,11 +14,11 @@ const ACTIVITIES = [
   "Updating the DB squeme.",
 ];
 
-const ContabilySA = () => (
+const ContabillySA = () => (
   <Card
     startDate={new Date(2021, 9, 1)}
     jobTitle="Full-stack developer"
-    enterpriseName="Contabily S.A."
+    enterpriseName="Contabilly S.A."
     endDate={new Date(2022, 7, 1)}
     activities={ACTIVITIES}>
     <Tag>
@@ -27,7 +27,7 @@ const ContabilySA = () => (
     </Tag>
     <Tag>
       <FontAwesomeIcon icon={faReact} className="w-[24px] h-[24px]" />
-      <p className="text-center">React Js</p>
+      <p className="text-center">React</p>
     </Tag>
     <Tag>
       <FontAwesomeIcon icon={faServer} className="w-[24px] h-[24px]" />
@@ -40,4 +40,4 @@ const ContabilySA = () => (
   </Card>
 );
 
-export { ContabilySA };
+export { ContabillySA };

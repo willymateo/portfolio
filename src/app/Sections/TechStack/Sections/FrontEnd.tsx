@@ -9,11 +9,19 @@ const FrontEnd = () => (
   <Technologies title="Front-end">
     <Tag>
       <FontAwesomeIcon icon={faReact} className="w-[24px] h-[24px]" />
-      <p className="text-center">React Js</p>
+      <p className="text-center">React</p>
+    </Tag>
+    <Tag>
+      <FontAwesomeIcon icon={faReact} className="w-[24px] h-[24px]" />
+      <p className="text-center">Redux</p>
     </Tag>
     <Tag>
       <LaptopDevMode />
       <p className="text-center">Next Js</p>
+    </Tag>
+    <Tag>
+      <LaptopDevMode />
+      <p className="text-center">SSR</p>
     </Tag>
     <Tag>
       <Html5 />
@@ -34,6 +42,10 @@ const FrontEnd = () => (
     <Tag>
       <LaptopDevMode />
       <p className="text-center">Chakra UI</p>
+    </Tag>
+    <Tag>
+      <FontAwesomeIcon icon={faCss3} className="w-[24px] h-[24px]" />
+      <p className="text-center">Material UI</p>
     </Tag>
   </Technologies>
 );
