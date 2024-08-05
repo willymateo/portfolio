@@ -23,7 +23,7 @@ const GetInTouch = () => {
   return (
     <div id={SECTIONS.GET_IN_TOUCH} className="flex flex-col gap-8">
       <h2 className="text-4xl font-bold">
-        <Link href={`#${SECTIONS.GET_IN_TOUCH}`}>GetInTouch</Link>
+        <Link href={`#${SECTIONS.GET_IN_TOUCH}`}>Get in touch</Link>
       </h2>
 
       <div className="flex flex-col gap-5">

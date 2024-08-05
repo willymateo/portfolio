@@ -1,3 +1,4 @@
+import { Achievements } from "./Sections/Achievements";
 import { GetInTouch } from "./Sections/GetInTouch";
 import { Experience } from "./Sections/Experience";
 import { TechStack } from "./Sections/TechStack";
@@ -13,8 +14,9 @@ const Home = () => (
       <Hero />
       <AboutMe />
       <TechStack />
-      <Projects />
       <Experience />
+      <Projects />
+      <Achievements />
       <Hobbies />
       <GetInTouch />
     </div>

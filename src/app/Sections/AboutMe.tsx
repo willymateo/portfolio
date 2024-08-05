@@ -8,7 +8,7 @@ import { SECTIONS } from "./constants";
 const AboutMe = () => (
   <div id={SECTIONS.ABOUT_ME} className="flex flex-col gap-8">
     <h2 className="text-4xl font-bold">
-      <Link href={`#${SECTIONS.ABOUT_ME}`}>About Me</Link>
+      <Link href={`#${SECTIONS.ABOUT_ME}`}>About me</Link>
     </h2>
 
     <div className="flex flex-col items-start gap-5">

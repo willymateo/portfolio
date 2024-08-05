@@ -1,4 +1,4 @@
-import { Rocket } from "iconoir-react";
+import { EmojiSingRight, Rocket, Suitcase } from "iconoir-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -34,11 +34,17 @@ const Hero = () => (
 
         <div className="flex flex-row justify-center items-center gap-5 flex-wrap">
           <Link href={`#${SECTIONS.EXPERIENCE}`}>
-            <PrimaryButton>Explore my work</PrimaryButton>
+            <PrimaryButton>
+              <Suitcase />
+              Explore my work
+            </PrimaryButton>
           </Link>
 
           <Link href={`#${SECTIONS.GET_IN_TOUCH}`}>
-            <PrimaryButton>Get in touch</PrimaryButton>
+            <PrimaryButton>
+              <EmojiSingRight />
+              Get in touch
+            </PrimaryButton>
           </Link>
         </div>
       </div>

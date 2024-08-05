@@ -1,4 +1,5 @@
 enum SECTIONS {
+  ACHIEVEMENTS = "achievements",
   GET_IN_TOUCH = "get-in-touch",
   TECH_STACK = "tech-stack",
   EXPERIENCE = "experience",
