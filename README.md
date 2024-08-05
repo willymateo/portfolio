@@ -1,4 +1,4 @@
-# namegenius
+# portfolio
 
 My personal dev-portfolio
 
@@ -28,13 +28,13 @@ npm start
 #### Development
 
 ```bash
-npm run dev
+npm run start:dev
 # or
-yarn dev
+yarn start:dev
 # or
-pnpm dev
+pnpm start:dev
 # or
-bun dev
+bun start:dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000)
