@@ -1,4 +1,5 @@
 import { faCss3, faReact, faSass } from "@fortawesome/free-brands-svg-icons";
+import { faNpm } from "@fortawesome/free-brands-svg-icons/faNpm";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Html5, Css3, LaptopDevMode } from "iconoir-react";
 
@@ -46,6 +47,18 @@ const FrontEnd = () => (
     <Tag>
       <FontAwesomeIcon icon={faCss3} className="w-[24px] h-[24px]" />
       <p className="text-center">Material UI</p>
+    </Tag>
+    <Tag>
+      <FontAwesomeIcon icon={faNpm} className="w-[24px] h-[24px]" />
+      <p className="text-center">Webpack</p>
+    </Tag>
+    <Tag>
+      <FontAwesomeIcon icon={faNpm} className="w-[24px] h-[24px]" />
+      <p className="text-center">Rollup</p>
+    </Tag>
+    <Tag>
+      <FontAwesomeIcon icon={faNpm} className="w-[24px] h-[24px]" />
+      <p className="text-center">NPM</p>
     </Tag>
   </Technologies>
 );

@@ -13,7 +13,11 @@ const BackEnd = () => (
     </Tag>
     <Tag>
       <FontAwesomeIcon icon={faNodeJs} className="w-[24px] h-[24px]" />
-      <p className="text-center">Express Js</p>
+      <p className="text-center">Express</p>
+    </Tag>
+    <Tag>
+      <FontAwesomeIcon icon={faNodeJs} className="w-[24px] h-[24px]" />
+      <p className="text-center">NestJS</p>
     </Tag>
     <Tag>
       <FontAwesomeIcon icon={faServer} className="w-[24px] h-[24px]" />

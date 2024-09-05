@@ -19,6 +19,10 @@ const MIProjectManager = () => (
         <p className="text-center">React</p>
       </Tag>
       <Tag>
+        <FontAwesomeIcon icon={faReact} className="w-[24px] h-[24px]" />
+        <p className="text-center">Redux</p>
+      </Tag>
+      <Tag>
         <LaptopDevMode />
         <p className="text-center">Vite</p>
       </Tag>
