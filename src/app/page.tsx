@@ -1,6 +1,7 @@
 import { Achievements } from "./Sections/Achievements";
 import { GetInTouch } from "./Sections/GetInTouch";
 import { Experience } from "./Sections/Experience";
+import { Education } from "./Sections/Education";
 import { TechStack } from "./Sections/TechStack";
 import { Projects } from "./Sections/Projects";
 import { AboutMe } from "./Sections/AboutMe";
@@ -16,6 +17,7 @@ const Home = () => (
       <TechStack />
       <Experience />
       <Projects />
+      <Education />
       <Achievements />
       <Hobbies />
       <GetInTouch />
