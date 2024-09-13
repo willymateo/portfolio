@@ -11,7 +11,7 @@ import { Hero } from "./Sections/Hero";
 
 const Home = () => (
   <main className="min-h-screen flex flex-col gap-20">
-    <div className="flex flex-col items-strech justify-center gap-20 px-10">
+    <div className="flex flex-col items-strech justify-center gap-20 px-10 md:px-36">
       <Hero />
       <AboutMe />
       <TechStack />

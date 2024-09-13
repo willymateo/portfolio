@@ -3,15 +3,12 @@ import { City } from "iconoir-react";
 import Image from "next/image";
 import Link from "next/link";
 
-import { Technologies } from "@/app/shared/Technologies";
-
 interface Props {
   children?: React.ReactNode;
   enterpriseImgUrl?: string;
   enterpriseImgAlt?: string;
   enterpriseWebUrl?: string;
   enterpriseName?: string;
-  activities?: string[];
   jobTitle?: string;
   startDate: Date;
   endDate?: Date;
@@ -22,13 +19,12 @@ const Card = ({
   enterpriseImgUrl = "",
   enterpriseImgAlt = "",
   enterpriseName = "",
-  activities = [],
   jobTitle = "",
   startDate,
   children,
   endDate,
 }: Props) => (
-  <div className="flex flex-col gap-x-16 gap-y-3 sm:flex-row sm:flex-wrap">
+  <div className="flex flex-col lg:flex-row gap-x-16 gap-y-3 flex-wrap">
     <div className="flex flex-col gap-3">
       <Link
         className={enterpriseWebUrl ? "" : "pointer-events-none"}
@@ -82,13 +78,7 @@ const Card = ({
       </div>
     </div>
 
-    <div className="flex-1 flex flex-col gap-3">
-      <ul className="flex flex-col gap-1 list-disc ps-5">
-        {activities?.map((activity = "", index) => <li key={index}>{activity}</li>)}
-      </ul>
-
-      <Technologies>{children}</Technologies>
-    </div>
+    <div className="flex-1 flex flex-col gap-5">{children}</div>
   </div>
 );
 
