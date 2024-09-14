@@ -18,15 +18,29 @@ const AboutMe = () => (
       </div>
 
       <p>
-        As an accomplished Computer Science Engineer with over four years of dedicated experience in
-        full-stack development, I bring a robust skill set focused on React, NextJs, NodeJs,
-        Express, TypeScript, JavaScript, Redux, MySQL, PostgreSQL, Material UI and Tailwind CSS
-        technologies. I also have knowledge in AWS, Firebase, Docker, Terraform, React Native, and
-        the use of agile methodologies to deliver superior results. Recognized for consistently
-        achieving performance excellence, I am committed to upholding the highest standards of clean
-        code practices. Among my most outstanding achievements is the development of automated
-        actions within a logistics system to significantly reduce users' time and improve their
-        experience.
+        I’m Willy Mateo, a passionate Computer Science Engineer from ESPOL, Ecuador’s top
+        university, with a strong focus on frontend and full-stack development. My career so far has
+        centered on creating efficient, high-performing applications using technologies like React,
+        Next.js, and Node.js. I thrive on solving complex challenges and am committed to building
+        scalable solutions. I identify myself with excellence, and this drives me to deliver
+        top-quality code and always look for ways to optimize processes, ensuring both user
+        satisfaction and performance.
+      </p>
+
+      <p>
+        Technically, I bring extensive experience in JavaScript, TypeScript, React, Redux, and AWS,
+        combined with a deep understanding of backend technologies like Node.js, Express, and MySQL.
+        Beyond technical expertise, I possess strong communication skills and a collaborative
+        mindset. My leadership qualities enable me to work effectively across teams, mentor peers,
+        and ensure that every project I touch meets high standards.
+      </p>
+
+      <p>
+        Looking ahead, I am determined to continuously grow my skills, with the ultimate goal of
+        becoming a software architect. I am driven by the idea of designing systems that are both
+        efficient and scalable, ensuring that technology not only meets today’s demands but is also
+        prepared for tomorrow’s challenges. I am constantly improving, learning, and innovating, and
+        I look forward to opportunities that push me to develop my expertise and leadership further.
       </p>
 
       <Link href="/docs/CV.pdf" rel="noreferrer" target="_blank">
