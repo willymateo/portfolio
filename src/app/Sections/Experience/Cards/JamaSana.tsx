@@ -10,7 +10,7 @@ const JamaSana = () => (
   <Card
     enterpriseImgUrl="/images/jama-sana-logo.png"
     startDate={new Date(2021, 9, 1)}
-    jobTitle="Full-stack developer"
+    jobTitle="Fullstack Developer"
     endDate={new Date(2022, 7, 1)}
     enterpriseName="JamaSana">
     <p>
@@ -617,12 +617,6 @@ const JamaSana = () => (
         <Agile />
 
         <p className="text-center">Scrum</p>
-      </Tag>
-
-      <Tag>
-        <Agile />
-
-        <p className="text-center">Kanban</p>
       </Tag>
     </Technologies>
   </Card>

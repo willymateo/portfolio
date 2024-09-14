@@ -10,9 +10,9 @@ const SASF = () => (
     enterpriseName="Sudamericana de Software S.A"
     enterpriseImgUrl="/images/sasf-logo.jpg"
     enterpriseWebUrl="https://www.sasf.net"
-    jobTitle="Full-stack developer intern"
     startDate={new Date(2022, 1, 1)}
-    endDate={new Date(2022, 7, 1)}>
+    endDate={new Date(2022, 7, 1)}
+    jobTitle="Fullstack Developer">
     <p>
       I maintained a CRM system and web service for Huawei, ensuring seamless functionality for
       their enterprise needs. A key aspect of my role was using PSQL to create SQL scripts that
