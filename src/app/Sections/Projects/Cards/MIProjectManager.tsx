@@ -1,14 +1,10 @@
-import { faCss3, faReact, faSquareJs } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { LaptopDevMode } from "iconoir-react";
-
 import { Technologies } from "@/app/shared/Technologies";
 import { Tag } from "@/app/shared/Tag";
 import { Card } from "./Card";
 
 const MIProjectManager = () => (
   <Card
-    description="This is an ESPOL thesis project management system. It allows clients to register their thesis project proposals, professors to manage and evaluate them, and coordinators to balance project proposals across existing courses. It also has a dashboard so that clients and teachers can monitor the progress of projects."
+    description="This project was designed to streamline the process of handling thesis proposals and evaluations. It addresses the challenge of coordinating between students, professors, and course coordinators by allowing clients to submit proposals, professors to manage and evaluate them, and coordinators to distribute projects efficiently. This project enhances visibility and organization through a dashboard, simplifying the tracking and management of thesis progress. It was developed in collaboration with key stakeholders, demonstrating a comprehensive application of computer science engineering skills to solve real-world administrative problems."
     websiteUrl="https://idear.espol.edu.ec/sites/default/files/posters/edicion_x/TECH_350_Desarrollo%20de%20una%20versi%C3%B3n%20mejorada%20del%20m%C3%B3dulo%20de%20gesti%C3%B3n%20de%20proyectos%20de%20materia%20integradora%20de%20la%20ESPOL.pdf"
     imgAlt="System for managing thesis projects of ESPOL"
     title="System for managing ESPOL thesis projects"
