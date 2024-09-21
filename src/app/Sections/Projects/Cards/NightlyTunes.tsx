@@ -6,7 +6,7 @@ const isDark = false;
 
 const NightlyTunes = () => (
   <Card
-    description="A music library that allows you to listen your favorite songs and discover new ones. It uses the Napster API to search for songs and artists, and the Vime library to play the songs. You can use this web app in English or Spanish and it supports both light and dark mode."
+    description="Nightly Tunes is a music library designed to make discovering and enjoying music easier. By offering a platform where users can listen to their favorite songs and explore new ones, it addresses the challenge of finding fresh music. With support for multiple languages and light or dark modes, it provides a personalized and user-friendly experience, simplifying the process of music discovery and playback."
     imgUrl={
       isDark ? "/images/nightly-tunes-dark-banner.png" : "/images/nightly-tunes-light-banner.png"
     }

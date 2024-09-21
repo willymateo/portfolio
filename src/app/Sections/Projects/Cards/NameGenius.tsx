@@ -6,7 +6,7 @@ const isDark = false;
 
 const NameGenius = () => (
   <Card
-    description="A free web application that uses artificial intelligence to generate creative and unique names for your business, projects or team. It uses the Hugging Face inference API to load a Natural Language Proccesing model and generate the appropiated names. It also has a dark mode and a light mode."
+    description="NameGenius is a free web application designed to solve the challenge of finding creative and unique names for businesses, projects, or teams. By leveraging artificial intelligence, it generates tailored name suggestions, streamlining a process that can be time-consuming and difficult. The application offers an intuitive user experience with features like dark and light modes, making it accessible for a wide range of users. NameGenius simplifies the naming process by utilizing cutting-edge technology to inspire creativity and save time."
     imgUrl={isDark ? "/images/namegenius-dark-banner.png" : "/images/namegenius-light-banner.png"}
     websiteUrl="https://www.namegenius.app"
     imgAlt="NameGenius website"
