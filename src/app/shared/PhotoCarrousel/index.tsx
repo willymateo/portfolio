@@ -57,7 +57,6 @@ const PhotoCarrousel = ({ images }: Props) => {
               className="object-cover object-center w-full h-full rounded-lg shadow-[0_1.5rem_3rem_-0.75rem_hsla(0,_0%,_0%,_0.25)]"
               src={image?.src}
               alt={image?.alt}
-              id={image?.id}
             />
           </div>
         ))}
