@@ -1,3 +1,4 @@
+import { intlFormat, isValid } from "date-fns";
 import { City } from "iconoir-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,8 +9,10 @@ interface Props {
   imgHeight?: number;
   imgWidth?: number;
   subTitle?: string;
+  startDate: Date;
   imgUrl?: string;
   imgAlt?: string;
+  endDate?: Date;
   title?: string;
   href?: string;
 }
@@ -23,11 +26,29 @@ const Card = ({
   imgAlt = "",
   title = "",
   href = "",
+  startDate,
   children,
+  endDate,
 }: Props) => (
   <div className="flex flex-col gap-6">
     <div className="flex flex-col gap">
-      <h3 className="text-l">{subTitle}</h3>
+      <div className="flex flex-col">
+        <h3 className="text-l">{subTitle}</h3>
+
+        <p>
+          {intlFormat(startDate, {
+            month: "long",
+            year: "numeric",
+          })}
+
+          {isValid(endDate)
+            ? ` - ${intlFormat(endDate as Date, {
+                month: "long",
+                year: "numeric",
+              })}`
+            : ""}
+        </p>
+      </div>
 
       <Link
         className={href ? "" : "pointer-events-none"}
