@@ -1,7 +1,8 @@
 import Link from "next/link";
 
+import { GithubFoundationsCertification } from "./Cards/GithubFoundationsCertification";
+import { PaperRAP } from "./Cards/PaperRAP";
 import { SECTIONS } from "../constants";
-import { RAPSTT } from "./Cards/RAPSTT";
 
 const Achievements = () => (
   <div id={SECTIONS.ACHIEVEMENTS} className="flex flex-col gap-8">
@@ -10,7 +11,8 @@ const Achievements = () => (
     </h2>
 
     <div className="flex flex-col gap-16">
-      <RAPSTT />
+      <GithubFoundationsCertification />
+      <PaperRAP />
     </div>
   </div>
 );
