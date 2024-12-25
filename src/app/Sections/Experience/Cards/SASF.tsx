@@ -1,4 +1,6 @@
-import { Database, LaptopDevMode } from "iconoir-react";
+import { faLaptopCode } from "@fortawesome/free-solid-svg-icons/faLaptopCode";
+import { faDatabase } from "@fortawesome/free-solid-svg-icons/faDatabase";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { Technologies } from "@/app/shared/Technologies";
 import { Tag } from "@/app/shared/Tag";
@@ -12,7 +14,8 @@ const SASF = () => (
     enterpriseWebUrl="https://www.sasf.net"
     startDate={new Date(2022, 1, 1)}
     endDate={new Date(2022, 7, 1)}
-    jobTitle="Fullstack Developer">
+    jobTitle="Fullstack Developer"
+  >
     <p>
       I maintained a CRM system and web service for Huawei, ensuring seamless functionality for
       their enterprise needs. A key aspect of my role was using PSQL to create SQL scripts that
@@ -65,17 +68,19 @@ const SASF = () => (
       </Tag>
 
       <Tag>
-        <Database />
+        <FontAwesomeIcon icon={faDatabase} className="w-[24px] h-[24px]" />
+
         <p className="text-center">Oracle</p>
       </Tag>
 
       <Tag>
-        <Database />
+        <FontAwesomeIcon icon={faDatabase} className="w-[24px] h-[24px]" />
+
         <p className="text-center">PL/SQL</p>
       </Tag>
 
       <Tag>
-        <LaptopDevMode />
+        <FontAwesomeIcon icon={faLaptopCode} className="w-[24px] h-[24px]" />
 
         <p className="text-center">SSR</p>
       </Tag>

@@ -21,7 +21,8 @@ const ProgrammingLanguages = () => (
         preserveAspectRatio="xMidYMid"
         viewBox="0 0 256 256"
         height="24"
-        width="24">
+        width="24"
+      >
         <path
           d="M20 0h216c11.046 0 20 8.954 20 20v216c0 11.046-8.954 20-20 20H20c-11.046 0-20-8.954-20-20V20C0 8.954 8.954 0 20 0Z"
           fill="#3178C6"
@@ -41,7 +42,8 @@ const ProgrammingLanguages = () => (
         viewBox="0 0 64 64"
         height="24"
         fill="none"
-        width="24">
+        width="24"
+      >
         <path
           fill="url(#a)"
           d="M31.885 16c-8.124 0-7.617 3.523-7.617 3.523l.01 3.65h7.752v1.095H21.197S16 23.678 16 31.876c0 8.196 4.537 7.906 4.537 7.906h2.708v-3.804s-.146-4.537 4.465-4.537h7.688s4.32.07 4.32-4.175v-7.019S40.374 16 31.885 16zm-4.275 2.454a1.394 1.394 0 1 1 0 2.79 1.393 1.393 0 0 1-1.395-1.395c0-.771.624-1.395 1.395-1.395z"
@@ -57,7 +59,8 @@ const ProgrammingLanguages = () => (
             x2="34.898"
             y1="18.782"
             y2="34.658"
-            gradientUnits="userSpaceOnUse">
+            gradientUnits="userSpaceOnUse"
+          >
             <stop stop-color="#387EB8" />
             <stop offset="1" stop-color="#366994" />
           </linearGradient>
@@ -67,7 +70,8 @@ const ProgrammingLanguages = () => (
             x2="45.803"
             y1="28.882"
             y2="45.163"
-            gradientUnits="userSpaceOnUse">
+            gradientUnits="userSpaceOnUse"
+          >
             <stop stop-color="#FFE052" />
             <stop offset="1" stop-color="#FFC331" />
           </linearGradient>

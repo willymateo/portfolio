@@ -1,4 +1,5 @@
-import { JournalPage } from "iconoir-react";
+import { faNewspaper } from "@fortawesome/free-regular-svg-icons/faNewspaper";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 
 import { PrimaryButton } from "../shared/Buttons/Primary";
@@ -50,7 +51,7 @@ const AboutMe = () => (
 
       <Link href="/docs/CV.pdf" rel="noreferrer" target="_blank">
         <PrimaryButton>
-          <JournalPage />
+          <FontAwesomeIcon icon={faNewspaper} className="w-[24px] h-[24px]" />
 
           <span className="text-center">Download resume</span>
         </PrimaryButton>

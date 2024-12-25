@@ -9,7 +9,8 @@ interface Props {
 const PrimaryButton = ({ onClick, children, className = "" }: Props) => (
   <button
     className={`flex flex-row flex-wrap items-center justify-center gap-x-3 gap-y-2 px-4 py-2 rounded-full bg-black text-white ${className}`}
-    onClick={onClick}>
+    onClick={onClick}
+  >
     {children}
   </button>
 );

@@ -1,9 +1,13 @@
-import { EmojiSingRight, Rocket, Suitcase } from "iconoir-react";
+import { faHandshakeAngle } from "@fortawesome/free-solid-svg-icons/faHandshakeAngle";
+import { faRocket } from "@fortawesome/free-solid-svg-icons/faRocket";
+import { faCode } from "@fortawesome/free-solid-svg-icons/faCode";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Link from "next/link";
 
 import { PrimaryButton } from "../shared/Buttons/Primary";
 import { animaticSCBold } from "@/shared/fonts";
+import { MotionH1 } from "../shared/Motion/H1";
 import { SECTIONS } from "./constants";
 
 const Hero = () => (
@@ -18,16 +22,20 @@ const Hero = () => (
 
     <div className="flex flex-col justify-center items-center gap-8 max-w-[600px]">
       <div className="flex flex-col justify-center items-center gap-1">
-        <h1 className={`text-4xl sm:text-5xl text-center ${animaticSCBold.className}`}>
+        <MotionH1
+          className={`text-4xl sm:text-5xl lg:text-8xl text-center ${animaticSCBold.className}`}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+        >
           I'm Willy Mateo,
-        </h1>
+        </MotionH1>
 
         <h2 className="text-xl sm:text-3xl text-center">
           a full-stack developer dedicated to creating innovative web solutions
         </h2>
       </div>
 
-      <Rocket className="w-12 h-12 text-slate-300" />
+      <FontAwesomeIcon icon={faRocket} className="w-[24px] h-[24px]" />
 
       <div className="flex flex-col justify-center items-center gap-5">
         <h2 className="text-xl sm:text-3xl text-center">Let’s build something amazing together.</h2>
@@ -35,14 +43,14 @@ const Hero = () => (
         <div className="flex flex-row justify-center items-center gap-5 flex-wrap">
           <Link href={`#${SECTIONS.EXPERIENCE}`}>
             <PrimaryButton>
-              <Suitcase />
+              <FontAwesomeIcon icon={faCode} className="w-[24px] h-[24px]" />
               Explore my work
             </PrimaryButton>
           </Link>
 
           <Link href={`#${SECTIONS.GET_IN_TOUCH}`}>
             <PrimaryButton>
-              <EmojiSingRight />
+              <FontAwesomeIcon icon={faHandshakeAngle} className="w-[24px] h-[24px]" />
               Get in touch
             </PrimaryButton>
           </Link>

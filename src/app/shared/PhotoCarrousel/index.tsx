@@ -52,7 +52,8 @@ const PhotoCarrousel = ({ images }: Props) => {
         {images.map((image, index) => (
           <div
             className={`absolute inset-0 transition-[200ms_opacity_ease-in-out] delay-200 ${currentImageIndex === index ? "opacity-100 delay-0" : "opacity-0"}`}
-            key={image?.id}>
+            key={image?.id}
+          >
             <img
               className="object-cover object-center w-full h-full rounded-lg shadow-[0_1.5rem_3rem_-0.75rem_hsla(0,_0%,_0%,_0.25)]"
               src={image?.src}

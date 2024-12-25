@@ -1,5 +1,6 @@
+import { faAward } from "@fortawesome/free-solid-svg-icons/faAward";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { intlFormat, isValid } from "date-fns";
-import { City } from "iconoir-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -54,7 +55,8 @@ const Card = ({
         className={href ? "" : "pointer-events-none"}
         rel="noreferrer"
         target="_blank"
-        href={href}>
+        href={href}
+      >
         <h4 className="text-2xl">{title}</h4>
       </Link>
     </div>
@@ -65,7 +67,8 @@ const Card = ({
           className={`${href ? "" : "pointer-events-none"}`}
           rel="noreferrer"
           target="_blank"
-          href={href}>
+          href={href}
+        >
           <Image
             className="object-contain"
             height={imgHeight}
@@ -79,8 +82,9 @@ const Card = ({
           className={`py-10 ${href ? "" : "pointer-events-none"}`}
           rel="noreferrer"
           target="_blank"
-          href={href}>
-          <City className="text-8xl" />
+          href={href}
+        >
+          <FontAwesomeIcon icon={faAward} className="w-[24px] h-[24px]" />
         </Link>
       )}
 

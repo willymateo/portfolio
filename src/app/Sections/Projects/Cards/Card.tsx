@@ -1,4 +1,5 @@
-import { Www } from "iconoir-react";
+import { faLink } from "@fortawesome/free-solid-svg-icons/faLink";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -26,7 +27,8 @@ const Card = ({
       className={websiteUrl ? "" : "pointer-events-none"}
       href={websiteUrl}
       rel="noreferrer"
-      target="_blank">
+      target="_blank"
+    >
       <Image
         className="object-contain rounded-xl"
         src={imgUrl}
@@ -43,7 +45,8 @@ const Card = ({
             className={websiteUrl ? "" : "pointer-events-none"}
             href={websiteUrl}
             rel="noreferrer"
-            target="_blank">
+            target="_blank"
+          >
             <h3 className="text-2xl">{title}</h3>
           </Link>
           <p>{description}</p>
@@ -56,7 +59,7 @@ const Card = ({
         <div className="flex flex-row justify-end gap-3">
           <Link href={websiteUrl} rel="noreferrer" target="_blank">
             <PrimaryButton>
-              <Www />
+              <FontAwesomeIcon icon={faLink} className="w-[24px] h-[24px]" />
 
               <span className="text-center">Go to website</span>
             </PrimaryButton>

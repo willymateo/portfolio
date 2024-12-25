@@ -1,5 +1,6 @@
+import { faLaptopCode } from "@fortawesome/free-solid-svg-icons/faLaptopCode";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { intlFormat, isValid } from "date-fns";
-import { City } from "iconoir-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -30,7 +31,8 @@ const Card = ({
         className={enterpriseWebUrl ? "" : "pointer-events-none"}
         href={enterpriseWebUrl}
         rel="noreferrer"
-        target="_blank">
+        target="_blank"
+      >
         <h3 className="text-2xl">{enterpriseName}</h3>
       </Link>
 
@@ -57,7 +59,8 @@ const Card = ({
             className={`py-10 ${enterpriseWebUrl ? "" : "pointer-events-none"}`}
             href={enterpriseWebUrl}
             rel="noreferrer"
-            target="_blank">
+            target="_blank"
+          >
             <Image
               className="object-contain"
               src={enterpriseImgUrl}
@@ -71,8 +74,9 @@ const Card = ({
             className={`py-10 ${enterpriseWebUrl ? "" : "pointer-events-none"}`}
             href={enterpriseWebUrl}
             rel="noreferrer"
-            target="_blank">
-            <City className="text-5xl" />
+            target="_blank"
+          >
+            <FontAwesomeIcon icon={faLaptopCode} className="w-[24px] h-[24px]" />
           </Link>
         )}
       </div>

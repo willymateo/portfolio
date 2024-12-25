@@ -12,16 +12,18 @@ const ESPOL = () => (
     subTitle="Escuela Superior Politécnica del Litoral - ESPOL"
     title="Engineering in Computer Science"
     startDate={new Date(2018, 2, 1)}
-    imgUrl="/images/espol-logo.jpg"
+    imgUrl="/images/espol-logo.png"
     endDate={new Date(2024, 1, 9)}
     type="Bachelor's degree"
     imgAlt="ESPOL logo"
     imgHeight={200}
-    imgWidth={200}>
+    imgWidth={200}
+  >
     <Link
       href="https://www.fiec.espol.edu.ec/en/undergraduate-programs/computer-science"
       rel="noreferrer"
-      target="_blank">
+      target="_blank"
+    >
       <PrimaryButton>
         <FontAwesomeIcon icon={faBuildingColumns} className="w-[24px] h-[24px]" />
         <p className="text-center">Go to website</p>

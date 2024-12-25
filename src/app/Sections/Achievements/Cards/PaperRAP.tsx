@@ -15,7 +15,8 @@ const PaperRAP = () => (
     startDate={new Date(2024, 4, 1)}
     subTitle="Paper"
     imgHeight={200}
-    imgWidth={200}>
+    imgWidth={200}
+  >
     <Link href="/docs/rap-stt-paper.pdf" rel="noreferrer" target="_blank">
       <PrimaryButton>
         <FontAwesomeIcon icon={faNewspaper} className="w-[24px] h-[24px]" />

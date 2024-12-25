@@ -1,6 +1,10 @@
 "use client";
 
-import { ClipboardCheck, Developer, PasteClipboard, SendMail } from "iconoir-react";
+import { faClipboardCheck } from "@fortawesome/free-solid-svg-icons/faClipboardCheck";
+import { faLaptopCode } from "@fortawesome/free-solid-svg-icons/faLaptopCode";
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons/faEnvelope";
+import { faPaste } from "@fortawesome/free-regular-svg-icons/faPaste";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 
 import { SocialNetworks } from "@/app/shared/SocialNetworks";
@@ -28,7 +32,8 @@ const GetInTouch = () => {
 
       <div className="flex flex-col gap-5">
         <h3 className="text-2xl">
-          Let's build something together <Developer className="inline-block" /> !
+          Let's build something together{" "}
+          <FontAwesomeIcon icon={faLaptopCode} className="w-[35px] h-[35px] inline-block ml-2" />
         </h3>
 
         <div className="flex flex-col items-stretch justify-center gap-10 lg:flex-row lg:flex-wrap">
@@ -40,13 +45,20 @@ const GetInTouch = () => {
 
               <div className="flex flex-row items-center justify-center flex-wrap gap-5">
                 <Link href={`mailto:${EMAIL}`} target="_blank" rel="noreferrer">
-                  <SendMail />
+                  <FontAwesomeIcon icon={faEnvelope} className="w-[24px] h-[24px]" />
                 </Link>
 
                 {isCopied ? (
-                  <ClipboardCheck className="cursor-pointer" />
+                  <FontAwesomeIcon
+                    className="w-[24px] h-[24px] cursor-pointer"
+                    icon={faClipboardCheck}
+                  />
                 ) : (
-                  <PasteClipboard onClick={handleClickCopy} className="cursor-pointer" />
+                  <FontAwesomeIcon
+                    className="w-[24px] h-[24px] cursor-pointer"
+                    onClick={handleClickCopy}
+                    icon={faPaste}
+                  />
                 )}
               </div>
             </div>
