@@ -1,11 +1,11 @@
 import { faHandshakeAngle } from "@fortawesome/free-solid-svg-icons/faHandshakeAngle";
-import { faRocket } from "@fortawesome/free-solid-svg-icons/faRocket";
 import { faCode } from "@fortawesome/free-solid-svg-icons/faCode";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Link from "next/link";
 
 import { PrimaryButton } from "../shared/Buttons/Primary";
+import { DotLottie } from "../shared/DotLottie";
 import { animaticSCBold } from "@/shared/fonts";
 import { MotionH1 } from "../shared/Motion/H1";
 import { SECTIONS } from "./constants";
@@ -35,7 +35,12 @@ const Hero = () => (
         </h2>
       </div>
 
-      <FontAwesomeIcon icon={faRocket} className="w-[24px] h-[24px]" />
+      <DotLottie
+        src="https://lottie.host/8aaed915-a5eb-45bc-a378-85773867d9a5/KBhS3N1Eot.lottie"
+        className="h-[100px]"
+        autoplay
+        loop
+      />
 
       <div className="flex flex-col justify-center items-center gap-5">
         <h2 className="text-xl sm:text-3xl text-center">Let’s build something amazing together.</h2>
