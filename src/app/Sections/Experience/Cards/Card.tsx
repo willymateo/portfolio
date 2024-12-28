@@ -4,6 +4,7 @@ import { intlFormat, isValid } from "date-fns";
 import Image from "next/image";
 import Link from "next/link";
 
+import { MotionDiv } from "@/app/shared/Motion/Div";
 import { SubTitle } from "@/app/shared/SubTitle";
 
 interface Props {
@@ -57,7 +58,16 @@ const Card = ({
         </p>
       </div>
 
-      <div className="flex flex-col items-center">
+      <MotionDiv
+        className="flex flex-col items-center"
+        whileInView={{ opacity: 1, scale: 1 }}
+        initial={{ opacity: 0, scale: 0.5 }}
+        transition={{
+          ease: [0, 0.71, 0.2, 1.01],
+          duration: 0.8,
+          delay: 0.1,
+        }}
+      >
         {enterpriseImgUrl ? (
           <Link
             className={`py-10 ${enterpriseWebUrl ? "" : "pointer-events-none"}`}
@@ -83,7 +93,7 @@ const Card = ({
             <FontAwesomeIcon icon={faLaptopCode} className="w-[24px] h-[24px]" />
           </Link>
         )}
-      </div>
+      </MotionDiv>
     </div>
 
     <div className="col-span-1 row-span-1 lg:col-span-3 flex flex-col gap-10">{children}</div>

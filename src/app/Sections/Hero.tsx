@@ -37,8 +37,8 @@ const Hero = () => (
       <div className="flex flex-col justify-center items-center gap-1">
         <MotionH1
           className={`text-4xl sm:text-5xl lg:text-8xl text-center ${animaticSCBold.className}`}
-          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 20 }}
           transition={{
             duration: 1,
             delay: 0.6,
@@ -49,12 +49,12 @@ const Hero = () => (
 
         <MotionH2
           className="text-xl sm:text-3xl text-center"
-          initial={{ opacity: 0, scale: 0 }}
-          whileInView={{ opacity: 1, scale: 1 }}
           transition={{
             scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
             duration: 0.1,
           }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          initial={{ opacity: 0, scale: 0 }}
         >
           a full-stack developer dedicated to creating innovative web solutions
         </MotionH2>
@@ -70,8 +70,8 @@ const Hero = () => (
       <div className="flex flex-col justify-center items-center gap-5">
         <MotionH2
           className="text-xl sm:text-3xl text-center"
-          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 20 }}
           transition={{ delay: 0.4 }}
         >
           Let’s build something amazing together.
@@ -79,8 +79,8 @@ const Hero = () => (
 
         <MotionDiv
           className="flex flex-row justify-center items-center gap-5 flex-wrap"
-          initial={{ opacity: 0, scale: 0.5 }}
           whileInView={{ opacity: 1, scale: 1 }}
+          initial={{ opacity: 0, scale: 0.5 }}
           transition={{
             ease: [0, 0.71, 0.2, 1.01],
             duration: 0.8,

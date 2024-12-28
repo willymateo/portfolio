@@ -4,26 +4,33 @@ import { Technologies } from "@/app/shared/Technologies";
 import { Python } from "@/app/shared/Icons/Python";
 import { Tag } from "@/app/shared/Tag";
 
-const ProgrammingLanguages = () => (
-  <Technologies title="Programming Languages">
-    <Tag>
-      <JavaScript />
+const ProgrammingLanguages = () => {
+  const technologies = [
+    { name: "JavaScript", Icon: JavaScript },
+    { name: "TypeScript", Icon: TypeScript },
+    { name: "Python", Icon: Python },
+  ];
 
-      <p className="text-center">JavaScript</p>
-    </Tag>
+  return (
+    <Technologies title="Programming Languages">
+      {technologies.map(({ name, Icon }, index) => (
+        <Tag
+          key={name}
+          transition={{
+            scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
+            delay: index * 0.3,
+            duration: 0.1,
+          }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          initial={{ opacity: 0, scale: 0 }}
+        >
+          <Icon />
 
-    <Tag>
-      <TypeScript />
-
-      <p className="text-center">TypeScript</p>
-    </Tag>
-
-    <Tag>
-      <Python />
-
-      <p className="text-center">Python</p>
-    </Tag>
-  </Technologies>
-);
+          <p className="text-center">{name}</p>
+        </Tag>
+      ))}
+    </Technologies>
+  );
+};
 
 export { ProgrammingLanguages };

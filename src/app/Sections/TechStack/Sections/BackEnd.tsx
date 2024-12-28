@@ -9,50 +9,58 @@ import { NestJs } from "@/app/shared/Icons/NestJs";
 import { Django } from "@/app/shared/Icons/Django";
 import { Tag } from "@/app/shared/Tag";
 
-const BackEnd = () => (
-  <Technologies title="Back-end">
-    <Tag>
-      <NodeJsIcon />
+const BackEnd = () => {
+  const technologies = [
+    {
+      name: "Node Js",
+      Icon: NodeJsIcon,
+    },
+    {
+      name: "Express",
+      Icon: ExpressIcon,
+    },
+    {
+      name: "NestJs",
+      Icon: NestJs,
+    },
+    {
+      name: "Django",
+      Icon: Django,
+    },
+    {
+      name: "Elasticsearch",
+      Icon: ElasticSearch,
+    },
+    {
+      name: "REST APIs",
+      Icon: () => <FontAwesomeIcon icon={faServer} className="w-[24px] h-[24px]" />,
+    },
+    {
+      name: "Supertest",
+      Icon: () => <FontAwesomeIcon icon={faServer} className="w-[24px] h-[24px]" />,
+    },
+  ];
 
-      <p className="text-center">Node Js</p>
-    </Tag>
+  return (
+    <Technologies title="Back-end">
+      {technologies.map(({ name, Icon }, index) => (
+        <Tag
+          key={name}
+          transition={{
+            scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
+            delay: index * 0.3,
+            duration: 0.1,
+          }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          initial={{ opacity: 0, scale: 0 }}
+        >
+          <Icon />
 
-    <Tag>
-      <ExpressIcon />
-
-      <p className="text-center">Express</p>
-    </Tag>
-
-    <Tag>
-      <NestJs />
-
-      <p className="text-center">NestJs</p>
-    </Tag>
-
-    <Tag>
-      <Django />
-
-      <p className="text-center">Django</p>
-    </Tag>
-
-    <Tag>
-      <ElasticSearch />
-
-      <p className="text-center">Elasticsearch</p>
-    </Tag>
-
-    <Tag>
-      <FontAwesomeIcon icon={faServer} className="w-[24px] h-[24px]" />
-
-      <p className="text-center">REST APIs</p>
-    </Tag>
-
-    <Tag>
-      <FontAwesomeIcon icon={faServer} className="w-[24px] h-[24px]" />
-
-      <p className="text-center">Supertest</p>
-    </Tag>
-  </Technologies>
-);
+          <p className="text-center">{name}</p>
+        </Tag>
+      ))}
+    </Technologies>
+  );
+};
 
 export { BackEnd };

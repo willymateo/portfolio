@@ -4,6 +4,7 @@ import { faDumbbell } from "@fortawesome/free-solid-svg-icons/faDumbbell";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 
+import { MotionDiv } from "@/app/shared/Motion/Div";
 import { Container } from "../Container";
 import { SECTIONS } from "../constants";
 
@@ -45,13 +46,24 @@ const Hobbies = () => (
         </li>
       </ul>
 
-      <Image
-        className="object-contain rounded-xl"
-        alt="hobbies of Willy Mateo"
-        src="/images/surf.jpg"
-        height={300}
-        width={500}
-      />
+      <MotionDiv
+        className="flex flex-col items-center"
+        whileInView={{ opacity: 1, scale: 1 }}
+        initial={{ opacity: 0, scale: 0.5 }}
+        transition={{
+          ease: [0, 0.71, 0.2, 1.01],
+          duration: 0.8,
+          delay: 0.1,
+        }}
+      >
+        <Image
+          className="object-contain rounded-xl"
+          alt="hobbies of Willy Mateo"
+          src="/images/surf.jpg"
+          height={300}
+          width={500}
+        />
+      </MotionDiv>
     </div>
   </Container>
 );
