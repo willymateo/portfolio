@@ -5,7 +5,7 @@ import { CSB } from "./Cards/CSB";
 
 const Education = () => (
   <Container id={SECTIONS.EDUCATION} title="Education">
-    <div className="flex flex-col gap-16">
+    <div className="flex flex-col gap-20">
       <ESPOL />
       <CSB />
     </div>

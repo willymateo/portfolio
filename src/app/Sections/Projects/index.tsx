@@ -6,7 +6,7 @@ import { SECTIONS } from "../constants";
 
 const Projects = () => (
   <Container id={SECTIONS.PROJECTS} title="Projects">
-    <div className="flex flex-col gap-16">
+    <div className="flex flex-col gap-20">
       <NameGenius />
       <NightlyTunes />
       <MIProjectManager />

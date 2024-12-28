@@ -1,3 +1,4 @@
+import { SubTitle } from "@/app/shared/SubTitle";
 import { faUserGraduate } from "@fortawesome/free-solid-svg-icons/faUserGraduate";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { intlFormat, isValid } from "date-fns";
@@ -34,33 +35,35 @@ const Card = ({
   endDate,
 }: Props) => (
   <div className="flex flex-col gap-6">
-    <div className="flex flex-col gap">
-      <h3 className="text-l">{subTitle}</h3>
-
+    <div className="flex flex-col gap-5">
       <Link
         className={href ? "" : "pointer-events-none"}
         rel="noreferrer"
         target="_blank"
         href={href}
       >
-        <h4 className="text-2xl">{title}</h4>
+        <SubTitle>{title}</SubTitle>
       </Link>
 
-      <h4 className="text-l">{type}</h4>
+      <div className="flex flex-col">
+        <h4 className="text-l">{subTitle}</h4>
 
-      <p>
-        {`${intlFormat(startDate, {
-          month: "long",
-          year: "numeric",
-        })} - ${
-          isValid(endDate)
-            ? intlFormat(endDate as Date, {
-                month: "long",
-                year: "numeric",
-              })
-            : "Present"
-        }`}
-      </p>
+        <h4 className="text-l">{type}</h4>
+
+        <p>
+          {`${intlFormat(startDate, {
+            month: "long",
+            year: "numeric",
+          })} - ${
+            isValid(endDate)
+              ? intlFormat(endDate as Date, {
+                  month: "long",
+                  year: "numeric",
+                })
+              : "Present"
+          }`}
+        </p>
+      </div>
     </div>
 
     <div className="flex flex-row flex-wrap justify-center gap-5">

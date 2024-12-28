@@ -4,6 +4,8 @@ import { intlFormat, isValid } from "date-fns";
 import Image from "next/image";
 import Link from "next/link";
 
+import { SubTitle } from "@/app/shared/SubTitle";
+
 interface Props {
   children?: React.ReactNode;
   description?: string;
@@ -32,7 +34,18 @@ const Card = ({
   endDate,
 }: Props) => (
   <div className="flex flex-col gap-6">
-    <div className="flex flex-col gap">
+    <div className="flex flex-col gap-5">
+      <SubTitle>
+        <Link
+          className={href ? "" : "pointer-events-none"}
+          rel="noreferrer"
+          target="_blank"
+          href={href}
+        >
+          {title}
+        </Link>
+      </SubTitle>
+
       <div className="flex flex-col">
         <h3 className="text-l">{subTitle}</h3>
 
@@ -50,15 +63,6 @@ const Card = ({
             : ""}
         </p>
       </div>
-
-      <Link
-        className={href ? "" : "pointer-events-none"}
-        rel="noreferrer"
-        target="_blank"
-        href={href}
-      >
-        <h4 className="text-2xl">{title}</h4>
-      </Link>
     </div>
 
     <div className="flex flex-row flex-wrap justify-center gap-5">

@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { PrimaryButton } from "@/app/shared/Buttons/Primary";
+import { SubTitle } from "@/app/shared/SubTitle";
 
 interface Props {
   children?: React.ReactNode;
@@ -41,14 +42,17 @@ const Card = ({
     <div className="flex-1 flex flex-col justify-between gap-3">
       <div className="flex flex-col gap-3">
         <div className="flex flex-col gap-1">
-          <Link
-            className={websiteUrl ? "" : "pointer-events-none"}
-            href={websiteUrl}
-            rel="noreferrer"
-            target="_blank"
-          >
-            <h3 className="text-2xl">{title}</h3>
-          </Link>
+          <SubTitle>
+            <Link
+              className={websiteUrl ? "" : "pointer-events-none"}
+              href={websiteUrl}
+              rel="noreferrer"
+              target="_blank"
+            >
+              {title}
+            </Link>
+          </SubTitle>
+
           <p>{description}</p>
         </div>
 
