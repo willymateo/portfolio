@@ -3,16 +3,12 @@ import { faPersonRunning } from "@fortawesome/free-solid-svg-icons/faPersonRunni
 import { faDumbbell } from "@fortawesome/free-solid-svg-icons/faDumbbell";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
-import Link from "next/link";
 
+import { Container } from "../Container";
 import { SECTIONS } from "../constants";
 
 const Hobbies = () => (
-  <div id={SECTIONS.HOBBIES} className="flex flex-col gap-8">
-    <h2 className="text-4xl font-bold">
-      <Link href={`#${SECTIONS.HOBBIES}`}>Hobbies</Link>
-    </h2>
-
+  <Container id={SECTIONS.HOBBIES} title="Hobbies">
     <div className="flex flex-col justify-center items-center flex-wrap gap-x-8 gap-y-5 lg:flex-row">
       <ul className="flex-1 flex flex-col gap-5">
         <li className="flex flex-row items-center justify-center flex-wrap gap-5">
@@ -57,7 +53,7 @@ const Hobbies = () => (
         width={500}
       />
     </div>
-  </div>
+  </Container>
 );
 
 export { Hobbies };
