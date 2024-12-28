@@ -12,4 +12,6 @@ const MotionH2 = forwardRef<HTMLHeadingElement, MotionH2Props>(({ children, ...p
   </motion.h2>
 ));
 
+MotionH2.displayName = "MotionH2";
+
 export { MotionH2 };

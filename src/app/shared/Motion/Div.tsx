@@ -12,4 +12,6 @@ const MotionDiv = forwardRef<HTMLHeadingElement, MotionDivProps>(({ children, ..
   </motion.div>
 ));
 
+MotionDiv.displayName = "MotionDiv";
+
 export { MotionDiv };
