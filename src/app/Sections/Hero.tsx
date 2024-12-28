@@ -5,20 +5,33 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { PrimaryButton } from "../shared/Buttons/Primary";
+import { MotionDiv } from "../shared/Motion/Div";
 import { DotLottie } from "../shared/DotLottie";
 import { animaticSCBold } from "@/shared/fonts";
 import { MotionH1 } from "../shared/Motion/H1";
+import { MotionH2 } from "../shared/Motion/H2";
 import { SECTIONS } from "./constants";
 
 const Hero = () => (
   <div className="min-h-screen flex flex-col items-center justify-center justify-items-center gap-10 sm:grid sm:grid-cols-[5fr_4fr] py-20">
-    <Image
-      className="rounded-full sm:order-2"
-      alt="Willy Mateo profile photo"
-      src="/images/profile.jpeg"
-      height={400}
-      width={400}
-    />
+    <MotionDiv
+      initial={{ opacity: 0, scale: 0.5 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{
+        ease: [0, 0.71, 0.2, 1.01],
+        duration: 0.8,
+        delay: 0.1,
+      }}
+      className="sm:order-2"
+    >
+      <Image
+        className="rounded-full sm:order-2"
+        alt="Willy Mateo profile photo"
+        src="/images/profile.jpeg"
+        height={400}
+        width={400}
+      />
+    </MotionDiv>
 
     <div className="flex flex-col justify-center items-center gap-8 max-w-[600px]">
       <div className="flex flex-col justify-center items-center gap-1">
@@ -26,13 +39,25 @@ const Hero = () => (
           className={`text-4xl sm:text-5xl lg:text-8xl text-center ${animaticSCBold.className}`}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 1,
+            delay: 0.6,
+          }}
         >
           I'm Willy Mateo,
         </MotionH1>
 
-        <h2 className="text-xl sm:text-3xl text-center">
+        <MotionH2
+          className="text-xl sm:text-3xl text-center"
+          initial={{ opacity: 0, scale: 0 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
+            duration: 0.1,
+          }}
+        >
           a full-stack developer dedicated to creating innovative web solutions
-        </h2>
+        </MotionH2>
       </div>
 
       <DotLottie
@@ -43,9 +68,25 @@ const Hero = () => (
       />
 
       <div className="flex flex-col justify-center items-center gap-5">
-        <h2 className="text-xl sm:text-3xl text-center">Let’s build something amazing together.</h2>
+        <MotionH2
+          className="text-xl sm:text-3xl text-center"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4 }}
+        >
+          Let’s build something amazing together.
+        </MotionH2>
 
-        <div className="flex flex-row justify-center items-center gap-5 flex-wrap">
+        <MotionDiv
+          className="flex flex-row justify-center items-center gap-5 flex-wrap"
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            ease: [0, 0.71, 0.2, 1.01],
+            duration: 0.8,
+            delay: 0.1,
+          }}
+        >
           <Link href={`#${SECTIONS.EXPERIENCE}`}>
             <PrimaryButton>
               <FontAwesomeIcon icon={faCode} className="w-[24px] h-[24px]" />
@@ -59,7 +100,7 @@ const Hero = () => (
               Get in touch
             </PrimaryButton>
           </Link>
-        </div>
+        </MotionDiv>
       </div>
     </div>
   </div>
