@@ -1,15 +1,15 @@
 import { React as ReactIcon } from "@/app/shared/Icons/React";
 import { Technologies } from "@/app/shared/Technologies";
-import { Tag } from "@/app/shared/Tag";
 
-const Mobile = () => (
-  <Technologies title="Mobile">
-    <Tag>
-      <ReactIcon />
+const Mobile = () => {
+  const technologies = [
+    {
+      name: "React Native",
+      Icon: ReactIcon,
+    },
+  ];
 
-      <p className="text-center">React Native</p>
-    </Tag>
-  </Technologies>
-);
+  return <Technologies title="Mobile" technologies={technologies} />;
+};
 
 export { Mobile };

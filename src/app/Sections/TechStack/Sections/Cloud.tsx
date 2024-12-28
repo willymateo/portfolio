@@ -4,40 +4,32 @@ import { Railway } from "@/app/shared/Icons/Railway";
 import { Netlify } from "@/app/shared/Icons/Netlify";
 import { Vercel } from "@/app/shared/Icons/Vercel";
 import { AWS } from "@/app/shared/Icons/AWS";
-import { Tag } from "@/app/shared/Tag";
 
-const Cloud = () => (
-  <Technologies title="Cloud">
-    <Tag>
-      <AWS />
+const Cloud = () => {
+  const technologies = [
+    {
+      name: "AWS",
+      Icon: AWS,
+    },
+    {
+      name: "Firebase",
+      Icon: Firebase,
+    },
+    {
+      name: "Vercel",
+      Icon: Vercel,
+    },
+    {
+      name: "Railway",
+      Icon: Railway,
+    },
+    {
+      name: "Netlify",
+      Icon: Netlify,
+    },
+  ];
 
-      <p className="text-center">AWS</p>
-    </Tag>
-
-    <Tag>
-      <Firebase />
-
-      <p className="text-center">Firebase</p>
-    </Tag>
-
-    <Tag>
-      <Vercel />
-
-      <p className="text-center">Vercel</p>
-    </Tag>
-
-    <Tag>
-      <Railway />
-
-      <p className="text-center">Railway</p>
-    </Tag>
-
-    <Tag>
-      <Netlify />
-
-      <p className="text-center">Netlify</p>
-    </Tag>
-  </Technologies>
-);
+  return <Technologies title="Cloud" technologies={technologies} />;
+};
 
 export { Cloud };
