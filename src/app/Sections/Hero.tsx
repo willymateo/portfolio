@@ -15,8 +15,8 @@ import { SECTIONS } from "./constants";
 const Hero = () => (
   <div className="min-h-screen flex flex-col items-center justify-center justify-items-center gap-10 sm:grid sm:grid-cols-[5fr_4fr] py-20">
     <MotionDiv
+      whileInView={{ opacity: 1, scale: 1 }}
       initial={{ opacity: 0, scale: 0.5 }}
-      animate={{ opacity: 1, scale: 1 }}
       transition={{
         ease: [0, 0.71, 0.2, 1.01],
         duration: 0.8,
@@ -38,7 +38,7 @@ const Hero = () => (
         <MotionH1
           className={`text-4xl sm:text-5xl lg:text-8xl text-center ${animaticSCBold.className}`}
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{
             duration: 1,
             delay: 0.6,
@@ -50,7 +50,7 @@ const Hero = () => (
         <MotionH2
           className="text-xl sm:text-3xl text-center"
           initial={{ opacity: 0, scale: 0 }}
-          animate={{ opacity: 1, scale: 1 }}
+          whileInView={{ opacity: 1, scale: 1 }}
           transition={{
             scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
             duration: 0.1,
@@ -71,7 +71,7 @@ const Hero = () => (
         <MotionH2
           className="text-xl sm:text-3xl text-center"
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
         >
           Let’s build something amazing together.
@@ -80,7 +80,7 @@ const Hero = () => (
         <MotionDiv
           className="flex flex-row justify-center items-center gap-5 flex-wrap"
           initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
+          whileInView={{ opacity: 1, scale: 1 }}
           transition={{
             ease: [0, 0.71, 0.2, 1.01],
             duration: 0.8,

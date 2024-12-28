@@ -1,9 +1,10 @@
 import { faLaptopCode } from "@fortawesome/free-solid-svg-icons/faLaptopCode";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { SubTitle } from "@/app/shared/SubTitle";
 import { intlFormat, isValid } from "date-fns";
 import Image from "next/image";
 import Link from "next/link";
+
+import { SubTitle } from "@/app/shared/SubTitle";
 
 interface Props {
   children?: React.ReactNode;
@@ -27,7 +28,7 @@ const Card = ({
   endDate,
 }: Props) => (
   <div className="grid grid-flow-row auto-rows-min grid-cols-1 gap-x-16 gap-y-3 xl:grid-rows-1 xl:grid-cols-4">
-    <div className="col-span-1 row-span-1 flex-col gap-3">
+    <div className="col-span-1 row-span-1 flex flex-col gap-5">
       <SubTitle>
         <Link
           className={enterpriseWebUrl ? "" : "pointer-events-none"}

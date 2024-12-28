@@ -23,9 +23,9 @@ const Card = ({
   title = "",
   children,
 }: Props) => (
-  <div className="flex flex-col justify-center items-center flex-wrap gap-x-8 gap-y-3 lg:flex-row">
+  <div className="grid auto-rows-min grid-cols-1 justify-items-center gap-x-16 gap-y-10 xl:grid-rows-1 xl:grid-cols-5">
     <Link
-      className={websiteUrl ? "" : "pointer-events-none"}
+      className={`row-span-1 col-span-1 xl:col-span-2 ${websiteUrl ? "" : "pointer-events-none"}`}
       href={websiteUrl}
       rel="noreferrer"
       target="_blank"
@@ -39,7 +39,7 @@ const Card = ({
       />
     </Link>
 
-    <div className="flex-1 flex flex-col justify-between gap-3">
+    <div className="row-span-1 col-span-1 lg:col-span-3 flex flex-col justify-between gap-3">
       <div className="flex flex-col gap-3">
         <div className="flex flex-col gap-1">
           <SubTitle>
