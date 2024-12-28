@@ -1,5 +1,6 @@
 import { faLaptopCode } from "@fortawesome/free-solid-svg-icons/faLaptopCode";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { SubTitle } from "@/app/shared/SubTitle";
 import { intlFormat, isValid } from "date-fns";
 import Image from "next/image";
 import Link from "next/link";
@@ -25,16 +26,18 @@ const Card = ({
   children,
   endDate,
 }: Props) => (
-  <div className="flex flex-col lg:flex-row gap-x-16 gap-y-3 flex-wrap">
-    <div className="flex flex-col gap-3">
-      <Link
-        className={enterpriseWebUrl ? "" : "pointer-events-none"}
-        href={enterpriseWebUrl}
-        rel="noreferrer"
-        target="_blank"
-      >
-        <h3 className="text-2xl">{enterpriseName}</h3>
-      </Link>
+  <div className="grid grid-flow-row auto-rows-min grid-cols-1 gap-x-16 gap-y-3 xl:grid-rows-1 xl:grid-cols-4">
+    <div className="col-span-1 row-span-1 flex-col gap-3">
+      <SubTitle>
+        <Link
+          className={enterpriseWebUrl ? "" : "pointer-events-none"}
+          href={enterpriseWebUrl}
+          rel="noreferrer"
+          target="_blank"
+        >
+          {enterpriseName}
+        </Link>
+      </SubTitle>
 
       <div className="flex flex-col">
         <h4 className="text-xl">{jobTitle}</h4>
@@ -82,7 +85,7 @@ const Card = ({
       </div>
     </div>
 
-    <div className="flex-1 flex flex-col gap-5">{children}</div>
+    <div className="col-span-1 row-span-1 lg:col-span-3 flex flex-col gap-10">{children}</div>
   </div>
 );
 

@@ -12,7 +12,7 @@ import { SECTIONS } from "../constants";
 
 const TechStack = () => (
   <Container id={SECTIONS.TECH_STACK} title="Tech stack">
-    <div className="flex flex-col gap-8">
+    <div className="flex flex-col gap-20">
       <ProgrammingLanguages />
       <FrontEnd />
       <BackEnd />

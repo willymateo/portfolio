@@ -8,8 +8,8 @@ interface Props {
 }
 
 const Container = ({ children, id, className = "", title = "" }: Readonly<Props>) => (
-  <div id={id} className={`flex flex-row items-start gap-44 ${className}`}>
-    <h2 className="text-7xl font-bold text-[#d9d9d9] sticky top-32 [writing-mode:vertical-lr]">
+  <div id={id} className={`flex flex-col items-start gap-10 xl:flex-row xl:gap-44 ${className}`}>
+    <h2 className="text-7xl font-bold text-[#d9d9d9] xl:sticky xl:top-32 xl:[writing-mode:vertical-lr]">
       <Link href={`#${id}`} className="whitespace-nowrap">
         {title}
       </Link>

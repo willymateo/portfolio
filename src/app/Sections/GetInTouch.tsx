@@ -12,6 +12,7 @@ import { DinamicQuote } from "../shared/DinamicQuote";
 import { copyTextToClipBoard } from "@/shared/utils";
 import { useActive } from "@/hooks/useActive";
 import { EMAIL } from "@/shared/constants";
+import { Container } from "./Container";
 import { SECTIONS } from "./constants";
 
 const GetInTouch = () => {
@@ -25,11 +26,7 @@ const GetInTouch = () => {
   };
 
   return (
-    <div id={SECTIONS.GET_IN_TOUCH} className="flex flex-col gap-8">
-      <h2 className="text-4xl font-bold">
-        <Link href={`#${SECTIONS.GET_IN_TOUCH}`}>Get in touch</Link>
-      </h2>
-
+    <Container id={SECTIONS.GET_IN_TOUCH} title="Get in touch">
       <div className="flex flex-col gap-5">
         <h3 className="text-2xl">
           Let's build something together{" "}
@@ -69,7 +66,7 @@ const GetInTouch = () => {
           </div>
         </div>
       </div>
-    </div>
+    </Container>
   );
 };
 

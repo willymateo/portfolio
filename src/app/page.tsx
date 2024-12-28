@@ -20,7 +20,7 @@ const Home = () => (
       </div>
     </div>
 
-    <div className="flex flex-col items-strech justify-center gap-56 px-10 lg:px-44 2xl:px-80 z-[1]">
+    <div className="flex flex-col items-strech justify-center gap-96 px-10 lg:px-24 2xl:px-40 z-[1]">
       <Hero />
       <AboutMe />
       <TechStack />

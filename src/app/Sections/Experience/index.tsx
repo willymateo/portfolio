@@ -9,13 +9,13 @@ import { SASF } from "./Cards/SASF";
 const Experience = () => (
   <Container id={SECTIONS.EXPERIENCE} title="Experience">
     <div className="flex flex-col gap-16">
-      <div className="flex flex-col gap-16">
+      <div className="flex flex-col gap-20">
         <ShippifyInc />
         <SASF />
         <JamaSana />
       </div>
 
-      <div className="flex flex-col gap-8 items-center">
+      <div className="flex flex-col gap-20 items-center">
         <h3 className="text-2xl">Colleagues</h3>
 
         <div className="w-full">
