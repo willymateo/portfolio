@@ -1,11 +1,9 @@
-import Image from "next/image";
-
-import backgroundImage from "@/../public/images/background.svg";
 import { Achievements } from "./Sections/Achievements";
 import { GetInTouch } from "./Sections/GetInTouch";
 import { Experience } from "./Sections/Experience";
 import { Education } from "./Sections/Education";
 import { TechStack } from "./Sections/TechStack";
+import { BackgroundSVG } from "./BackgroundSVG";
 import { Projects } from "./Sections/Projects";
 import { AboutMe } from "./Sections/AboutMe";
 import { Hobbies } from "./Sections/Hobbies";
@@ -16,7 +14,7 @@ const Home = () => (
   <main className="min-h-screen flex flex-col gap-20 bg-[#eee]">
     <div className="opacity-30 fixed top-0 bottom-[65px] left-0 right-0 z-[0]">
       <div className="w-full h-full opacity-100">
-        <Image alt="background image" src={backgroundImage} className="w-full h-full" />
+        <BackgroundSVG />
       </div>
     </div>
 
