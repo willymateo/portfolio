@@ -1,20 +1,20 @@
-import { Gym, Running, Swimming } from "iconoir-react";
+import { faPersonSwimming } from "@fortawesome/free-solid-svg-icons/faPersonSwimming";
+import { faPersonRunning } from "@fortawesome/free-solid-svg-icons/faPersonRunning";
+import { faDumbbell } from "@fortawesome/free-solid-svg-icons/faDumbbell";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
-import Link from "next/link";
 
+import { MotionDiv } from "@/app/shared/Motion/Div";
+import { Container } from "../Container";
 import { SECTIONS } from "../constants";
 
 const Hobbies = () => (
-  <div id={SECTIONS.HOBBIES} className="flex flex-col gap-8">
-    <h2 className="text-4xl font-bold">
-      <Link href={`#${SECTIONS.HOBBIES}`}>Hobbies</Link>
-    </h2>
-
+  <Container id={SECTIONS.HOBBIES} title="Hobbies">
     <div className="flex flex-col justify-center items-center flex-wrap gap-x-8 gap-y-5 lg:flex-row">
       <ul className="flex-1 flex flex-col gap-5">
         <li className="flex flex-row items-center justify-center flex-wrap gap-5">
           <div>
-            <Swimming />
+            <FontAwesomeIcon icon={faPersonSwimming} className="w-[24px] h-[24px]" />
           </div>
 
           <p className="flex-1">
@@ -25,7 +25,7 @@ const Hobbies = () => (
 
         <li className="flex flex-row items-center justify-center flex-wrap gap-5">
           <div>
-            <Running />
+            <FontAwesomeIcon icon={faPersonRunning} className="w-[24px] h-[24px]" />
           </div>
 
           <p className="flex-1">
@@ -36,7 +36,7 @@ const Hobbies = () => (
 
         <li className="flex flex-row items-center justify-center gap-5">
           <div>
-            <Gym />
+            <FontAwesomeIcon icon={faDumbbell} className="w-[24px] h-[24px]" />
           </div>
 
           <p className="flex-1">
@@ -46,15 +46,26 @@ const Hobbies = () => (
         </li>
       </ul>
 
-      <Image
-        className="object-contain rounded-xl"
-        alt="hobbies of Willy Mateo"
-        src="/images/surf.jpg"
-        height={300}
-        width={500}
-      />
+      <MotionDiv
+        className="flex flex-col items-center"
+        whileInView={{ opacity: 1, scale: 1 }}
+        initial={{ opacity: 0, scale: 0.5 }}
+        transition={{
+          ease: [0, 0.71, 0.2, 1.01],
+          duration: 0.8,
+          delay: 0.1,
+        }}
+      >
+        <Image
+          className="object-contain rounded-xl"
+          alt="hobbies of Willy Mateo"
+          src="/images/surf.jpg"
+          height={300}
+          width={500}
+        />
+      </MotionDiv>
     </div>
-  </div>
+  </Container>
 );
 
 export { Hobbies };

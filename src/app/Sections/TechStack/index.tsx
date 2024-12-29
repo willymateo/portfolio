@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 import { WebDevelopmentEnvironment } from "./Sections/WebDevelopmentEnvironment";
 import { ProgrammingLanguages } from "./Sections/ProgrammingLanguages";
 import { Databases } from "./Sections/DataBases";
@@ -9,15 +7,12 @@ import { DevOps } from "./Sections/DevOps";
 import { Mobile } from "./Sections/Mobile";
 import { Cloud } from "./Sections/Cloud";
 import { Agile } from "./Sections/Agile";
+import { Container } from "../Container";
 import { SECTIONS } from "../constants";
 
 const TechStack = () => (
-  <div id={SECTIONS.TECH_STACK} className="flex flex-col gap-8">
-    <h2 className="text-4xl font-bold">
-      <Link href={`#${SECTIONS.TECH_STACK}`}>Tech stack</Link>
-    </h2>
-
-    <div className="flex flex-col gap-8">
+  <Container id={SECTIONS.TECH_STACK} title="Tech stack">
+    <div className="flex flex-col gap-20">
       <ProgrammingLanguages />
       <FrontEnd />
       <BackEnd />
@@ -28,7 +23,7 @@ const TechStack = () => (
       <WebDevelopmentEnvironment />
       <Agile />
     </div>
-  </div>
+  </Container>
 );
 
 export { TechStack };

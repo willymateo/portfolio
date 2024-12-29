@@ -17,7 +17,8 @@ const CSB = () => (
     imgUrl="/images/csb-logo.png"
     type="High School degree"
     imgHeight={200}
-    imgWidth={200}>
+    imgWidth={200}
+  >
     <Link href="https://carrerasanchezbruno.edu.ec" rel="noreferrer" target="_blank">
       <PrimaryButton>
         <FontAwesomeIcon icon={faSchool} className="w-[24px] h-[24px]" />

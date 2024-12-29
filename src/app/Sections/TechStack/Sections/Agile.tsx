@@ -1,22 +1,21 @@
-import { Agile as AgileIcon } from "iconoir-react";
+import { faArrowsSpin } from "@fortawesome/free-solid-svg-icons/faArrowsSpin";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { Technologies } from "@/app/shared/Technologies";
-import { Tag } from "@/app/shared/Tag";
 
-const Agile = () => (
-  <Technologies title="Agile">
-    <Tag>
-      <AgileIcon />
+const Agile = () => {
+  const technologies = [
+    {
+      name: "Scrum",
+      Icon: () => <FontAwesomeIcon icon={faArrowsSpin} className="w-[24px] h-[24px]" />,
+    },
+    {
+      name: "Kanban",
+      Icon: () => <FontAwesomeIcon icon={faArrowsSpin} className="w-[24px] h-[24px]" />,
+    },
+  ];
 
-      <p className="text-center">Scrum</p>
-    </Tag>
-
-    <Tag>
-      <AgileIcon />
-
-      <p className="text-center">Kanban</p>
-    </Tag>
-  </Technologies>
-);
+  return <Technologies title="Agile" technologies={technologies} />;
+};
 
 export { Agile };

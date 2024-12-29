@@ -14,14 +14,12 @@ const GET = async () => {
   } catch (err: any) {
     console.log("Error getting all quotes", err);
 
-    const {
-      response: {
-        data: { error: { message = "Unexpected error ocurred", type = "" } = {} } = {},
-        status = 500,
-      } = {},
-    } = err ?? {};
-
-    return NextResponse.json({ error: `${type} : ${message}` }, { status });
+    return NextResponse.json(
+      {
+        error: `${err?.response?.data?.error?.type} : ${err?.response?.data?.error?.message || "Unexpected error ocurred"}`,
+      },
+      { status: err?.response?.status ?? 500 },
+    );
   }
 };
 

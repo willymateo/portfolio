@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 
+import { MotionDiv } from "../Motion/Div";
 import { Image } from "./types";
 
 type Props = {
@@ -47,12 +48,22 @@ const PhotoCarrousel = ({ images }: Props) => {
     setCurrentImageIndex(prevIndex => (prevIndex < images.length - 1 ? prevIndex + 1 : 0));
 
   return (
-    <div className="relative max-w-[70rem] m-auto">
+    <MotionDiv
+      className="relative max-w-[70rem] m-auto"
+      whileInView={{ opacity: 1, scale: 1 }}
+      initial={{ opacity: 0, scale: 0.5 }}
+      transition={{
+        ease: [0, 0.71, 0.2, 1.01],
+        duration: 0.8,
+        delay: 0.1,
+      }}
+    >
       <div className="aspect-[4/2]" onTouchStart={handleTouchStart} onTouchMove={handleTouchMove}>
         {images.map((image, index) => (
           <div
             className={`absolute inset-0 transition-[200ms_opacity_ease-in-out] delay-200 ${currentImageIndex === index ? "opacity-100 delay-0" : "opacity-0"}`}
-            key={image?.id}>
+            key={image?.id}
+          >
             <img
               className="object-cover object-center w-full h-full rounded-lg shadow-[0_1.5rem_3rem_-0.75rem_hsla(0,_0%,_0%,_0.25)]"
               src={image?.src}
@@ -71,7 +82,7 @@ const PhotoCarrousel = ({ images }: Props) => {
           />
         ))}
       </div>
-    </div>
+    </MotionDiv>
   );
 };
 

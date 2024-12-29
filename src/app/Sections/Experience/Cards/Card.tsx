@@ -1,7 +1,11 @@
+import { faLaptopCode } from "@fortawesome/free-solid-svg-icons/faLaptopCode";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { intlFormat, isValid } from "date-fns";
-import { City } from "iconoir-react";
 import Image from "next/image";
 import Link from "next/link";
+
+import { MotionDiv } from "@/app/shared/Motion/Div";
+import { SubTitle } from "@/app/shared/SubTitle";
 
 interface Props {
   children?: React.ReactNode;
@@ -24,15 +28,18 @@ const Card = ({
   children,
   endDate,
 }: Props) => (
-  <div className="flex flex-col lg:flex-row gap-x-16 gap-y-3 flex-wrap">
-    <div className="flex flex-col gap-3">
-      <Link
-        className={enterpriseWebUrl ? "" : "pointer-events-none"}
-        href={enterpriseWebUrl}
-        rel="noreferrer"
-        target="_blank">
-        <h3 className="text-2xl">{enterpriseName}</h3>
-      </Link>
+  <div className="grid grid-flow-row auto-rows-min grid-cols-1 gap-x-16 gap-y-3 xl:grid-rows-1 xl:grid-cols-4">
+    <div className="col-span-1 row-span-1 flex flex-col gap-5">
+      <SubTitle>
+        <Link
+          className={enterpriseWebUrl ? "" : "pointer-events-none"}
+          href={enterpriseWebUrl}
+          rel="noreferrer"
+          target="_blank"
+        >
+          {enterpriseName}
+        </Link>
+      </SubTitle>
 
       <div className="flex flex-col">
         <h4 className="text-xl">{jobTitle}</h4>
@@ -51,13 +58,23 @@ const Card = ({
         </p>
       </div>
 
-      <div className="flex flex-col items-center">
+      <MotionDiv
+        className="flex flex-col items-center"
+        whileInView={{ opacity: 1, scale: 1 }}
+        initial={{ opacity: 0, scale: 0.5 }}
+        transition={{
+          ease: [0, 0.71, 0.2, 1.01],
+          duration: 0.8,
+          delay: 0.1,
+        }}
+      >
         {enterpriseImgUrl ? (
           <Link
             className={`py-10 ${enterpriseWebUrl ? "" : "pointer-events-none"}`}
             href={enterpriseWebUrl}
             rel="noreferrer"
-            target="_blank">
+            target="_blank"
+          >
             <Image
               className="object-contain"
               src={enterpriseImgUrl}
@@ -71,14 +88,15 @@ const Card = ({
             className={`py-10 ${enterpriseWebUrl ? "" : "pointer-events-none"}`}
             href={enterpriseWebUrl}
             rel="noreferrer"
-            target="_blank">
-            <City className="text-5xl" />
+            target="_blank"
+          >
+            <FontAwesomeIcon icon={faLaptopCode} className="w-[24px] h-[24px]" />
           </Link>
         )}
-      </div>
+      </MotionDiv>
     </div>
 
-    <div className="flex-1 flex flex-col gap-5">{children}</div>
+    <div className="col-span-1 row-span-1 lg:col-span-3 flex flex-col gap-10">{children}</div>
   </div>
 );
 

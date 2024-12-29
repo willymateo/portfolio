@@ -1,16 +1,14 @@
-import { JournalPage } from "iconoir-react";
+import { faNewspaper } from "@fortawesome/free-regular-svg-icons/faNewspaper";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 
 import { PrimaryButton } from "../shared/Buttons/Primary";
 import { DinamicQuote } from "../shared/DinamicQuote";
+import { Container } from "./Container";
 import { SECTIONS } from "./constants";
 
 const AboutMe = () => (
-  <div id={SECTIONS.ABOUT_ME} className="flex flex-col gap-8">
-    <h2 className="text-4xl font-bold">
-      <Link href={`#${SECTIONS.ABOUT_ME}`}>About me</Link>
-    </h2>
-
+  <Container id={SECTIONS.ABOUT_ME} title="About me">
     <div className="flex flex-col items-start gap-5">
       <div className="flex flex-col">
         <h3 className="text-2xl">Hello there! My name is Willy Mateo</h3>
@@ -50,13 +48,13 @@ const AboutMe = () => (
 
       <Link href="/docs/CV.pdf" rel="noreferrer" target="_blank">
         <PrimaryButton>
-          <JournalPage />
+          <FontAwesomeIcon icon={faNewspaper} className="w-[24px] h-[24px]" />
 
           <span className="text-center">Download resume</span>
         </PrimaryButton>
       </Link>
     </div>
-  </div>
+  </Container>
 );
 
 export { AboutMe };

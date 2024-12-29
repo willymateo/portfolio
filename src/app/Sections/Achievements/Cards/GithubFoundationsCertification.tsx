@@ -16,11 +16,13 @@ const GithubFoundationsCertification = () => (
     endDate={new Date(2027, 11, 1)}
     subTitle="Certification"
     imgHeight={200}
-    imgWidth={200}>
+    imgWidth={200}
+  >
     <Link
       href="https://www.credly.com/badges/90bdfedb-5212-4a93-ae60-1c5ebedfdcd3/linked_in_profile"
       rel="noreferrer"
-      target="_blank">
+      target="_blank"
+    >
       <PrimaryButton>
         <FontAwesomeIcon icon={faNewspaper} className="w-[24px] h-[24px]" />
         <p className="text-center">View credential</p>
