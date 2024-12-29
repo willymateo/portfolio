@@ -1,5 +1,5 @@
 import { SubTitle } from "../SubTitle";
-import { Tag } from "../Tag";
+import { Tag } from "../Motion/Tag";
 
 import { TechnologiesProps } from "./types";
 

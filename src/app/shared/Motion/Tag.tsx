@@ -1,6 +1,6 @@
 "use client";
 
-import { MotionDiv, MotionDivProps } from "./Motion/Div";
+import { MotionDiv, MotionDivProps } from "./Div";
 
 const Tag = ({ children, className = "", ...props }: MotionDivProps) => (
   <MotionDiv

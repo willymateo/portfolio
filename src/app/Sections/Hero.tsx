@@ -62,6 +62,9 @@ const Hero = () => (
 
       <DotLottie
         src="https://lottie.host/8aaed915-a5eb-45bc-a378-85773867d9a5/KBhS3N1Eot.lottie"
+        renderConfig={{
+          freezeOnOffscreen: true,
+        }}
         className="h-[100px]"
         autoplay
         loop
