@@ -3,9 +3,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Link from "next/link";
 
-import { PrimaryButton } from "@/app/shared/Buttons/Primary";
-import { MotionDiv } from "@/app/shared/Motion/Div";
-import { SubTitle } from "@/app/shared/SubTitle";
+import { PrimaryButton } from "@/app/[locale]/shared/Buttons/Primary";
+import { MotionDiv } from "@/app/[locale]/shared/Motion/Div";
+import { SubTitle } from "@/app/[locale]/shared/SubTitle";
 
 interface Props {
   children?: React.ReactNode;

@@ -2,20 +2,20 @@ import { faArrowsSpin } from "@fortawesome/free-solid-svg-icons/faArrowsSpin";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faServer } from "@fortawesome/free-solid-svg-icons";
 
-import { Redux as ReduxIcon } from "@/app/shared/Icons/Redux";
-import { React as ReactIcon } from "@/app/shared/Icons/React";
-import { ReactRouter } from "@/app/shared/Icons/ReactRouter";
-import { JavaScript } from "@/app/shared/Icons/JavaScript";
-import { Technologies } from "@/app/shared/Technologies";
-import { Python } from "@/app/shared/Icons/Python";
-import { Django } from "@/app/shared/Icons/Django";
-import { NodeJs } from "@/app/shared/Icons/NodeJs";
-import { SQLite } from "@/app/shared/Icons/SQLite";
-import { Github } from "@/app/shared/Icons/Github";
-import { Linux } from "@/app/shared/Icons/Linux";
-import { Jest } from "@/app/shared/Icons/Jest";
-import { Sass } from "@/app/shared/Icons/Sass";
-import { Git } from "@/app/shared/Icons/Git";
+import { Redux as ReduxIcon } from "@/app/[locale]/shared/Icons/Redux";
+import { React as ReactIcon } from "@/app/[locale]/shared/Icons/React";
+import { ReactRouter } from "@/app/[locale]/shared/Icons/ReactRouter";
+import { JavaScript } from "@/app/[locale]/shared/Icons/JavaScript";
+import { Technologies } from "@/app/[locale]/shared/Technologies";
+import { Python } from "@/app/[locale]/shared/Icons/Python";
+import { Django } from "@/app/[locale]/shared/Icons/Django";
+import { NodeJs } from "@/app/[locale]/shared/Icons/NodeJs";
+import { SQLite } from "@/app/[locale]/shared/Icons/SQLite";
+import { Github } from "@/app/[locale]/shared/Icons/Github";
+import { Linux } from "@/app/[locale]/shared/Icons/Linux";
+import { Jest } from "@/app/[locale]/shared/Icons/Jest";
+import { Sass } from "@/app/[locale]/shared/Icons/Sass";
+import { Git } from "@/app/[locale]/shared/Icons/Git";
 import { Card } from "./Card";
 
 const JamaSana = () => {

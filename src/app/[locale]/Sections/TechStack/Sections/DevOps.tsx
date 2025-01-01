@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCloud } from "@fortawesome/free-solid-svg-icons";
 
-import { Technologies } from "@/app/shared/Technologies";
-import { Docker } from "@/app/shared/Icons/Docker";
-import { Github } from "@/app/shared/Icons/Github";
+import { Technologies } from "@/app/[locale]/shared/Technologies";
+import { Docker } from "@/app/[locale]/shared/Icons/Docker";
+import { Github } from "@/app/[locale]/shared/Icons/Github";
 
 const DevOps = () => {
   const technologies = [

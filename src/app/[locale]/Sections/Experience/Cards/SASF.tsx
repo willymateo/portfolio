@@ -2,10 +2,10 @@ import { faLaptopCode } from "@fortawesome/free-solid-svg-icons/faLaptopCode";
 import { faDatabase } from "@fortawesome/free-solid-svg-icons/faDatabase";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { JavaScript } from "@/app/shared/Icons/JavaScript";
-import { Technologies } from "@/app/shared/Technologies";
-import { HTML5 } from "@/app/shared/Icons/HTML5";
-import { CSS3 } from "@/app/shared/Icons/CSS3";
+import { JavaScript } from "@/app/[locale]/shared/Icons/JavaScript";
+import { Technologies } from "@/app/[locale]/shared/Technologies";
+import { HTML5 } from "@/app/[locale]/shared/Icons/HTML5";
+import { CSS3 } from "@/app/[locale]/shared/Icons/CSS3";
 import { Card } from "./Card";
 
 const SASF = () => {

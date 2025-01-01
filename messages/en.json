@@ -1,1 +1,29 @@
-{}
+{
+  "home": {
+    "hero": {
+      "I'm Willy Mateo": "I'm Willy Mateo",
+      "a full-stack developer dedicated to creating innovative web solutions": "a full-stack developer dedicated to creating innovative web solutions",
+      "Let’s build something amazing together": "Let’s build something amazing together",
+      "Explore my work": "Explore my work",
+      "Get in touch": "Get in touch"
+    },
+    "aboutMe": {
+      "About me": "About me",
+      "Hello there! My name is Willy Mateo": "Hello there! My name is Willy Mateo",
+      "I’m Willy Mateo, a passionate Computer Science Engineer from": "I’m Willy Mateo, a passionate Computer Science Engineer from",
+      "ESPOL, Ecuador’s top university": "ESPOL, Ecuador’s top university",
+      "with a strong focus on full-stack development My career so far has centered on creating efficient, high-performing applications I thrive on solving complex challenges and am committed to building scalable solutions I identify myself with excellence, and this drives me to deliver top-quality code and always look for ways to optimize processes, ensuring both user satisfaction and performance": "with a strong focus on full-stack development. My career so far has centered on creating efficient, high-performing applications. I thrive on solving complex challenges and am committed to building scalable solutions. I identify myself with excellence, and this drives me to deliver top-quality code and always look for ways to optimize processes, ensuring both user satisfaction and performance",
+      "Technically, I bring extensive experience in": "Technically, I bring extensive experience in",
+      "TypeScript, JavaScript, React, Nextjs, Redux and testing libraries": "TypeScript, JavaScript, React, Next.js, Redux and testing libraries",
+      "combined with a deep understanding of backend technologies like": "combined with a deep understanding of backend technologies like",
+      "Nodejs, Expressjs, Nestjs, Python, Django, MySQL, PostgreSQL and MongoDB": "Node.js, Express.js, Nest.js, Python, Django, MySQL, PostgreSQL and MongoDB",
+      "My experience with cloud services is based on": "My experience with cloud services is based on",
+      "AWS, Firebase, Vercel, ElasticSearch, Terraform and Docker": "AWS, Firebase, Vercel, ElasticSearch, Terraform and Docker",
+      "Beyond technical expertise, I possess strong communication skills and a collaborative mindset My leadership qualities enable me to work effectively across teams, mentor peers, and ensure that every project I touch meets high standards": "Beyond technical expertise, I possess strong communication skills and a collaborative mindset. My leadership qualities enable me to work effectively across teams, mentor peers, and ensure that every project I touch meets high standards",
+      "Looking ahead, I am determined to continuously grow my skills": "Looking ahead, I am determined to continuously grow my skills",
+      "with the ultimate goal of becoming a software architect": "with the ultimate goal of becoming a software architect",
+      "I am driven by the idea of designing systems that are both efficient and scalable, ensuring that technology not only meets today’s demands but is also prepared for tomorrow’s challenges I am constantly improving, learning, and innovating, and I look forward to opportunities that push me to develop my expertise and leadership further": "I am driven by the idea of designing systems that are both efficient and scalable, ensuring that technology not only meets today’s demands but is also prepared for tomorrow’s challenges. I am constantly improving, learning, and innovating, and I look forward to opportunities that push me to develop my expertise and leadership further",
+      "Download resume": "Download resume"
+    }
+  }
+}

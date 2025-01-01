@@ -1,7 +1,7 @@
 import { faArrowsSpin } from "@fortawesome/free-solid-svg-icons/faArrowsSpin";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { Technologies } from "@/app/shared/Technologies";
+import { Technologies } from "@/app/[locale]/shared/Technologies";
 
 const Agile = () => {
   const technologies = [

@@ -1,14 +1,14 @@
-import { React as ReactIcon } from "@/app/shared/Icons/React";
-import { ReactRouter } from "@/app/shared/Icons/ReactRouter";
-import { JavaScript } from "@/app/shared/Icons/JavaScript";
-import { Technologies } from "@/app/shared/Technologies";
-import { ChakraUI } from "@/app/shared/Icons/ChakraUI";
-import { Netlify } from "@/app/shared/Icons/Netlify";
-import { Github } from "@/app/shared/Icons/Github";
-import { HTML5 } from "@/app/shared/Icons/HTML5";
-import { Vite } from "@/app/shared/Icons/Vite";
-import { CSS3 } from "@/app/shared/Icons/CSS3";
-import { Git } from "@/app/shared/Icons/Git";
+import { React as ReactIcon } from "@/app/[locale]/shared/Icons/React";
+import { ReactRouter } from "@/app/[locale]/shared/Icons/ReactRouter";
+import { JavaScript } from "@/app/[locale]/shared/Icons/JavaScript";
+import { Technologies } from "@/app/[locale]/shared/Technologies";
+import { ChakraUI } from "@/app/[locale]/shared/Icons/ChakraUI";
+import { Netlify } from "@/app/[locale]/shared/Icons/Netlify";
+import { Github } from "@/app/[locale]/shared/Icons/Github";
+import { HTML5 } from "@/app/[locale]/shared/Icons/HTML5";
+import { Vite } from "@/app/[locale]/shared/Icons/Vite";
+import { CSS3 } from "@/app/[locale]/shared/Icons/CSS3";
+import { Git } from "@/app/[locale]/shared/Icons/Git";
 import { Card } from "./Card";
 
 const isDark = false;

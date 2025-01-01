@@ -1,9 +1,9 @@
-import { Technologies } from "@/app/shared/Technologies";
-import { Firebase } from "@/app/shared/Icons/Firebase";
-import { Railway } from "@/app/shared/Icons/Railway";
-import { Netlify } from "@/app/shared/Icons/Netlify";
-import { Vercel } from "@/app/shared/Icons/Vercel";
-import { AWS } from "@/app/shared/Icons/AWS";
+import { Technologies } from "@/app/[locale]/shared/Technologies";
+import { Firebase } from "@/app/[locale]/shared/Icons/Firebase";
+import { Railway } from "@/app/[locale]/shared/Icons/Railway";
+import { Netlify } from "@/app/[locale]/shared/Icons/Netlify";
+import { Vercel } from "@/app/[locale]/shared/Icons/Vercel";
+import { AWS } from "@/app/[locale]/shared/Icons/AWS";
 
 const Cloud = () => {
   const technologies = [

@@ -2,7 +2,7 @@ import { faBuildingColumns } from "@fortawesome/free-solid-svg-icons/faBuildingC
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 
-import { PrimaryButton } from "@/app/shared/Buttons/Primary";
+import { PrimaryButton } from "@/app/[locale]/shared/Buttons/Primary";
 import { Card } from "./Card";
 
 const ESPOL = () => (

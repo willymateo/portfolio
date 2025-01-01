@@ -2,12 +2,12 @@ import { faBitbucket } from "@fortawesome/free-brands-svg-icons/faBitbucket";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faJira } from "@fortawesome/free-brands-svg-icons";
 
-import { Technologies } from "@/app/shared/Technologies";
-import { Github } from "@/app/shared/Icons/Github";
-import { GitLab } from "@/app/shared/Icons/GitLab";
-import { Notion } from "@/app/shared/Icons/Notion";
-import { Linux } from "@/app/shared/Icons/Linux";
-import { Git } from "@/app/shared/Icons/Git";
+import { Technologies } from "@/app/[locale]/shared/Technologies";
+import { Github } from "@/app/[locale]/shared/Icons/Github";
+import { GitLab } from "@/app/[locale]/shared/Icons/GitLab";
+import { Notion } from "@/app/[locale]/shared/Icons/Notion";
+import { Linux } from "@/app/[locale]/shared/Icons/Linux";
+import { Git } from "@/app/[locale]/shared/Icons/Git";
 
 const WebDevelopmentEnvironment = () => {
   const technologies = [

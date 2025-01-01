@@ -4,7 +4,7 @@ import { faDumbbell } from "@fortawesome/free-solid-svg-icons/faDumbbell";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 
-import { MotionDiv } from "@/app/shared/Motion/Div";
+import { MotionDiv } from "@/app/[locale]/shared/Motion/Div";
 import { Container } from "../Container";
 import { SECTIONS } from "../constants";
 

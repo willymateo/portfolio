@@ -1,13 +1,13 @@
-import { React as ReactIcon } from "@/app/shared/Icons/React";
-import { Redux as ReduxIcon } from "@/app/shared/Icons/Redux";
-import { TailwindCss } from "@/app/shared/Icons/TailwindCss";
-import { JavaScript } from "@/app/shared/Icons/JavaScript";
-import { Technologies } from "@/app/shared/Technologies";
-import { GitLab } from "@/app/shared/Icons/GitLab";
-import { HTML5 } from "@/app/shared/Icons/HTML5";
-import { CSS3 } from "@/app/shared/Icons/CSS3";
-import { Vite } from "@/app/shared/Icons/Vite";
-import { Git } from "@/app/shared/Icons/Git";
+import { React as ReactIcon } from "@/app/[locale]/shared/Icons/React";
+import { Redux as ReduxIcon } from "@/app/[locale]/shared/Icons/Redux";
+import { TailwindCss } from "@/app/[locale]/shared/Icons/TailwindCss";
+import { JavaScript } from "@/app/[locale]/shared/Icons/JavaScript";
+import { Technologies } from "@/app/[locale]/shared/Technologies";
+import { GitLab } from "@/app/[locale]/shared/Icons/GitLab";
+import { HTML5 } from "@/app/[locale]/shared/Icons/HTML5";
+import { CSS3 } from "@/app/[locale]/shared/Icons/CSS3";
+import { Vite } from "@/app/[locale]/shared/Icons/Vite";
+import { Git } from "@/app/[locale]/shared/Icons/Git";
 import { Card } from "./Card";
 
 const MIProjectManager = () => {

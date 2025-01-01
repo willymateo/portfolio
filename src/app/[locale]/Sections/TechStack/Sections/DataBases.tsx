@@ -1,13 +1,13 @@
 import { faDatabase } from "@fortawesome/free-solid-svg-icons/faDatabase";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { MycrosoftSQLServer } from "@/app/shared/Icons/MicrosoftSQLServer";
-import { PostgreSQL } from "@/app/shared/Icons/PostgreSQL";
-import { Technologies } from "@/app/shared/Technologies";
-import { Firebase } from "@/app/shared/Icons/Firebase";
-import { MongoDB } from "@/app/shared/Icons/MongoDB";
-import { SQLite } from "@/app/shared/Icons/SQLite";
-import { MySQL } from "@/app/shared/Icons/MySQL";
+import { MycrosoftSQLServer } from "@/app/[locale]/shared/Icons/MicrosoftSQLServer";
+import { PostgreSQL } from "@/app/[locale]/shared/Icons/PostgreSQL";
+import { Technologies } from "@/app/[locale]/shared/Technologies";
+import { Firebase } from "@/app/[locale]/shared/Icons/Firebase";
+import { MongoDB } from "@/app/[locale]/shared/Icons/MongoDB";
+import { SQLite } from "@/app/[locale]/shared/Icons/SQLite";
+import { MySQL } from "@/app/[locale]/shared/Icons/MySQL";
 
 const Databases = () => {
   const technologies = [

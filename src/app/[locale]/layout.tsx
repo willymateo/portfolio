@@ -1,5 +1,5 @@
+import { getMessages, setRequestLocale } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import type { Metadata } from "next";
@@ -13,15 +13,21 @@ const metadata: Metadata = {
   title: "Willy Mateo",
 };
 
-interface Props {
-  params: { locale: string };
+type Props = {
+  params: Promise<{ locale: string }>;
   children: React.ReactNode;
-}
+};
 
-const RootLayout = async ({ children, params: { locale } }: Readonly<Props>) => {
+const generateStaticParams = () => routing.locales.map(locale => ({ locale }));
+
+const RootLayout = async ({ children, params }: Readonly<Props>) => {
+  const { locale } = await params;
+
   if (!routing.locales.includes(locale as any)) {
     notFound();
   }
+
+  setRequestLocale(locale);
 
   const messages = await getMessages();
 
@@ -35,4 +41,4 @@ const RootLayout = async ({ children, params: { locale } }: Readonly<Props>) => 
 };
 
 export default RootLayout;
-export { metadata };
+export { metadata, generateStaticParams };

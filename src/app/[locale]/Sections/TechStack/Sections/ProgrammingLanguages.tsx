@@ -1,7 +1,7 @@
-import { TypeScript } from "@/app/shared/Icons/TypeScript";
-import { JavaScript } from "@/app/shared/Icons/JavaScript";
-import { Technologies } from "@/app/shared/Technologies";
-import { Python } from "@/app/shared/Icons/Python";
+import { TypeScript } from "@/app/[locale]/shared/Icons/TypeScript";
+import { JavaScript } from "@/app/[locale]/shared/Icons/JavaScript";
+import { Technologies } from "@/app/[locale]/shared/Technologies";
+import { Python } from "@/app/[locale]/shared/Icons/Python";
 
 const ProgrammingLanguages = () => {
   const technologies = [

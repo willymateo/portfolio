@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faNewspaper } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 
-import { PrimaryButton } from "@/app/shared/Buttons/Primary";
+import { PrimaryButton } from "@/app/[locale]/shared/Buttons/Primary";
 import { Card } from "./Card";
 
 const PaperRAP = () => (

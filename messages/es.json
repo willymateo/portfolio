@@ -1,1 +1,29 @@
-{}
+{
+  "home": {
+    "hero": {
+      "I'm Willy Mateo": "Soy Willy Mateo",
+      "a full-stack developer dedicated to creating innovative web solutions": "un desarrollador full-stack dedicado a crear soluciones web innovadoras",
+      "Let’s build something amazing together": "Construyamos algo increíble juntos",
+      "Explore my work": "Explora mi trabajo",
+      "Get in touch": "Ponte en contacto"
+    },
+    "aboutMe": {
+      "About me": "Sobre mí",
+      "Hello there! My name is Willy Mateo": "¡Hola! Mi nombre es Willy Mateo",
+      "I’m Willy Mateo, a passionate Computer Science Engineer from": "Soy Willy Mateo, un apasionado Ingeniero en Ciencias de la Computación de",
+      "ESPOL, Ecuador’s top university": "ESPOL, la mejor universidad de Ecuador",
+      "with a strong focus on full-stack development My career so far has centered on creating efficient, high-performing applications I thrive on solving complex challenges and am committed to building scalable solutions I identify myself with excellence, and this drives me to deliver top-quality code and always look for ways to optimize processes, ensuring both user satisfaction and performance": "con un fuerte enfoque en el desarrollo full-stack. Mi carrera hasta ahora se ha centrado en la creación de aplicaciones eficientes y de alto rendimiento. Me entusiasma resolver desafíos complejos y estoy comprometido a construir soluciones escalables. Me identifico con la excelencia, y esto me impulsa a entregar código de alta calidad y siempre buscar formas de optimizar procesos, asegurando tanto la satisfacción del usuario como el rendimiento",
+      "Technically, I bring extensive experience in": "Técnicamente, tengo una amplia experiencia en",
+      "TypeScript, JavaScript, React, Nextjs, Redux and testing libraries": "TypeScript, JavaScript, React, Next.js, Redux y bibliotecas de pruebas",
+      "combined with a deep understanding of backend technologies like": "combinado con una profunda comprensión de tecnologías backend como",
+      "Nodejs, Expressjs, Nestjs, Python, Django, MySQL, PostgreSQL and MongoDB": "Node.js, Express.js, Nest.js, Python, Django, MySQL, PostgreSQL y MongoDB",
+      "My experience with cloud services is based on": "Mi experiencia",
+      "AWS, Firebase, Vercel, ElasticSearch, Terraform and Docker": "AWS, Firebase, Vercel, ElasticSearch, Terraform y Docker",
+      "Beyond technical expertise, I possess strong communication skills and a collaborative mindset My leadership qualities enable me to work effectively across teams, mentor peers, and ensure that every project I touch meets high standards": "Más allá de la experiencia técnica, poseo fuertes habilidades de comunicación y una mentalidad colaborativa. Mis cualidades de liderazgo me permiten trabajar de manera efectiva en equipos, mentorar a mis compañeros y asegurar que cada proyecto en el que participo cumpla con altos estándares",
+      "Looking ahead, I am determined to continuously grow my skills,": "Mirando hacia adelante, estoy decidido a seguir creciendo en mis habilidades",
+      "with the ultimate goal of becoming a software architect": "con el objetivo final de convertirme en un arquitecto de software",
+      "I am driven by the idea of designing systems that are both efficient and scalable, ensuring that technology not only meets today’s demands but is also prepared for tomorrow’s challenges I am constantly improving, learning, and innovating, and I look forward to opportunities that push me to develop my expertise and leadership further": "Me impulsa la idea de diseñar sistemas que sean eficientes y escalables, asegurando que la tecnología no solo cumpla con las demandas actuales, sino que también esté preparada para los desafíos del mañana. Estoy constantemente mejorando, aprendiendo e innovando, y espero con ansias las oportunidades que me empujen a desarrollar aún más mi experiencia y liderazgo",
+      "Download resume": "Descargar currículum"
+    }
+  }
+}

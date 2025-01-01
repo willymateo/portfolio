@@ -7,7 +7,7 @@ import { faPaste } from "@fortawesome/free-regular-svg-icons/faPaste";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 
-import { SocialNetworks } from "@/app/shared/SocialNetworks";
+import { SocialNetworks } from "@/app/[locale]/shared/SocialNetworks";
 import { DinamicQuote } from "../shared/DinamicQuote";
 import { copyTextToClipBoard } from "@/shared/utils";
 import { MotionDiv } from "../shared/Motion/Div";

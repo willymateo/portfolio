@@ -1,14 +1,14 @@
-import { React as ReactIcon } from "@/app/shared/Icons/React";
-import { Redux as ReduxIcon } from "@/app/shared/Icons/Redux";
-import { TypeScript } from "@/app/shared/Icons/TypeScript";
-import { Technologies } from "@/app/shared/Technologies";
-import { ChakraUI } from "@/app/shared/Icons/ChakraUI";
-import { Vercel } from "@/app/shared/Icons/Vercel";
-import { Github } from "@/app/shared/Icons/Github";
-import { NextJs } from "@/app/shared/Icons/NextJs";
-import { HTML5 } from "@/app/shared/Icons/HTML5";
-import { CSS3 } from "@/app/shared/Icons/CSS3";
-import { Git } from "@/app/shared/Icons/Git";
+import { React as ReactIcon } from "@/app/[locale]/shared/Icons/React";
+import { Redux as ReduxIcon } from "@/app/[locale]/shared/Icons/Redux";
+import { TypeScript } from "@/app/[locale]/shared/Icons/TypeScript";
+import { Technologies } from "@/app/[locale]/shared/Technologies";
+import { ChakraUI } from "@/app/[locale]/shared/Icons/ChakraUI";
+import { Vercel } from "@/app/[locale]/shared/Icons/Vercel";
+import { Github } from "@/app/[locale]/shared/Icons/Github";
+import { NextJs } from "@/app/[locale]/shared/Icons/NextJs";
+import { HTML5 } from "@/app/[locale]/shared/Icons/HTML5";
+import { CSS3 } from "@/app/[locale]/shared/Icons/CSS3";
+import { Git } from "@/app/[locale]/shared/Icons/Git";
 import { Card } from "./Card";
 
 const isDark = false;

@@ -1,5 +1,5 @@
-import { React as ReactIcon } from "@/app/shared/Icons/React";
-import { Technologies } from "@/app/shared/Technologies";
+import { React as ReactIcon } from "@/app/[locale]/shared/Icons/React";
+import { Technologies } from "@/app/[locale]/shared/Technologies";
 
 const Mobile = () => {
   const technologies = [

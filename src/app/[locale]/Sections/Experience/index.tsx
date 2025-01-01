@@ -1,4 +1,4 @@
-import { PhotoCarrousel } from "@/app/shared/PhotoCarrousel";
+import { PhotoCarrousel } from "@/app/[locale]/shared/PhotoCarrousel";
 import { ShippifyInc } from "./Cards/ShippifyInc";
 import { JamaSana } from "./Cards/JamaSana";
 import { JOB_IMAGES } from "./constants";

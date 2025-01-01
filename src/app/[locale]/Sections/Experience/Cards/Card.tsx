@@ -4,8 +4,8 @@ import { intlFormat, isValid } from "date-fns";
 import Image from "next/image";
 import Link from "next/link";
 
-import { MotionDiv } from "@/app/shared/Motion/Div";
-import { SubTitle } from "@/app/shared/SubTitle";
+import { MotionDiv } from "@/app/[locale]/shared/Motion/Div";
+import { SubTitle } from "@/app/[locale]/shared/SubTitle";
 
 interface Props {
   children?: React.ReactNode;
