@@ -76,6 +76,19 @@
         "During my studies at Carrera Sánchez Bruno high school, where I specialized in computer systems, I gained essential foundational knowledge in various areas of software development I learned the principles of Object-Oriented Programming, which helped me understand how to structure and organize code effectively I also delved into Algorithms Analysis, which taught me how to optimize and improve the efficiency of solutions Additionally, I acquired a solid grasp of the basics of Web Development, enabling me to build functional and responsive websites": "During my studies at Carrera Sánchez Bruno high school, where I specialized in computer systems, I gained essential foundational knowledge in various areas of software development. I learned the principles of Object-Oriented Programming, which helped me understand how to structure and organize code effectively. I also delved into Algorithms Analysis, which taught me how to optimize and improve the efficiency of solutions. Additionally, I acquired a solid grasp of the basics of Web Development, enabling me to build functional and responsive websites",
         "Go to website": "Go to website"
       }
+    },
+    "achievements": {
+      "Achievements": "Achievements",
+      "githubFoundationsCertification": {
+        "Certification": "Certification",
+        "This certification validates expertise in essential GitHub skills, including repositories, commits, branching, markdowns, and project management It's designed to showcase entry-level DevOps skills and modern development practices with GitHub tools like Actions, Codespaces, GitFlow and Projects Key Skills Validated: Git & GitHub Basics, Collaboration & Modern Development Features, Continuous Integration (CI), Continuous Delivery (CD), Secure Repository Management, GitHub Administration": "This certification validates expertise in essential GitHub skills, including repositories, commits, branching, markdowns, and project management. It's designed to showcase entry-level DevOps skills and modern development practices with GitHub tools like Actions, Codespaces, GitFlow and Projects. Key Skills Validated: Git & GitHub Basics, Collaboration & Modern Development Features, Continuous Integration (CI), Continuous Delivery (CD), Secure Repository Management, GitHub Administration",
+        "View credential": "View credential"
+      },
+      "paperRAP": {
+        "Paper": "Paper",
+        "In the realm of verbal communication, most common non-clinical speech disfluencies are filler words and filled pauses, which pose challenges for effective oral presentations Yet their detection is no easy task This article presents the usage of OpenAI’s Whisper for filled pauses and filler words detection in Spanish oral presentations, including on-the-wild usage with undergraduate students Preliminary results indicate that Whisper demonstrates promise as a valuable tool to identify a substantial amount of filler words and filled pauses Despite areas of improvement, Whisper serves as a diagnostic tool for assessing disfluences in oral communication": "In the realm of verbal communication, most common non-clinical speech disfluencies are filler words and filled pauses, which pose challenges for effective oral presentations. Yet their detection is no easy task. This article presents the usage of OpenAI’s Whisper for filled pauses and filler words detection in Spanish oral presentations, including on-the-wild usage with undergraduate students. Preliminary results indicate that Whisper demonstrates promise as a valuable tool to identify a substantial amount of filler words and filled pauses. Despite areas of improvement, Whisper serves as a diagnostic tool for assessing disfluences in oral communication",
+        "Download paper": "Download paper"
+      }
     }
   },
   "languageMenu": {
