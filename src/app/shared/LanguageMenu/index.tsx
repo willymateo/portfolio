@@ -3,8 +3,8 @@
 import { useLocale, useTranslations } from "next-intl";
 
 import { LANGUAGES_DATA_BY_CODE } from "@/i18n/constants";
-import { usePathname } from "next/navigation";
-import { Link } from "@/i18n/routing";
+import { Link, usePathname } from "@/i18n/routing";
+import "./types";
 
 const LanguageMenu = () => {
   const t = useTranslations();
