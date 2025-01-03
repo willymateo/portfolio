@@ -7,6 +7,7 @@ import { TechStack } from "./Sections/TechStack";
 import { Projects } from "./Sections/Projects";
 import { AboutMe } from "./Sections/AboutMe";
 import { Hobbies } from "./Sections/Hobbies";
+import { Header } from "../shared/Header";
 import { Footer } from "./shared/Footer";
 import { Hero } from "./Sections/Hero";
 
@@ -17,6 +18,8 @@ const Home = () => (
         <BackgroundSVG />
       </div>
     </div>
+
+    <Header />
 
     <div className="flex flex-col items-strech justify-center gap-96 px-10 lg:px-24 2xl:px-40 z-[1]">
       <Hero />

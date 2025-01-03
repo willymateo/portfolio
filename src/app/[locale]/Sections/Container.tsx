@@ -1,6 +1,5 @@
-import Link from "next/link";
-
 import { MotionH2 } from "../shared/Motion/H2";
+import { Link } from "@/i18n/routing";
 
 interface Props {
   children: React.ReactNode;

@@ -3,7 +3,6 @@ import { faCode } from "@fortawesome/free-solid-svg-icons/faCode";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import Link from "next/link";
 
 import { PrimaryButton } from "../shared/Buttons/Primary";
 import { MotionDiv } from "../shared/Motion/Div";
@@ -12,6 +11,7 @@ import { animaticSCBold } from "@/shared/fonts";
 import { MotionH1 } from "../shared/Motion/H1";
 import { MotionH2 } from "../shared/Motion/H2";
 import { SECTIONS } from "./constants";
+import { Link } from "@/i18n/routing";
 
 const Hero = () => {
   const t = useTranslations("home.hero");

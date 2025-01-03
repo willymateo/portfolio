@@ -1,6 +1,7 @@
 import { faBitbucket } from "@fortawesome/free-brands-svg-icons/faBitbucket";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faJira } from "@fortawesome/free-brands-svg-icons";
+import { useTranslations } from "next-intl";
 
 import { Technologies } from "@/app/[locale]/shared/Technologies";
 import { Github } from "@/app/[locale]/shared/Icons/Github";
@@ -9,7 +10,9 @@ import { Notion } from "@/app/[locale]/shared/Icons/Notion";
 import { Linux } from "@/app/[locale]/shared/Icons/Linux";
 import { Git } from "@/app/[locale]/shared/Icons/Git";
 
-const WebDevelopmentEnvironment = () => {
+const DevelopmentEnvironment = () => {
+  const t = useTranslations("home.techStack");
+
   const technologies = [
     {
       name: "Linux",
@@ -41,7 +44,7 @@ const WebDevelopmentEnvironment = () => {
     },
   ];
 
-  return <Technologies title="Web development environment" technologies={technologies} />;
+  return <Technologies title={t("Development environment")} technologies={technologies} />;
 };
 
-export { WebDevelopmentEnvironment };
+export { DevelopmentEnvironment };

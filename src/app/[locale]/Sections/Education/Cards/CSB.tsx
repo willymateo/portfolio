@@ -1,8 +1,8 @@
 import { faSchool } from "@fortawesome/free-solid-svg-icons/faSchool";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Link from "next/link";
 
 import { PrimaryButton } from "@/app/[locale]/shared/Buttons/Primary";
+import { Link } from "@/i18n/routing";
 import { Card } from "./Card";
 
 const CSB = () => (

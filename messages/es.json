@@ -20,10 +20,23 @@
       "My experience with cloud services is based on": "Mi experiencia",
       "AWS, Firebase, Vercel, ElasticSearch, Terraform and Docker": "AWS, Firebase, Vercel, ElasticSearch, Terraform y Docker",
       "Beyond technical expertise, I possess strong communication skills and a collaborative mindset My leadership qualities enable me to work effectively across teams, mentor peers, and ensure that every project I touch meets high standards": "Más allá de la experiencia técnica, poseo fuertes habilidades de comunicación y una mentalidad colaborativa. Mis cualidades de liderazgo me permiten trabajar de manera efectiva en equipos, mentorar a mis compañeros y asegurar que cada proyecto en el que participo cumpla con altos estándares",
-      "Looking ahead, I am determined to continuously grow my skills,": "Mirando hacia adelante, estoy decidido a seguir creciendo en mis habilidades",
+      "Looking ahead, I am determined to continuously grow my skills": "Mirando hacia adelante, estoy decidido a seguir creciendo en mis habilidades",
       "with the ultimate goal of becoming a software architect": "con el objetivo final de convertirme en un arquitecto de software",
       "I am driven by the idea of designing systems that are both efficient and scalable, ensuring that technology not only meets today’s demands but is also prepared for tomorrow’s challenges I am constantly improving, learning, and innovating, and I look forward to opportunities that push me to develop my expertise and leadership further": "Me impulsa la idea de diseñar sistemas que sean eficientes y escalables, asegurando que la tecnología no solo cumpla con las demandas actuales, sino que también esté preparada para los desafíos del mañana. Estoy constantemente mejorando, aprendiendo e innovando, y espero con ansias las oportunidades que me empujen a desarrollar aún más mi experiencia y liderazgo",
       "Download resume": "Descargar currículum"
+    },
+    "techStack": {
+      "Tech stack": "Tecnologías",
+      "Programming languages": "Lenguajes de programación",
+      "Mobile": "Móvil",
+      "Databases": "Bases de datos",
+      "Cloud": "Nube",
+      "Development environment": "Entorno de desarrollo",
+      "Agile": "Ágil"
     }
+  },
+  "languageMenu": {
+    "English": "Inglés",
+    "Spanish": "Español"
   }
 }

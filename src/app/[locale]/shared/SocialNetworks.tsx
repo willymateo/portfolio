@@ -2,10 +2,10 @@ import { faEnvelope } from "@fortawesome/free-regular-svg-icons/faEnvelope";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons/faLinkedin";
 import { faGithub } from "@fortawesome/free-brands-svg-icons/faGithub";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Link from "next/link";
 
 import { EMAIL } from "@/shared/constants";
 import { MotionLi } from "./Motion/Li";
+import { Link } from "@/i18n/routing";
 
 interface Props {
   itemsClassName?: string;

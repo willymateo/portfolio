@@ -1,11 +1,11 @@
 import { faLink } from "@fortawesome/free-solid-svg-icons/faLink";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
-import Link from "next/link";
 
 import { PrimaryButton } from "@/app/[locale]/shared/Buttons/Primary";
 import { MotionDiv } from "@/app/[locale]/shared/Motion/Div";
 import { SubTitle } from "@/app/[locale]/shared/SubTitle";
+import { Link } from "@/i18n/routing";
 
 interface Props {
   children?: React.ReactNode;

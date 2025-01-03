@@ -1,8 +1,8 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faNewspaper } from "@fortawesome/free-solid-svg-icons";
-import Link from "next/link";
 
 import { PrimaryButton } from "@/app/[locale]/shared/Buttons/Primary";
+import { Link } from "@/i18n/routing";
 import { Card } from "./Card";
 
 const GithubFoundationsCertification = () => (

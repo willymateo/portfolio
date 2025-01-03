@@ -24,6 +24,19 @@
       "with the ultimate goal of becoming a software architect": "with the ultimate goal of becoming a software architect",
       "I am driven by the idea of designing systems that are both efficient and scalable, ensuring that technology not only meets today’s demands but is also prepared for tomorrow’s challenges I am constantly improving, learning, and innovating, and I look forward to opportunities that push me to develop my expertise and leadership further": "I am driven by the idea of designing systems that are both efficient and scalable, ensuring that technology not only meets today’s demands but is also prepared for tomorrow’s challenges. I am constantly improving, learning, and innovating, and I look forward to opportunities that push me to develop my expertise and leadership further",
       "Download resume": "Download resume"
+    },
+    "techStack": {
+      "Tech stack": "Tech stack",
+      "Programming languages": "Programming languages",
+      "Mobile": "Mobile",
+      "Databases": "Databases",
+      "Cloud": "Cloud",
+      "Development environment": "Development environment",
+      "Agile": "Agile"
     }
+  },
+  "languageMenu": {
+    "English": "English",
+    "Spanish": "Spanish"
   }
 }

@@ -1,12 +1,12 @@
 import { faNewspaper } from "@fortawesome/free-regular-svg-icons/faNewspaper";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useTranslations } from "next-intl";
-import Link from "next/link";
 
 import { PrimaryButton } from "../shared/Buttons/Primary";
 import { DinamicQuote } from "../shared/DinamicQuote";
 import { Container } from "./Container";
 import { SECTIONS } from "./constants";
+import { Link } from "@/i18n/routing";
 
 const AboutMe = () => {
   const t = useTranslations("home.aboutMe");

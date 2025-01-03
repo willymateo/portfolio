@@ -1,3 +1,5 @@
+import { useTranslations } from "next-intl";
+
 import { Technologies } from "@/app/[locale]/shared/Technologies";
 import { Firebase } from "@/app/[locale]/shared/Icons/Firebase";
 import { Railway } from "@/app/[locale]/shared/Icons/Railway";
@@ -6,6 +8,8 @@ import { Vercel } from "@/app/[locale]/shared/Icons/Vercel";
 import { AWS } from "@/app/[locale]/shared/Icons/AWS";
 
 const Cloud = () => {
+  const t = useTranslations("home.techStack");
+
   const technologies = [
     {
       name: "AWS",
@@ -29,7 +33,7 @@ const Cloud = () => {
     },
   ];
 
-  return <Technologies title="Cloud" technologies={technologies} />;
+  return <Technologies title={t("Cloud")} technologies={technologies} />;
 };
 
 export { Cloud };

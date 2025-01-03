@@ -1,9 +1,12 @@
 import { faArrowsSpin } from "@fortawesome/free-solid-svg-icons/faArrowsSpin";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useTranslations } from "next-intl";
 
 import { Technologies } from "@/app/[locale]/shared/Technologies";
 
 const Agile = () => {
+  const t = useTranslations("home.techStack");
+
   const technologies = [
     {
       name: "Scrum",
@@ -15,7 +18,7 @@ const Agile = () => {
     },
   ];
 
-  return <Technologies title="Agile" technologies={technologies} />;
+  return <Technologies title={t("Agile")} technologies={technologies} />;
 };
 
 export { Agile };

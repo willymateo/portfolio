@@ -1,5 +1,6 @@
 import { faDatabase } from "@fortawesome/free-solid-svg-icons/faDatabase";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useTranslations } from "next-intl";
 
 import { MycrosoftSQLServer } from "@/app/[locale]/shared/Icons/MicrosoftSQLServer";
 import { PostgreSQL } from "@/app/[locale]/shared/Icons/PostgreSQL";
@@ -10,6 +11,8 @@ import { SQLite } from "@/app/[locale]/shared/Icons/SQLite";
 import { MySQL } from "@/app/[locale]/shared/Icons/MySQL";
 
 const Databases = () => {
+  const t = useTranslations("home.techStack");
+
   const technologies = [
     { name: "MySQL", Icon: MySQL },
     { name: "PostgreSQL", Icon: PostgreSQL },
@@ -23,7 +26,7 @@ const Databases = () => {
     },
   ];
 
-  return <Technologies title="Databases" technologies={technologies} />;
+  return <Technologies title={t("Databases")} technologies={technologies} />;
 };
 
 export { Databases };

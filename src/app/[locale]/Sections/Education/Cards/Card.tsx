@@ -2,10 +2,10 @@ import { faUserGraduate } from "@fortawesome/free-solid-svg-icons/faUserGraduate
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { intlFormat, isValid } from "date-fns";
 import Image from "next/image";
-import Link from "next/link";
 
 import { MotionDiv } from "@/app/[locale]/shared/Motion/Div";
 import { SubTitle } from "@/app/[locale]/shared/SubTitle";
+import { Link } from "@/i18n/routing";
 
 interface Props {
   children?: React.ReactNode;

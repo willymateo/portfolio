@@ -5,7 +5,6 @@ import { faLaptopCode } from "@fortawesome/free-solid-svg-icons/faLaptopCode";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons/faEnvelope";
 import { faPaste } from "@fortawesome/free-regular-svg-icons/faPaste";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Link from "next/link";
 
 import { SocialNetworks } from "@/app/[locale]/shared/SocialNetworks";
 import { DinamicQuote } from "../shared/DinamicQuote";
@@ -15,6 +14,7 @@ import { useActive } from "@/hooks/useActive";
 import { EMAIL } from "@/shared/constants";
 import { Container } from "./Container";
 import { SECTIONS } from "./constants";
+import { Link } from "@/i18n/routing";
 
 const GetInTouch = () => {
   const { isActive: isCopied, enable: startCopied, disable: stopCopied } = useActive();
