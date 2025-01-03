@@ -105,5 +105,9 @@
   "languageMenu": {
     "English": "Inglés",
     "Spanish": "Español"
+  },
+  "footer": {
+    "Designed and developed with": "Diseñado y desarrollado con",
+    "by": "por"
   }
 }
