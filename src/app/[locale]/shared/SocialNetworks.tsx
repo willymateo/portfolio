@@ -14,7 +14,7 @@ interface Props {
 const SocialNetworks = ({ itemsClassName = "" }: Props) => (
   <ul className="flex flex-row items-center justify-center flex-wrap gap-x-10 gap-y-3">
     <MotionLi
-      className={`bg-black bg-opacity-20 rounded-full p-5 hover:shadow-2xl ${itemsClassName}`}
+      className={`bg-black bg-opacity-20 rounded-full px-5 py-4 hover:shadow-2xl ${itemsClassName}`}
       transition={{
         scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
         duration: 0.1,
@@ -29,7 +29,7 @@ const SocialNetworks = ({ itemsClassName = "" }: Props) => (
     </MotionLi>
 
     <MotionLi
-      className={`bg-black bg-opacity-20 rounded-full p-5 hover:shadow-2xl ${itemsClassName}`}
+      className={`bg-black bg-opacity-20 rounded-full px-5 py-4 hover:shadow-2xl ${itemsClassName}`}
       transition={{
         scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
         duration: 0.1,
@@ -44,7 +44,7 @@ const SocialNetworks = ({ itemsClassName = "" }: Props) => (
     </MotionLi>
 
     <MotionLi
-      className={`bg-black bg-opacity-20 rounded-full p-5 hover:shadow-2xl ${itemsClassName}`}
+      className={`bg-black bg-opacity-20 rounded-full px-5 py-4 hover:shadow-2xl ${itemsClassName}`}
       transition={{
         scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
         duration: 0.1,
