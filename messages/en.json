@@ -1,5 +1,9 @@
 {
   "home": {
+    "metadata": {
+      "title": "Willy Mateo - Full-stack developer",
+      "description": "Willy Mateo is a full-stack developer dedicated to creating innovative web solutions. Explore his work and get in touch to build something amazing together."
+    },
     "hero": {
       "I'm Willy Mateo": "I'm Willy Mateo",
       "a full-stack developer dedicated to creating innovative web solutions": "a full-stack developer dedicated to creating innovative web solutions",

@@ -1,29 +1,34 @@
-import { getMessages, setRequestLocale } from "next-intl/server";
+import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import type { Metadata } from "next";
 
+import { GenerateMetadataProps, RootLayoutProps } from "./types";
 import { ralewayVariable } from "@/shared/fonts";
 
 import "../globals.css";
 
-const metadata: Metadata = {
-  description: "Willy Mateo's personal website",
-  title: "Willy Mateo",
-};
-
-type Props = {
-  params: Promise<{ locale: string }>;
-  children: React.ReactNode;
-};
-
 const generateStaticParams = () => routing.locales.map(locale => ({ locale }));
 
-const RootLayout = async ({ children, params }: Readonly<Props>) => {
+const generateMetadata = async ({ params }: GenerateMetadataProps): Promise<Metadata> => {
   const { locale } = await params;
 
-  if (!routing.locales.includes(locale as any)) {
+  const t = await getTranslations({
+    namespace: "home.metadata",
+    locale,
+  });
+
+  return {
+    description: t("description"),
+    title: t("title"),
+  };
+};
+
+const RootLayout = async ({ children, params }: Readonly<RootLayoutProps>) => {
+  const { locale } = await params;
+
+  if (!routing.locales.includes(locale)) {
     notFound();
   }
 
@@ -41,4 +46,4 @@ const RootLayout = async ({ children, params }: Readonly<Props>) => {
 };
 
 export default RootLayout;
-export { metadata, generateStaticParams };
+export { generateStaticParams, generateMetadata };
