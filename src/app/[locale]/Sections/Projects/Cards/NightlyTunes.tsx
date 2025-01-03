@@ -1,3 +1,5 @@
+import { useTranslations } from "next-intl";
+
 import { React as ReactIcon } from "@/app/[locale]/shared/Icons/React";
 import { ReactRouter } from "@/app/[locale]/shared/Icons/ReactRouter";
 import { JavaScript } from "@/app/[locale]/shared/Icons/JavaScript";
@@ -14,6 +16,8 @@ import { Card } from "./Card";
 const isDark = false;
 
 const NightlyTunes = () => {
+  const t = useTranslations("home.projects");
+
   const technologies = [
     { name: "JavaScript", Icon: JavaScript },
     { name: "React", Icon: ReactIcon },
@@ -29,7 +33,9 @@ const NightlyTunes = () => {
 
   return (
     <Card
-      description="Nightly Tunes is a music library designed to make discovering and enjoying music easier. By offering a platform where users can listen to their favorite songs and explore new ones, it addresses the challenge of finding fresh music. With support for multiple languages and light or dark modes, it provides a personalized and user-friendly experience, simplifying the process of music discovery and playback."
+      description={t(
+        "Nightly Tunes is a music library designed to make discovering and enjoying music easier By offering a platform where users can listen to their favorite songs and explore new ones, it addresses the challenge of finding fresh music With support for multiple languages and light or dark modes, it provides a personalized and user-friendly experience, simplifying the process of music discovery and playback",
+      )}
       imgUrl={
         isDark ? "/images/nightly-tunes-dark-banner.png" : "/images/nightly-tunes-light-banner.png"
       }
