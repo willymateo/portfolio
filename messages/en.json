@@ -89,6 +89,12 @@
         "In the realm of verbal communication, most common non-clinical speech disfluencies are filler words and filled pauses, which pose challenges for effective oral presentations Yet their detection is no easy task This article presents the usage of OpenAI’s Whisper for filled pauses and filler words detection in Spanish oral presentations, including on-the-wild usage with undergraduate students Preliminary results indicate that Whisper demonstrates promise as a valuable tool to identify a substantial amount of filler words and filled pauses Despite areas of improvement, Whisper serves as a diagnostic tool for assessing disfluences in oral communication": "In the realm of verbal communication, most common non-clinical speech disfluencies are filler words and filled pauses, which pose challenges for effective oral presentations. Yet their detection is no easy task. This article presents the usage of OpenAI’s Whisper for filled pauses and filler words detection in Spanish oral presentations, including on-the-wild usage with undergraduate students. Preliminary results indicate that Whisper demonstrates promise as a valuable tool to identify a substantial amount of filler words and filled pauses. Despite areas of improvement, Whisper serves as a diagnostic tool for assessing disfluences in oral communication",
         "Download paper": "Download paper"
       }
+    },
+    "hobbies": {
+      "Hobbies": "Hobbies",
+      "Ecuador is a country that has beautiful beaches, so I enjoy going surfing with my friends on weekends and holidays": "Ecuador is a country that has beautiful beaches, so I enjoy going surfing with my friends on weekends and holidays",
+      "I am lucky enough to live in a village close to the mountains, in the afternoons it makes me happy to go for a run in natural spaces": "I am lucky enough to live in a village close to the mountains, in the afternoons it makes me happy to go for a run in natural spaces",
+      "Another activity I do to keep my body and mind healthy is going to the gym with my friends": "Another activity I do to keep my body and mind healthy is going to the gym with my friends"
     }
   },
   "languageMenu": {

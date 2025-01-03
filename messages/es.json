@@ -89,6 +89,12 @@
         "In the realm of verbal communication, most common non-clinical speech disfluencies are filler words and filled pauses, which pose challenges for effective oral presentations Yet their detection is no easy task This article presents the usage of OpenAI’s Whisper for filled pauses and filler words detection in Spanish oral presentations, including on-the-wild usage with undergraduate students Preliminary results indicate that Whisper demonstrates promise as a valuable tool to identify a substantial amount of filler words and filled pauses Despite areas of improvement, Whisper serves as a diagnostic tool for assessing disfluences in oral communication": "En el ámbito de la comunicación verbal, las disfluencias no clínicas del habla más comunes son las palabras de relleno y las pausas rellenas, que plantean desafíos para las presentaciones orales efectivas. Sin embargo, su detección no es una tarea fácil. Este artículo presenta el uso de Whisper de OpenAI para pausas rellenas y la detección de palabras de relleno en presentaciones orales en español, incluido el uso en la naturaleza con estudiantes de pregrado. Los resultados preliminares indican que Whisper demuestra ser prometedor como una herramienta valiosa para identificar un A pesar de las áreas de mejora, Whisper sirve como una herramienta de diagnóstico para evaluar las disfluencias en la comunicación oral",
         "Download paper": "Descargar artículo"
       }
+    },
+    "hobbies": {
+      "Hobbies": "Pasatiempos",
+      "Ecuador is a country that has beautiful beaches, so I enjoy going surfing with my friends on weekends and holidays": "Ecuador es un país que tiene hermosas playas, así que disfruto ir a surfear con mis amigos los fines de semana y días festivos",
+      "I am lucky enough to live in a village close to the mountains, in the afternoons it makes me happy to go for a run in natural spaces": "Tengo la suerte de vivir en un pueblo cerca de las montañas, por las tardes me hace feliz salir a correr en espacios naturales",
+      "Another activity I do to keep my body and mind healthy is going to the gym with my friends": "Otra actividad que hago para mantener mi cuerpo y mente saludables es ir al gimnasio con mis amigos"
     }
   },
   "languageMenu": {
