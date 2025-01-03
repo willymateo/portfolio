@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 import { Link } from "@/i18n/routing";
 
 const LanguageMenu = () => {
-  const t = useTranslations("languageMenu");
+  const t = useTranslations();
   const pathname = usePathname();
   const locale = useLocale();
 

@@ -1,6 +1,7 @@
 import { faArrowsSpin } from "@fortawesome/free-solid-svg-icons/faArrowsSpin";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faServer } from "@fortawesome/free-solid-svg-icons";
+import { useTranslations } from "next-intl";
 
 import { Redux as ReduxIcon } from "@/app/[locale]/shared/Icons/Redux";
 import { React as ReactIcon } from "@/app/[locale]/shared/Icons/React";
@@ -19,6 +20,8 @@ import { Git } from "@/app/[locale]/shared/Icons/Git";
 import { Card } from "./Card";
 
 const JamaSana = () => {
+  const t = useTranslations("home.experience.jamasana");
+
   const technologies = [
     { name: "JavaScript", Icon: JavaScript },
     { name: "Python", Icon: Python },
@@ -48,27 +51,12 @@ const JamaSana = () => {
   return (
     <Card
       enterpriseImgUrl="/images/jama-sana-logo.png"
+      jobTitle={t("Fullstack Developer")}
       startDate={new Date(2021, 9, 1)}
-      jobTitle="Fullstack Developer"
       endDate={new Date(2022, 7, 1)}
       enterpriseName="JamaSana"
     >
-      <p>
-        I played a key role in developing version 2 of an application dedicated to the buying and
-        selling of health food. The primary challenge was to enhance user experience by implementing
-        new features and improving existing functionalities. To address this, I implemented password
-        recovery for user accounts and developed flows for registering customer allergies, which
-        personalized the shopping experience. I also created functionalities for editing customer
-        and seller information and added form validations in the sign-up forms to ensure data
-        integrity. On the backend, I maintained and updated the RESTful API using Django and updated
-        the database schema with SQLite to accommodate new features. I utilized React and Redux for
-        frontend development, ensuring a responsive and intuitive user interface. Node.js was used
-        for server-side operations, and I leveraged GitHub for version control, GitHub Actions for
-        continuous integration, and deployed the system using Railway. Rigorous testing of the
-        entire system ensured a robust and user-friendly application. This project showcased my
-        ability to solve complex problems using a full stack of technologies, including React,
-        Redux, Node.js, Django, SQLite, JavaScript, and RESTful APIs.
-      </p>
+      <p>{`${t("I played a key role in developing version 2 of an application dedicated to the buying and selling of health food The primary challenge was to enhance user experience by implementing new features and improving existing functionalities To address this, I implemented password recovery for user accounts and developed flows for registering customer allergies, which personalized the shopping experience I also created functionalities for editing customer and seller information and added form validations in the sign-up forms to ensure data integrity On the backend, I maintained and updated the RESTful API using Django and updated the database schema with SQLite to accommodate new features I utilized React and Redux for frontend development, ensuring a responsive and intuitive user interface Nodejs was used for server-side operations, and I leveraged GitHub for version control, GitHub Actions for continuous integration, and deployed the system using Railway Rigorous testing of the entire system ensured a robust and user-friendly application This project showcased my ability to solve complex problems using a full stack of technologies, including React, Redux, Nodejs, Django, SQLite, JavaScript, and RESTful APIs")}.`}</p>
 
       <Technologies technologies={technologies} />
     </Card>

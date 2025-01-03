@@ -3,6 +3,7 @@ import { faArrowsSpin } from "@fortawesome/free-solid-svg-icons/faArrowsSpin";
 import { faCloud, faServer } from "@fortawesome/free-solid-svg-icons";
 import { faJira } from "@fortawesome/free-brands-svg-icons/faJira";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useTranslations } from "next-intl";
 
 import { Express as ExpressIcon } from "@/app/[locale]/shared/Icons/Express";
 import { ElasticSearch } from "@/app/[locale]/shared/Icons/ElasticSearch";
@@ -28,6 +29,8 @@ import { NPM } from "@/app/[locale]/shared/Icons/NPM";
 import { Card } from "./Card";
 
 const ShippifyInc = () => {
+  const t = useTranslations("home.experience.shippify");
+
   const technologies = [
     { name: "JavaScript", Icon: JavaScript },
     { name: "TypeScript", Icon: TypeScript },
@@ -80,26 +83,11 @@ const ShippifyInc = () => {
       enterpriseImgUrl="/images/shippify-logo.svg"
       enterpriseWebUrl="https://www.shippify.co"
       enterpriseImgAlt="Shippify Inc logo"
+      jobTitle={t("Fullstack Engineer")}
       startDate={new Date(2022, 8, 20)}
       enterpriseName="Shippify Inc"
-      jobTitle="Fullstack Engineer"
     >
-      <p>
-        I contributed to a wide range of impactful projects, showcasing my full-stack expertise. For
-        instance: I rebuilt the entire version 3 of the company's landing page, adding dynamic
-        animations with CSS, improving SEO through server-side rendering using Express.js, and
-        ensuring the site was multi-language with i18next. I also developed the 'Permissions
-        Manager' , where I designed a shared React component to manage user and company permissions,
-        significantly reducing manual requests for permission changes. Another major project was
-        enhancing the delivery location manager, where I improved the user experience by displaying
-        real-time location updates on a Mapbox-powered map, allowing operators to make precise
-        location adjustments with ease. Furthermore, I played a pivotal role in the 'Driver Payments
-        V2' project, starting with the frontend and later taking on backend responsibilities,
-        utilizing AWS Lambda, Terraform, and Elasticsearch to optimize data retrieval performance.
-        In every project, I worked closely with cross-functional teams, integrating solutions that
-        not only improved system efficiency but also reduced operational overhead, helping Shippify
-        scale its services more effectively.
-      </p>
+      <p>{`${t("I contributed to a wide range of impactful projects, showcasing my full-stack expertise For instance: I rebuilt the entire version 3 of the company's landing page, adding dynamic animations with CSS, improving SEO through server-side rendering using Expressjs, and ensuring the site was multi-language with i18next I also developed the 'Permissions Manager' , where I designed a shared React component to manage user and company permissions, significantly reducing manual requests for permission changes Another major project was enhancing the delivery location manager, where I improved the user experience by displaying real-time location updates on a Mapbox-powered map, allowing operators to make precise location adjustments with ease Furthermore, I played a pivotal role in the 'Driver Payments V2' project, starting with the frontend and later taking on backend responsibilities, utilizing AWS Lambda, Terraform, and Elasticsearch to optimize data retrieval performance In every project, I worked closely with cross-functional teams, integrating solutions that not only improved system efficiency but also reduced operational overhead, helping Shippify scale its services more effectively")}.`}</p>
 
       <Technologies technologies={technologies} />
     </Card>
