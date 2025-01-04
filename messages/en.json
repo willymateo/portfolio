@@ -1,0 +1,113 @@
+{
+  "home": {
+    "metadata": {
+      "title": "Willy Mateo - Full-stack developer",
+      "description": "Willy Mateo is a full-stack developer dedicated to creating innovative web solutions. Explore his work and get in touch to build something amazing together."
+    },
+    "hero": {
+      "I'm Willy Mateo": "I'm Willy Mateo",
+      "a full-stack developer dedicated to creating innovative web solutions": "a full-stack developer dedicated to creating innovative web solutions",
+      "Let’s build something amazing together": "Let’s build something amazing together",
+      "Explore my work": "Explore my work",
+      "Get in touch": "Get in touch"
+    },
+    "aboutMe": {
+      "About me": "About me",
+      "Hello there! My name is Willy Mateo": "Hello there! My name is Willy Mateo",
+      "I’m Willy Mateo, a passionate Computer Science Engineer from": "I’m Willy Mateo, a passionate Computer Science Engineer from",
+      "ESPOL, Ecuador’s top university": "ESPOL, Ecuador’s top university",
+      "with a strong focus on full-stack development My career so far has centered on creating efficient, high-performing applications I thrive on solving complex challenges and am committed to building scalable solutions I identify myself with excellence, and this drives me to deliver top-quality code and always look for ways to optimize processes, ensuring both user satisfaction and performance": "with a strong focus on full-stack development. My career so far has centered on creating efficient, high-performing applications. I thrive on solving complex challenges and am committed to building scalable solutions. I identify myself with excellence, and this drives me to deliver top-quality code and always look for ways to optimize processes, ensuring both user satisfaction and performance",
+      "Technically, I bring extensive experience in": "Technically, I bring extensive experience in",
+      "TypeScript, JavaScript, React, Nextjs, Redux and testing libraries": "TypeScript, JavaScript, React, Next.js, Redux and testing libraries",
+      "combined with a deep understanding of backend technologies like": "combined with a deep understanding of backend technologies like",
+      "Nodejs, Expressjs, Nestjs, Python, Django, MySQL, PostgreSQL and MongoDB": "Node.js, Express.js, Nest.js, Python, Django, MySQL, PostgreSQL and MongoDB",
+      "My experience with cloud services is based on": "My experience with cloud services is based on",
+      "AWS, Firebase, Vercel, ElasticSearch, Terraform and Docker": "AWS, Firebase, Vercel, ElasticSearch, Terraform and Docker",
+      "Beyond technical expertise, I possess strong communication skills and a collaborative mindset My leadership qualities enable me to work effectively across teams, mentor peers, and ensure that every project I touch meets high standards": "Beyond technical expertise, I possess strong communication skills and a collaborative mindset. My leadership qualities enable me to work effectively across teams, mentor peers, and ensure that every project I touch meets high standards",
+      "Looking ahead, I am determined to continuously grow my skills": "Looking ahead, I am determined to continuously grow my skills",
+      "with the ultimate goal of becoming a software architect": "with the ultimate goal of becoming a software architect",
+      "I am driven by the idea of designing systems that are both efficient and scalable, ensuring that technology not only meets today’s demands but is also prepared for tomorrow’s challenges I am constantly improving, learning, and innovating, and I look forward to opportunities that push me to develop my expertise and leadership further": "I am driven by the idea of designing systems that are both efficient and scalable, ensuring that technology not only meets today’s demands but is also prepared for tomorrow’s challenges. I am constantly improving, learning, and innovating, and I look forward to opportunities that push me to develop my expertise and leadership further",
+      "Download resume": "Download resume"
+    },
+    "techStack": {
+      "Technologies": "Technologies",
+      "Tech stack": "Tech stack",
+      "Programming languages": "Programming languages",
+      "Mobile": "Mobile",
+      "Databases": "Databases",
+      "Cloud": "Cloud",
+      "Development environment": "Development environment",
+      "Agile": "Agile"
+    },
+    "experience": {
+      "Experience": "Experience",
+      "Colleagues": "Colleagues",
+      "shippify": {
+        "Fullstack Engineer": "Fullstack Engineer",
+        "I contributed to a wide range of impactful projects, showcasing my full-stack expertise For instance: I rebuilt the entire version 3 of the company's landing page, adding dynamic animations with CSS, improving SEO through server-side rendering using Expressjs, and ensuring the site was multi-language with i18next I also developed the 'Permissions Manager' , where I designed a shared React component to manage user and company permissions, significantly reducing manual requests for permission changes Another major project was enhancing the delivery location manager, where I improved the user experience by displaying real-time location updates on a Mapbox-powered map, allowing operators to make precise location adjustments with ease Furthermore, I played a pivotal role in the 'Driver Payments V2' project, starting with the frontend and later taking on backend responsibilities, utilizing AWS Lambda, Terraform, and Elasticsearch to optimize data retrieval performance In every project, I worked closely with cross-functional teams, integrating solutions that not only improved system efficiency but also reduced operational overhead, helping Shippify scale its services more effectively": "I contributed to a wide range of impactful projects, showcasing my full-stack expertise. For instance: I rebuilt the entire version 3 of the company's landing page, adding dynamic animations with CSS, improving SEO through server-side rendering using Express.js, and ensuring the site was multi-language with i18next. I also developed the 'Permissions Manager' , where I designed a shared React component to manage user and company permissions, significantly reducing manual requests for permission changes. Another major project was enhancing the delivery location manager, where I improved the user experience by displaying real-time location updates on a Mapbox-powered map, allowing operators to make precise location adjustments with ease. Furthermore, I played a pivotal role in the 'Driver Payments V2' project, starting with the frontend and later taking on backend responsibilities, utilizing AWS Lambda, Terraform, and Elasticsearch to optimize data retrieval performance. In every project, I worked closely with cross-functional teams, integrating solutions that not only improved system efficiency but also reduced operational overhead, helping Shippify scale its services more effectively"
+      },
+      "sasf": {
+        "Fullstack Developer": "Fullstack Developer",
+        "I maintained a CRM system and web service for Huawei, ensuring seamless functionality for their enterprise needs A key aspect of my role was using PSQL to create SQL scripts that migrated data from old to new tables, while ensuring data integrity by avoiding duplication and ambiguous entries I also worked with microservices and orchestration services to streamline operations for both Claro and Huawei Throughout the project, I utilized technologies like JavaScript, HTML, CSS, and SCSS to enhance the system's interface and performance": "I maintained a CRM system and web service for Huawei, ensuring seamless functionality for their enterprise needs. A key aspect of my role was using PSQL to create SQL scripts that migrated data from old to new tables, while ensuring data integrity by avoiding duplication and ambiguous entries. I also worked with microservices and orchestration services to streamline operations for both Claro and Huawei. Throughout the project, I utilized technologies like JavaScript, HTML, CSS, and SCSS to enhance the system's interface and performance"
+      },
+      "jamasana": {
+        "Fullstack Developer": "Fullstack Developer",
+        "I played a key role in developing version 2 of an application dedicated to the buying and selling of health food The primary challenge was to enhance user experience by implementing new features and improving existing functionalities To address this, I implemented password recovery for user accounts and developed flows for registering customer allergies, which personalized the shopping experience I also created functionalities for editing customer and seller information and added form validations in the sign-up forms to ensure data integrity On the backend, I maintained and updated the RESTful API using Django and updated the database schema with SQLite to accommodate new features I utilized React and Redux for frontend development, ensuring a responsive and intuitive user interface Nodejs was used for server-side operations, and I leveraged GitHub for version control, GitHub Actions for continuous integration, and deployed the system using Railway Rigorous testing of the entire system ensured a robust and user-friendly application This project showcased my ability to solve complex problems using a full stack of technologies, including React, Redux, Nodejs, Django, SQLite, JavaScript, and RESTful APIs": "I played a key role in developing version 2 of an application dedicated to the buying and selling of health food. The primary challenge was to enhance user experience by implementing new features and improving existing functionalities. To address this, I implemented password recovery for user accounts and developed flows for registering customer allergies, which personalized the shopping experience. I also created functionalities for editing customer and seller information and added form validations in the sign-up forms to ensure data integrity. On the backend, I maintained and updated the RESTful API using Django and updated the database schema with SQLite to accommodate new features. I utilized React and Redux for frontend development, ensuring a responsive and intuitive user interface. Node.js was used for server-side operations, and I leveraged GitHub for version control, GitHub Actions for continuous integration, and deployed the system using Railway. Rigorous testing of the entire system ensured a robust and user-friendly application. This project showcased my ability to solve complex problems using a full stack of technologies, including React, Redux, Node.js, Django, SQLite, JavaScript, and RESTful APIs"
+      }
+    },
+    "projects": {
+      "Projects": "Projects",
+      "NameGenius is a free web application designed to solve the challenge of finding creative and unique names for businesses, projects, or teams By leveraging artificial intelligence, it generates tailored name suggestions, streamlining a process that can be time-consuming and difficult The application offers an intuitive user experience with features like dark and light modes, making it accessible for a wide range of users NameGenius simplifies the naming process by utilizing cutting-edge technology to inspire creativity and save time": "NameGenius is a free web application designed to solve the challenge of finding creative and unique names for businesses, projects, or teams. By leveraging artificial intelligence, it generates tailored name suggestions, streamlining a process that can be time-consuming and difficult. The application offers an intuitive user experience with features like dark and light modes, making it accessible for a wide range of users. NameGenius simplifies the naming process by utilizing cutting-edge technology to inspire creativity and save time",
+      "Nightly Tunes is a music library designed to make discovering and enjoying music easier By offering a platform where users can listen to their favorite songs and explore new ones, it addresses the challenge of finding fresh music With support for multiple languages and light or dark modes, it provides a personalized and user-friendly experience, simplifying the process of music discovery and playback": "Nightly Tunes is a music library designed to make discovering and enjoying music easier. By offering a platform where users can listen to their favorite songs and explore new ones, it addresses the challenge of finding fresh music. With support for multiple languages and light or dark modes, it provides a personalized and user-friendly experience, simplifying the process of music discovery and playback",
+      "This project was designed to streamline the process of handling thesis proposals and evaluations It addresses the challenge of coordinating between students, professors, and course coordinators by allowing clients to submit proposals, professors to manage and evaluate them, and coordinators to distribute projects efficiently This project enhances visibility and organization through a dashboard, simplifying the tracking and management of thesis progress It was developed in collaboration with key stakeholders, demonstrating a comprehensive application of computer science engineering skills to solve real-world administrative problems": "This project was designed to streamline the process of handling thesis proposals and evaluations. It addresses the challenge of coordinating between students, professors, and course coordinators by allowing clients to submit proposals, professors to manage and evaluate them, and coordinators to distribute projects efficiently. This project enhances visibility and organization through a dashboard, simplifying the tracking and management of thesis progress. It was developed in collaboration with key stakeholders, demonstrating a comprehensive application of computer science engineering skills to solve real-world administrative problems",
+      "Go to website": "Go to website"
+    },
+    "education": {
+      "Education": "Education",
+      "espol": {
+        "Engineering in Computer Science": "Engineering in Computer Science",
+        "Bachelor's degree": "Bachelor's degree",
+        "In my journey as a Computer Science Engineer from ESPOL, I gained a comprehensive foundation in various areas of software development and technology My education provided me with a deep understanding of Object-Oriented Programming and Data Structures, essential for building scalable and maintainable software solutions I developed a strong grasp of Software Design principles and Database Systems, which are critical for designing efficient, robust applications Courses in Systems Programming, Operating Systems, and Algorithms Analysis enhanced my ability to create optimized and high-performance systems I also explored Web and Mobile Software Development, learning how to build responsive, user-friendly applications My studies included Information Security, ensuring I understand how to protect systems and data, and Programming Languages, allowing me to work across different development environments Additionally, I studied Software Engineering, Artificial Intelligence, and Distributed Systems and Cloud Computing, which provided insights into creating intelligent and distributed applications My education also covered the Management of IT Projects and Information Systems, equipping me with the skills to lead technology projects and manage information effectively in a business context": "In my journey as a Computer Science Engineer from ESPOL, I gained a comprehensive foundation in various areas of software development and technology. My education provided me with a deep understanding of Object-Oriented Programming and Data Structures, essential for building scalable and maintainable software solutions. I developed a strong grasp of Software Design principles and Database Systems, which are critical for designing efficient, robust applications. Courses in Systems Programming, Operating Systems, and Algorithms Analysis enhanced my ability to create optimized and high-performance systems. I also explored Web and Mobile Software Development, learning how to build responsive, user-friendly applications. My studies included Information Security, ensuring I understand how to protect systems and data, and Programming Languages, allowing me to work across different development environments. Additionally, I studied Software Engineering, Artificial Intelligence, and Distributed Systems and Cloud Computing, which provided insights into creating intelligent and distributed applications. My education also covered the Management of IT Projects and Information Systems, equipping me with the skills to lead technology projects and manage information effectively in a business context",
+        "Go to website": "Go to website"
+      },
+      "uecsb": {
+        "High School degree in Computer Systems": "High School degree in Computer Systems",
+        "High School degree": "High School degree",
+        "During my studies at Carrera Sánchez Bruno high school, where I specialized in computer systems, I gained essential foundational knowledge in various areas of software development I learned the principles of Object-Oriented Programming, which helped me understand how to structure and organize code effectively I also delved into Algorithms Analysis, which taught me how to optimize and improve the efficiency of solutions Additionally, I acquired a solid grasp of the basics of Web Development, enabling me to build functional and responsive websites": "During my studies at Carrera Sánchez Bruno high school, where I specialized in computer systems, I gained essential foundational knowledge in various areas of software development. I learned the principles of Object-Oriented Programming, which helped me understand how to structure and organize code effectively. I also delved into Algorithms Analysis, which taught me how to optimize and improve the efficiency of solutions. Additionally, I acquired a solid grasp of the basics of Web Development, enabling me to build functional and responsive websites",
+        "Go to website": "Go to website"
+      }
+    },
+    "achievements": {
+      "Achievements": "Achievements",
+      "githubFoundationsCertification": {
+        "Certification": "Certification",
+        "This certification validates expertise in essential GitHub skills, including repositories, commits, branching, markdowns, and project management It's designed to showcase entry-level DevOps skills and modern development practices with GitHub tools like Actions, Codespaces, GitFlow and Projects Key Skills Validated: Git & GitHub Basics, Collaboration & Modern Development Features, Continuous Integration (CI), Continuous Delivery (CD), Secure Repository Management, GitHub Administration": "This certification validates expertise in essential GitHub skills, including repositories, commits, branching, markdowns, and project management. It's designed to showcase entry-level DevOps skills and modern development practices with GitHub tools like Actions, Codespaces, GitFlow and Projects. Key Skills Validated: Git & GitHub Basics, Collaboration & Modern Development Features, Continuous Integration (CI), Continuous Delivery (CD), Secure Repository Management, GitHub Administration",
+        "View credential": "View credential"
+      },
+      "paperRAP": {
+        "Paper": "Paper",
+        "In the realm of verbal communication, most common non-clinical speech disfluencies are filler words and filled pauses, which pose challenges for effective oral presentations Yet their detection is no easy task This article presents the usage of OpenAI’s Whisper for filled pauses and filler words detection in Spanish oral presentations, including on-the-wild usage with undergraduate students Preliminary results indicate that Whisper demonstrates promise as a valuable tool to identify a substantial amount of filler words and filled pauses Despite areas of improvement, Whisper serves as a diagnostic tool for assessing disfluences in oral communication": "In the realm of verbal communication, most common non-clinical speech disfluencies are filler words and filled pauses, which pose challenges for effective oral presentations. Yet their detection is no easy task. This article presents the usage of OpenAI’s Whisper for filled pauses and filler words detection in Spanish oral presentations, including on-the-wild usage with undergraduate students. Preliminary results indicate that Whisper demonstrates promise as a valuable tool to identify a substantial amount of filler words and filled pauses. Despite areas of improvement, Whisper serves as a diagnostic tool for assessing disfluences in oral communication",
+        "Download paper": "Download paper"
+      }
+    },
+    "hobbies": {
+      "Hobbies": "Hobbies",
+      "Ecuador is a country that has beautiful beaches, so I enjoy going surfing with my friends on weekends and holidays": "Ecuador is a country that has beautiful beaches, so I enjoy going surfing with my friends on weekends and holidays",
+      "I am lucky enough to live in a village close to the mountains, in the afternoons it makes me happy to go for a run in natural spaces": "I am lucky enough to live in a village close to the mountains, in the afternoons it makes me happy to go for a run in natural spaces",
+      "Another activity I do to keep my body and mind healthy is going to the gym with my friends": "Another activity I do to keep my body and mind healthy is going to the gym with my friends"
+    },
+    "getInTouch": {
+      "Get in touch": "Get in touch",
+      "Let's build something together": "Let's build something together",
+      "Or": "Or"
+    }
+  },
+  "languageMenu": {
+    "English": "English",
+    "Spanish": "Spanish"
+  },
+  "footer": {
+    "Designed and developed with": "Designed and developed with",
+    "by": "by"
+  }
+}
