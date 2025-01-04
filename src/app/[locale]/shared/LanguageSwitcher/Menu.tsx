@@ -15,7 +15,7 @@ const Menu = ({ className = "", onChangeLocale }: Props) => {
 
   return (
     <MotionUl
-      className={`flex flex-col gap-1 py-2 text-left w-[150px] border border-[#555555]/30 bg-[#eeeeee] ${className}`}
+      className={`flex flex-col gap-1 py-2 text-left w-[150px] border border-darkosPortfolio-gray-500/30 bg-darkosPortfolio-gray dark:bg-darkosPortfolio-black ${className}`}
       exit={{ opacity: 0, transition: { duration: 0.3 } }}
       transition={{ duration: 0.5 }}
       animate={{ opacity: 1 }}
@@ -23,7 +23,7 @@ const Menu = ({ className = "", onChangeLocale }: Props) => {
     >
       {Object.values(LANGUAGES_DATA_BY_CODE).map(languageData => (
         <Link
-          className={`px-5 hover:bg-[#555555]/30 ${locale === languageData.code ? "font-bold" : ""}`}
+          className={`px-5 hover:bg-darkosPortfolio-gray-500/30 ${locale === languageData.code ? "font-bold" : ""}`}
           locale={languageData.code}
           onClick={onChangeLocale}
           key={languageData.code}

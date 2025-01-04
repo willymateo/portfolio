@@ -1,10 +1,10 @@
 "use client";
 
+import { AnimatePresence } from "motion/react";
 import { useEffect, useRef } from "react";
 import { useLocale } from "next-intl";
 
-import { LotusFlower } from "@/app/[locale]/shared/Loaders/LotusFlower";
-import { AnimatePresence } from "motion/react";
+import { LotusFlower } from "../Loaders/LotusFlower";
 import { useActive } from "@/hooks/useActive";
 import { Menu } from "./Menu";
 import "./types";

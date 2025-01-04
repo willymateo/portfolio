@@ -6,7 +6,7 @@ const Footer = () => {
   const t = useTranslations("footer");
 
   return (
-    <footer className="flex flex-row items-center justify-center bg-black text-white text-sm sm:text-base px-10 py-5 sticky bottom-0 z-[9999]">
+    <footer className="flex flex-row items-center justify-center bg-darkosPortfolio-black dark:bg-black text-white text-sm sm:text-base px-10 py-5 sticky bottom-0 z-[9999]">
       <div className="text-center leading-9">
         {t("Designed and developed with")}
 

@@ -48,8 +48,11 @@ const DinamicQuote = ({ className = "" }: Props) => {
 
   return (
     <div className={`flex flex-col items-stretch justify-center ${className}`}>
-      <p className="italic text-slate-700">{quotes[currentQuoteIndex]?.body}</p>
-      <p className="italic text-slate-500 font-bold text-right">
+      <p className="italic text-darkosPortfolio-black dark:text-darkosPortfolio-gray">
+        {quotes[currentQuoteIndex]?.body}
+      </p>
+
+      <p className="italic text-darkosPortfolio-black dark:text-darkosPortfolio-gray font-bold text-right">
         {quotes[currentQuoteIndex]?.author}
       </p>
     </div>

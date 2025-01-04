@@ -9,7 +9,7 @@ const SubTitle = ({ children, subTitleClassName = "" }: Props) => (
   <div className="flex flex-col gap-5">
     <h3 className={`text-xl sm:text-3xl font-bold ${subTitleClassName}`}>{children}</h3>
 
-    <hr className="w-28 h-[2px] bg-black border-0" />
+    <hr className="w-28 h-[2px] bg-darkosPortfolio-black dark:bg-darkosPortfolio-gray border-0" />
   </div>
 );
 
