@@ -1,7 +1,11 @@
 import "./index.css";
 
-const Loader = () => (
-  <div className="newtons-cradle">
+type Props = {
+  className?: string;
+};
+
+const NewtonsCradle = ({ className = "" }: Props) => (
+  <div className={`newtons-cradle ${className}`}>
     <div className="newtons-cradle__dot" />
     <div className="newtons-cradle__dot" />
     <div className="newtons-cradle__dot" />
@@ -9,4 +13,4 @@ const Loader = () => (
   </div>
 );
 
-export { Loader };
+export { NewtonsCradle };
