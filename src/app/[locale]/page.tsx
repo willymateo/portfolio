@@ -12,9 +12,9 @@ import { Footer } from "./shared/Footer";
 import { Hero } from "./Sections/Hero";
 
 const Home = () => (
-  <main className="min-h-screen flex flex-col gap-20 bg-[#eee]">
-    <div className="opacity-30 fixed top-0 bottom-[65px] left-0 right-0 z-[0]">
-      <div className="w-full h-full opacity-100">
+  <main className="min-h-screen flex flex-col gap-20 bg-[#eeeeee]">
+    <div className="opacity-30 fixed top-[47px] lg:top-[63px] bottom-[76px] left-0 right-0 z-[0]">
+      <div className="w-full h-full">
         <BackgroundSVG />
       </div>
     </div>

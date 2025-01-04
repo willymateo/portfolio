@@ -13,7 +13,7 @@ const Footer = () => {
         <div className="inline-block w-[100px] h-3 relative">
           <DotLottie
             src="https://lottie.host/46fa9291-fd6e-44fc-9c19-ce14b78ad7a0/3sAdrnpFow.lottie"
-            className="absolute bottom-[-5px] left-[-50%] w-[200px]"
+            className="absolute bottom-[-5px] left-[-50%] w-[190px]"
             renderConfig={{ freezeOnOffscreen: true }}
             autoplay
             loop

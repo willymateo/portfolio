@@ -1,8 +1,10 @@
+import { ReactNode } from "react";
+
 import { LanguageCode } from "@/i18n/types";
 
 export type RootLayoutProps = {
   params: Promise<ParamsContent>;
-  children: React.ReactNode;
+  children: Readonly<ReactNode>;
 };
 
 export type GenerateMetadataProps = {
