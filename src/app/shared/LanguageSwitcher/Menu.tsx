@@ -5,10 +5,10 @@ import { LANGUAGES_DATA_BY_CODE } from "@/i18n/constants";
 import { Link, usePathname } from "@/i18n/routing";
 
 type Props = MotionUlProps & {
-  onClose: () => void;
+  onChangeLocale: () => void;
 };
 
-const Menu = ({ className = "", onClose }: Props) => {
+const Menu = ({ className = "", onChangeLocale }: Props) => {
   const pathname = usePathname();
   const t = useTranslations();
   const locale = useLocale();
@@ -20,13 +20,14 @@ const Menu = ({ className = "", onClose }: Props) => {
       transition={{ duration: 0.5 }}
       animate={{ opacity: 1 }}
       initial={{ opacity: 0 }}
-      onClick={onClose}
     >
       {Object.values(LANGUAGES_DATA_BY_CODE).map(languageData => (
         <Link
           className={`px-5 hover:bg-[#555555]/30 ${locale === languageData.code ? "font-bold" : ""}`}
-          href={`/${languageData.code}${pathname}`}
+          locale={languageData.code}
+          onClick={onChangeLocale}
           key={languageData.code}
+          href={pathname}
         >
           {`${languageData.code.toUpperCase()} - ${t(languageData.name)}`}
         </Link>

@@ -4,21 +4,19 @@ import { useCallback, useEffect, useState } from "react";
 
 import { AllQuotesResponse, Quote } from "@/shared/interfaces/FavQs";
 import { DINAMIC_QUOTE_INTERVAL } from "@/shared/constants";
+import { NewtonsCradle } from "./Loaders/NewtonsCradle";
 import { useActive } from "@/hooks/useActive";
-import { Loader } from "./Loader";
 
 interface Props {
   className?: string;
 }
 
 const DinamicQuote = ({ className = "" }: Props) => {
-  const { isActive: isLoading, enable: startLoading, disable: stopLoading } = useActive();
+  const { isActive: isLoading, disable: stopLoading } = useActive(true);
   const [currentQuoteIndex, setCurrentQuoteIndex] = useState<number>(0);
   const [quotes, setQuotes] = useState<Quote[]>([]);
 
   const fetchQuotes = useCallback(async () => {
-    startLoading();
-
     try {
       const response = await fetch("/api/quotes");
       const { quotes: fetchedQuotes = [] }: AllQuotesResponse = (await response.json()) ?? {};
@@ -45,7 +43,7 @@ const DinamicQuote = ({ className = "" }: Props) => {
   }, [quotes]);
 
   if (isLoading) {
-    <Loader />;
+    return <NewtonsCradle />;
   }
 
   return (

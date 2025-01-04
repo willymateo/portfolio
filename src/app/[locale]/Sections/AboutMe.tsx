@@ -14,7 +14,7 @@ const AboutMe = () => {
   return (
     <Container id={SECTIONS.ABOUT_ME} title={t("About me")}>
       <div className="flex flex-col items-start gap-5">
-        <div className="flex flex-col">
+        <div className="flex flex-col gap-1">
           <h3 className="text-2xl">{t("Hello there! My name is Willy Mateo")}</h3>
           <DinamicQuote />
         </div>

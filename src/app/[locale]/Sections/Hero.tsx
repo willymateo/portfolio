@@ -17,7 +17,7 @@ const Hero = () => {
   const t = useTranslations("home.hero");
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center justify-items-center gap-10 sm:grid sm:grid-cols-[5fr_4fr] py-20">
+    <div className="min-h-screen flex flex-col items-center justify-center justify-items-center gap-10 sm:grid sm:grid-cols-[5fr_4fr] pt-[49px] lg:pt-[65px] pb-[112px] sm:pb-[76px]">
       <MotionDiv
         whileInView={{ opacity: 1, scale: 1 }}
         initial={{ opacity: 0, scale: 0.5 }}
@@ -37,7 +37,7 @@ const Hero = () => {
         />
       </MotionDiv>
 
-      <div className="flex flex-col justify-center items-center gap-8 max-w-[600px]">
+      <div className="flex flex-col justify-center items-center gap-3 lg:gap-8 max-w-[600px]">
         <div className="flex flex-col justify-center items-center gap-1">
           <MotionH1
             className={`text-4xl sm:text-5xl lg:text-8xl text-center ${animaticSCBold.className}`}
@@ -66,9 +66,7 @@ const Hero = () => {
 
         <DotLottie
           src="https://lottie.host/8aaed915-a5eb-45bc-a378-85773867d9a5/KBhS3N1Eot.lottie"
-          renderConfig={{
-            freezeOnOffscreen: true,
-          }}
+          renderConfig={{ freezeOnOffscreen: true }}
           className="h-[100px]"
           autoplay
           loop
