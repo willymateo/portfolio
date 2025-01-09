@@ -41,10 +41,10 @@ const SASF = () => {
 
   return (
     <Card
+      enterpriseWebUrl="https://www.linkedin.com/company/sudamericana-de-software/"
       enterpriseImgAlt="Sudamericana de Software S.A logo"
       enterpriseName="Sudamericana de Software S.A"
       enterpriseImgUrl="/images/sasf-logo.jpg"
-      enterpriseWebUrl="https://www.sasf.net"
       jobTitle={t("Fullstack Developer")}
       startDate={new Date(2022, 1, 1)}
       endDate={new Date(2022, 7, 1)}

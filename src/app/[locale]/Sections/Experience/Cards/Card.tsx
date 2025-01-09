@@ -48,13 +48,14 @@ const Card = ({
         <div className="flex flex-col">
           <h4 className="text-xl">{jobTitle}</h4>
           <p>
-            {`${
-              (intlFormat(startDate, {
+            {`${intlFormat(
+              startDate,
+              {
                 month: "long",
                 year: "numeric",
-              }),
-              { locale })
-            } - ${
+              },
+              { locale },
+            )} - ${
               isValid(endDate)
                 ? intlFormat(
                     endDate as Date,
