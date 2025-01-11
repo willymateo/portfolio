@@ -1,0 +1,130 @@
+.switch {
+  --shadow-color: var(--color-dark);
+  --transition100: 100ms;
+  --color-dark: #0c0f14;
+  --color-gray: #52555a;
+
+  transition: var(--transition100);
+  align-items: center;
+  border-radius: 30px;
+  position: relative;
+  user-select: none;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  height: 24px;
+  padding: 4px;
+  width: 50px;
+}
+
+.switch .svg {
+  transition: var(--transition100);
+  position: absolute;
+}
+
+.switch .moon {
+  fill: var(--color-gray);
+  height: 14px;
+  width: 14px;
+  right: 5px;
+}
+
+.switch .sun {
+  transform: translateY(-50%);
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-left: 2px;
+  display: flex;
+  height: 12px;
+  width: 12px;
+  scale: 0.5;
+  top: 8px;
+}
+
+.switch .sun .dot {
+  border-radius: 50%;
+  position: relative;
+  background: white;
+  display: block;
+  height: 3px;
+  width: 3px;
+  z-index: 1;
+  box-shadow:
+    11px 0px 0px var(--shadow-color),
+    10.3px 0px 0px var(--shadow-color),
+    -11px 0px 0px var(--shadow-color),
+    -10.3px 0px 0px var(--shadow-color),
+    0px -11px 0px var(--shadow-color),
+    0px -10.3px 0px var(--shadow-color),
+    0px 11px 0px var(--shadow-color),
+    0px 10.3px 0px var(--shadow-color),
+    8px 8px 0px var(--shadow-color),
+    7.3px 7.3px 0px var(--shadow-color),
+    8px -8px 0px var(--shadow-color),
+    7.3px -7.3px 0px var(--shadow-color),
+    -8px -8px 0px var(--shadow-color),
+    -7.3px -7.3px 0px var(--shadow-color),
+    -8px 8px 0px var(--shadow-color),
+    -7.3px 7.3px 0px var(--shadow-color);
+}
+
+.switch .sun .dot::before {
+  border: 2px solid var(--color-dark);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  position: absolute;
+  background: white;
+  height: 10px;
+  width: 10px;
+  content: "";
+  left: 50%;
+  top: 50%;
+}
+
+.switch .circle {
+  transition: var(--transition100);
+  background-color: white;
+  border-radius: 50%;
+  position: relative;
+  appearance: none;
+  height: 16px;
+  width: 16px;
+  left: 0;
+}
+
+.switch:hover .circle {
+  margin-left: 3px;
+}
+
+.switch:hover .circle:checked {
+  margin-left: -3px;
+}
+
+.switch:hover .moon {
+  right: 7px;
+}
+
+.switch:hover .sun {
+  margin-left: 5px;
+}
+
+.switch .circle:checked {
+  left: calc(100% - 16px);
+}
+
+.switch:has(.circle:checked) > .sun {
+  opacity: 0;
+}
+
+.switch:not(:has(.circle:checked)) > .sun {
+  opacity: 1;
+}
+
+.switch:has(.circle:checked) > .moon {
+  opacity: 1;
+}
+
+.switch:not(:has(.circle:checked)) > .moon {
+  opacity: 0;
+}

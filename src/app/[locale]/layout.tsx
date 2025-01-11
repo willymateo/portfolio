@@ -5,6 +5,7 @@ import type { Metadata } from "next";
 
 import { GenerateMetadataProps, RootLayoutProps } from "./types";
 import { ralewayVariable } from "@/shared/fonts";
+import { Providers } from "./Providers";
 
 import "../globals.css";
 
@@ -34,8 +35,10 @@ const RootLayout = async ({ children, params }: Readonly<RootLayoutProps>) => {
   setRequestLocale(locale);
 
   return (
-    <html lang={locale}>
-      <body className={ralewayVariable.className}>{children}</body>
+    <html lang={locale} suppressHydrationWarning>
+      <body className={ralewayVariable.className}>
+        <Providers>{children}</Providers>
+      </body>
     </html>
   );
 };

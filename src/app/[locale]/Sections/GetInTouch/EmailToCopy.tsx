@@ -23,7 +23,7 @@ const EmailToCopy = () => {
 
   return (
     <MotionDiv
-      className="flex flex-row items-center justify-center flex-wrap gap-x-10 gap-y-3 rounded-xl bg-black bg-opacity-20 p-5 max-w-full"
+      className="flex flex-row items-center justify-center flex-wrap gap-x-10 gap-y-3 rounded-xl p-5 max-w-full bg-darkosPortfolio-black/10 dark:bg-darkosPortfolio-gray/10"
       transition={{
         scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
         duration: 0.1,

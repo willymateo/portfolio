@@ -7,12 +7,12 @@ import { TechStack } from "./Sections/TechStack";
 import { Projects } from "./Sections/Projects";
 import { AboutMe } from "./Sections/AboutMe";
 import { Hobbies } from "./Sections/Hobbies";
-import { Header } from "../shared/Header";
+import { Header } from "./shared/Header";
 import { Footer } from "./shared/Footer";
 import { Hero } from "./Sections/Hero";
 
 const Home = () => (
-  <main className="min-h-screen flex flex-col gap-20 bg-[#eeeeee]">
+  <main className="min-h-screen flex flex-col gap-20 bg-darkosPortfolio-gray dark:bg-darkosPortfolio-black">
     <div className="opacity-30 fixed top-[47px] lg:top-[63px] bottom-[76px] left-0 right-0 z-[0]">
       <div className="w-full h-full">
         <BackgroundSVG />

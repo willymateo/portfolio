@@ -10,7 +10,7 @@ interface Props {
 
 const PrimaryButton = ({ onClick, children, className = "" }: Props) => (
   <MotionButton
-    className={`flex flex-row flex-wrap items-center justify-center gap-x-3 gap-y-2 px-4 py-2 rounded-full bg-black text-white ${className}`}
+    className={`flex flex-row flex-wrap items-center justify-center gap-x-3 gap-y-2 px-4 py-2 rounded-full bg-darkosPortfolio-black dark:bg-darkosPortfolio-gray/50 text-white ${className}`}
     whileInView={{ opacity: 1, scale: 1 }}
     initial={{ opacity: 0, scale: 0.5 }}
     transition={{
