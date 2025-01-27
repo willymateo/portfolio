@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useTranslations } from "next-intl";
 
 import { PrimaryButton } from "@/app/[locale]/shared/Buttons/Primary";
+import csbLogo from "@/../public/images/education/csb-logo.png";
 import { Link } from "@/i18n/routing";
 import { Card } from "./Card";
 
@@ -21,7 +22,7 @@ const CSB = () => {
       startDate={new Date(2015, 4, 1)}
       endDate={new Date(2018, 1, 1)}
       type={t("High School degree")}
-      imgUrl="/images/csb-logo.png"
+      imgUrl={csbLogo.src}
       imgHeight={200}
       imgWidth={200}
     >

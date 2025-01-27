@@ -12,6 +12,7 @@ const Education = () => {
     <Container id={SECTIONS.EDUCATION} title={t("Education")}>
       <div className="flex flex-col gap-20">
         <ESPOL />
+
         <CSB />
       </div>
     </Container>

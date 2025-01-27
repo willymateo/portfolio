@@ -1,27 +1,33 @@
+import shippifyTeam1 from "@/../public/images/experience/shippify-team-1.jpg";
+import shippifyTeam2 from "@/../public/images/experience/shippify-team-2.jpg";
+import shippifyTeam3 from "@/../public/images/experience/shippify-team-3.jpg";
+import shippifyTeam4 from "@/../public/images/experience/shippify-team-4.jpg";
+import shippifyTeam5 from "@/../public/images/experience/shippify-team-5.jpg";
+
 const JOB_IMAGES = [
   {
     id: "photo-shippify-team-1",
-    src: "/images/shippify-team-1.jpg",
+    src: shippifyTeam1.src,
     alt: "Shippify team 1",
   },
   {
     id: "photo-shippify-team-2",
-    src: "/images/shippify-team-2.jpg",
+    src: shippifyTeam2.src,
     alt: "Shippify team 2",
   },
   {
     id: "photo-shippify-team-5",
-    src: "/images/shippify-team-5.jpg",
+    src: shippifyTeam5.src,
     alt: "Shippify team 5",
   },
   {
     id: "photo-shippify-team-3",
-    src: "/images/shippify-team-3.jpg",
+    src: shippifyTeam3.src,
     alt: "Shippify team 3",
   },
   {
     id: "photo-shippify-team-4",
-    src: "/images/shippify-team-4.jpg",
+    src: shippifyTeam4.src,
     alt: "Shippify team 4",
   },
 ];

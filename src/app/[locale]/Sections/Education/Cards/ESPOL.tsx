@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useTranslations } from "next-intl";
 
 import { PrimaryButton } from "@/app/[locale]/shared/Buttons/Primary";
+import espolLogo from "@/../public/images/education/espol-logo.png";
 import { Link } from "@/i18n/routing";
 import { Card } from "./Card";
 
@@ -18,9 +19,9 @@ const ESPOL = () => {
       subTitle="Escuela Superior Politécnica del Litoral - ESPOL"
       title={t("Engineering in Computer Science")}
       startDate={new Date(2018, 2, 1)}
-      imgUrl="/images/espol-logo.png"
       endDate={new Date(2024, 1, 9)}
       type={t("Bachelor's degree")}
+      imgUrl={espolLogo.src}
       imgAlt="ESPOL logo"
       imgHeight={200}
       imgWidth={200}

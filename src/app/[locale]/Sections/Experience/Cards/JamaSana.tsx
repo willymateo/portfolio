@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faServer } from "@fortawesome/free-solid-svg-icons";
 import { useTranslations } from "next-intl";
 
+import jamaSanaLogo from "@/../public/images/experience/jama-sana-logo.png";
 import { Redux as ReduxIcon } from "@/app/[locale]/shared/Icons/Redux";
 import { React as ReactIcon } from "@/app/[locale]/shared/Icons/React";
 import { ReactRouter } from "@/app/[locale]/shared/Icons/ReactRouter";
@@ -50,7 +51,7 @@ const JamaSana = () => {
 
   return (
     <Card
-      enterpriseImgUrl="/images/jama-sana-logo.png"
+      enterpriseImgUrl={jamaSanaLogo.src}
       jobTitle={t("Fullstack Developer")}
       startDate={new Date(2021, 9, 1)}
       endDate={new Date(2022, 7, 1)}

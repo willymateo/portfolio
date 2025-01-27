@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faNewspaper } from "@fortawesome/free-solid-svg-icons";
 import { useTranslations } from "next-intl";
 
+import rapSTTPaperPreview from "@/../public/images/achievements/rap-stt-paper-preview.png";
 import { PrimaryButton } from "@/app/[locale]/shared/Buttons/Primary";
 import { Link } from "@/i18n/routing";
 import { Card } from "./Card";
@@ -15,8 +16,8 @@ const PaperRAP = () => {
       imgAlt="Detecting Speech Disfluencies Using Open-Source Tools in Automatic Feedback Systems for Oral Presentation Training"
       title="Detecting Speech Disfluencies Using Open-Source Tools in Automatic Feedback Systems for Oral Presentation Training"
       href="https://www.scitepress.org/PublicationsDetail.aspx?ID=znVkMzb6Da0=&t=1"
-      imgUrl="/images/rap-stt-paper-preview.png"
       startDate={new Date(2024, 4, 1)}
+      imgUrl={rapSTTPaperPreview.src}
       subTitle={t("Paper")}
       imgHeight={200}
       imgWidth={200}

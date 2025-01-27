@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 
+import mIProjectManagerBanner from "@/../public/images/projects/mi-project-manager-banner.png";
 import { React as ReactIcon } from "@/app/[locale]/shared/Icons/React";
 import { Redux as ReduxIcon } from "@/app/[locale]/shared/Icons/Redux";
 import { TailwindCss } from "@/app/[locale]/shared/Icons/TailwindCss";
@@ -35,7 +36,7 @@ const MIProjectManager = () => {
       websiteUrl="https://idear.espol.edu.ec/sites/default/files/posters/edicion_x/TECH_350_Desarrollo%20de%20una%20versi%C3%B3n%20mejorada%20del%20m%C3%B3dulo%20de%20gesti%C3%B3n%20de%20proyectos%20de%20materia%20integradora%20de%20la%20ESPOL.pdf"
       imgAlt="System for managing thesis projects of ESPOL"
       title="System for managing ESPOL thesis projects"
-      imgUrl="/images/mi-project-manager-banner.png"
+      imgUrl={mIProjectManagerBanner.src}
     >
       <Technologies technologies={technologies} />
     </Card>
