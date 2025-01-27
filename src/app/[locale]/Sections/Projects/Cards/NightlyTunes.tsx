@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 
-import nightlyTunesLightBanner from "@/../public/images/projects/nightly-tunes-light-banner.png";
-import nightlyTunesDarkBanner from "@/../public/images/projects/nightly-tunes-dark-banner.png";
+import nightlyTunesLightBanner from "@/../public/images/projects/nightly-tunes-light-banner.jpg";
+import nightlyTunesDarkBanner from "@/../public/images/projects/nightly-tunes-dark-banner.jpg";
 import { React as ReactIcon } from "@/app/[locale]/shared/Icons/React";
 import { ReactRouter } from "@/app/[locale]/shared/Icons/ReactRouter";
 import { JavaScript } from "@/app/[locale]/shared/Icons/JavaScript";

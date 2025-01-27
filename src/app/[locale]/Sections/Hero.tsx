@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 import { PrimaryButton } from "../shared/Buttons/Primary";
-import profile from "@/../public/images/profile.jpeg";
+import profile from "@/../public/images/profile.jpg";
 import { MotionDiv } from "../shared/Motion/Div";
 import { DotLottie } from "../shared/DotLottie";
 import { animaticSCBold } from "@/shared/fonts";

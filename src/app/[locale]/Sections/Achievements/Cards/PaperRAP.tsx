@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faNewspaper } from "@fortawesome/free-solid-svg-icons";
 import { useTranslations } from "next-intl";
 
-import rapSTTPaperPreview from "@/../public/images/achievements/rap-stt-paper-preview.png";
+import rapSTTPaperPreview from "@/../public/images/achievements/rap-stt-paper-preview.jpg";
 import { PrimaryButton } from "@/app/[locale]/shared/Buttons/Primary";
 import { Link } from "@/i18n/routing";
 import { Card } from "./Card";
@@ -19,8 +19,8 @@ const PaperRAP = () => {
       startDate={new Date(2024, 4, 1)}
       imgUrl={rapSTTPaperPreview.src}
       subTitle={t("Paper")}
-      imgHeight={200}
-      imgWidth={200}
+      imgHeight={300}
+      imgWidth={220}
     >
       <Link href="/docs/rap-stt-paper.pdf" rel="noreferrer" target="_blank">
         <PrimaryButton>

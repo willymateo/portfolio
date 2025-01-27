@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 
-import mIProjectManagerBanner from "@/../public/images/projects/mi-project-manager-banner.png";
+import mIProjectManagerBanner from "@/../public/images/projects/mi-project-manager-banner.jpg";
 import { React as ReactIcon } from "@/app/[locale]/shared/Icons/React";
 import { Redux as ReduxIcon } from "@/app/[locale]/shared/Icons/Redux";
 import { TailwindCss } from "@/app/[locale]/shared/Icons/TailwindCss";

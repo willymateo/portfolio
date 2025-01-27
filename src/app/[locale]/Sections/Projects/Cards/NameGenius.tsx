@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 
-import nameGeniusLightBanner from "@/../public/images/projects/namegenius-light-banner.png";
-import nameGeniusDarkBanner from "@/../public/images/projects/namegenius-dark-banner.png";
+import nameGeniusLightBanner from "@/../public/images/projects/namegenius-light-banner.jpg";
+import nameGeniusDarkBanner from "@/../public/images/projects/namegenius-dark-banner.jpg";
 import { React as ReactIcon } from "@/app/[locale]/shared/Icons/React";
 import { Redux as ReduxIcon } from "@/app/[locale]/shared/Icons/Redux";
 import { TypeScript } from "@/app/[locale]/shared/Icons/TypeScript";
