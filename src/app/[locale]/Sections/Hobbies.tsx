@@ -6,8 +6,9 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 import { MotionDiv } from "@/app/[locale]/shared/Motion/Div";
-import { Container } from "../Container";
-import { SECTIONS } from "../constants";
+import surf from "@/../public/images/hobbies/surf.jpg";
+import { Container } from "./Container";
+import { SECTIONS } from "./constants";
 
 const Hobbies = () => {
   const t = useTranslations("home.hobbies");
@@ -54,7 +55,7 @@ const Hobbies = () => {
           <Image
             className="object-contain rounded-xl"
             alt="hobbies of Willy Mateo"
-            src="/images/surf.jpg"
+            src={surf.src}
             height={300}
             width={500}
           />

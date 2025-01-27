@@ -91,7 +91,7 @@ const Card = ({
                 className="object-contain"
                 src={enterpriseImgUrl}
                 alt={enterpriseImgAlt}
-                height={200}
+                height={150}
                 width={150}
               />
             </Link>

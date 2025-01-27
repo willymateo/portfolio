@@ -80,7 +80,7 @@ const ShippifyInc = () => {
 
   return (
     <Card
-      enterpriseImgUrl="/images/shippify-logo.svg"
+      enterpriseImgUrl="/images/experience/shippify-logo.svg"
       enterpriseWebUrl="https://www.shippify.co"
       enterpriseImgAlt="Shippify Inc logo"
       jobTitle={t("Fullstack Engineer")}

@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 import { PrimaryButton } from "../shared/Buttons/Primary";
+import profile from "@/../public/images/profile.jpg";
 import { MotionDiv } from "../shared/Motion/Div";
 import { DotLottie } from "../shared/DotLottie";
 import { animaticSCBold } from "@/shared/fonts";
@@ -29,9 +30,9 @@ const Hero = () => {
         className="sm:order-2"
       >
         <Image
-          className="rounded-full sm:order-2"
+          className="rounded-full sm:order-2 aspect-square object-cover object-center"
           alt="Willy Mateo profile photo"
-          src="/images/profile.jpeg"
+          src={profile.src}
           height={400}
           width={400}
         />

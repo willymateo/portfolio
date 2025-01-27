@@ -50,7 +50,7 @@ const Card = ({
             src={imgUrl}
             alt={imgAlt}
             height={300}
-            width={500}
+            width={400}
           />
         </Link>
       </MotionDiv>
