@@ -1,0 +1,3 @@
+const TechCommunity = () => {};
+
+export { TechCommunity };
