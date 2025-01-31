@@ -1,3 +1,4 @@
+import { TechCommunity } from "./Sections/TechCommunity";
 import { BackgroundSVG } from "./shared/BackgroundSVG";
 import { Achievements } from "./Sections/Achievements";
 import { GetInTouch } from "./Sections/GetInTouch";
@@ -29,6 +30,7 @@ const Home = () => (
       <Projects />
       <Education />
       <Achievements />
+      <TechCommunity />
       <Hobbies />
       <GetInTouch />
     </div>

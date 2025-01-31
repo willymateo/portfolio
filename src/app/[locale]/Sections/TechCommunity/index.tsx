@@ -1,3 +1,3 @@
-const TechCommunity = () => {};
+const TechCommunity = () => <section></section>;
 
 export { TechCommunity };

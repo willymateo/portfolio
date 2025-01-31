@@ -1,8 +1,8 @@
-import shippifyTeam1 from "@/../public/images/experience/shippify-team-1.jpg";
-import shippifyTeam2 from "@/../public/images/experience/shippify-team-2.jpg";
-import shippifyTeam3 from "@/../public/images/experience/shippify-team-3.jpg";
-import shippifyTeam4 from "@/../public/images/experience/shippify-team-4.jpg";
-import shippifyTeam5 from "@/../public/images/experience/shippify-team-5.jpg";
+import shippifyTeam1 from "@/../public/images/tech-community/shippify-team-1.jpg";
+import shippifyTeam2 from "@/../public/images/tech-community/shippify-team-2.jpg";
+import shippifyTeam3 from "@/../public/images/tech-community/shippify-team-3.jpg";
+import shippifyTeam4 from "@/../public/images/tech-community/shippify-team-4.jpg";
+import shippifyTeam5 from "@/../public/images/tech-community/shippify-team-5.jpg";
 
 const JOB_IMAGES = [
   {
