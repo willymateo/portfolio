@@ -19,11 +19,11 @@ const CommunityMomentsSelector = ({ className = "" }: Props) => {
   return (
     <div className={`lg:flex-row lg:justify-center ${className}`}>
       <Image
-        className="object-cover object-center w-[800px] h-[500px]"
+        className={`object-cover w-[700px] h-[700px] ${selectedCommunityMoment?.className ?? ""}`}
         src={selectedCommunityMoment.imageSrc}
         alt={selectedCommunityMoment.alt}
-        height={500}
-        width={800}
+        height={700}
+        width={700}
       />
 
       <div className="w-[400px] flex flex-col items-end justify-between gap-10 p-10 bg-darkosPortfolio-gray dark:bg-darkosPortfolio-black">
@@ -42,7 +42,7 @@ const CommunityMomentsSelector = ({ className = "" }: Props) => {
 
             return (
               <li
-                className={`w-full px-5 py-2 cursor-pointer hover:bg-cherry-shop-gray-200 ${selectedCommunityMoment.id === communityMoment.id ? "font-bold bg-cherry-shop-gray-200" : ""}`}
+                className={`w-full px-5 py-2 cursor-pointer hover:bg-darkosPortfolio-gray-50 ${selectedCommunityMoment.id === communityMoment.id ? "font-bold bg-darkosPortfolio-gray-50" : ""}`}
                 onMouseEnter={selectCommunityMoment}
                 onClick={selectCommunityMoment}
                 key={communityMoment.id}

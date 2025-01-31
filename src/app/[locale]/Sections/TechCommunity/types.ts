@@ -3,4 +3,5 @@ export type CommunityMoment = {
   alt: string;
   name: string;
   imageSrc: string;
+  className?: string;
 };
