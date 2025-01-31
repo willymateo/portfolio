@@ -10,7 +10,7 @@
   .tech-community-container::before {
     @apply absolute inset-0 bg-center bg-cover blur-sm z-[-1];
 
-    background-image: url("/images/backgrounds/beach-lifeguard.jpg");
+    background-image: url("/images/tech-community/laptop-background.jpg");
     content: "";
   }
 }
