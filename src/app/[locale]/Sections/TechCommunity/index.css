@@ -4,13 +4,6 @@
 
 @layer components {
   .tech-community-container {
-    @apply flex flex-row items-center justify-start lg:justify-center py-20 sm:py-32 bg-no-repeat bg-center bg-cover overflow-hidden relative;
-  }
-
-  .tech-community-container::before {
-    @apply absolute inset-0 bg-bottom bg-cover blur-sm z-[-1];
-
-    background-image: url("/images/tech-community/beach-background.jpg");
-    content: "";
+    @apply flex flex-row items-center justify-start lg:justify-center py-28 sm:py-36 bg-no-repeat bg-center bg-cover overflow-hidden relative bg-[url("/images/tech-community/marmol.jpg")] dark:bg-[url("/images/tech-community/waves.jpg")];
   }
 }

@@ -4,7 +4,7 @@ import "./index.css";
 
 const TechCommunity = () => (
   <section className="tech-community-container">
-    <CommunityMomentsSelector className="hidden lg:flex" />
+    <CommunityMomentsSelector className="hidden xl:flex" />
   </section>
 );
 
