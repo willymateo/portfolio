@@ -21,11 +21,11 @@ const CommunityMomentsSlider = ({ className = "" }: Props) => {
       <div className="flex list-none items-center gap-1 overflow-x-scroll">
         {COMMUNITY_MOMENTS.map(communityMoment => (
           <li
-            className="flex-shrink-0 w-[250px] sm:w-[400px] h-[250px] sm:h-[400px] relative aspect-square"
+            className="flex-shrink-0 w-[400px] h-[400px] relative aspect-square"
             key={communityMoment.id}
           >
             <Image
-              className="w-full h-full object-cover object-center"
+              className={`w-full h-full object-cover ${communityMoment.className ?? ""}`}
               src={communityMoment.imageSrc}
               alt={t(communityMoment.alt)}
               height={400}
