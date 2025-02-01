@@ -9,35 +9,35 @@ import { Link } from "@/i18n/routing";
 
 const SocialNetworks = () => (
   <ul className="flex flex-row items-center justify-center flex-wrap gap-x-10 gap-y-3">
-    <SocialNetworkIconContainer
-      transition={{
-        delay: 0.1,
-      }}
-    >
-      <Link href={SOCIAL_NETWORK_LINKS.LINKEDIN} target="_blank" rel="noreferrer">
+    <Link href={SOCIAL_NETWORK_LINKS.LINKEDIN} target="_blank" rel="noreferrer">
+      <SocialNetworkIconContainer
+        transition={{
+          delay: 0.1,
+        }}
+      >
         <FontAwesomeIcon icon={faLinkedin} className="w-[24px] h-[24px]" />
-      </Link>
-    </SocialNetworkIconContainer>
+      </SocialNetworkIconContainer>
+    </Link>
 
-    <SocialNetworkIconContainer
-      transition={{
-        delay: 0.2,
-      }}
-    >
-      <Link href={SOCIAL_NETWORK_LINKS.GITHUB} target="_blank" rel="noreferrer">
+    <Link href={SOCIAL_NETWORK_LINKS.GITHUB} target="_blank" rel="noreferrer">
+      <SocialNetworkIconContainer
+        transition={{
+          delay: 0.2,
+        }}
+      >
         <FontAwesomeIcon icon={faGithub} className="w-[24px] h-[24px]" />
-      </Link>
-    </SocialNetworkIconContainer>
+      </SocialNetworkIconContainer>
+    </Link>
 
-    <SocialNetworkIconContainer
-      transition={{
-        delay: 0.3,
-      }}
-    >
-      <Link href={`mailto:${SOCIAL_NETWORK_LINKS.EMAIL}`} target="_blank" rel="noreferrer">
+    <Link href={`mailto:${SOCIAL_NETWORK_LINKS.EMAIL}`} target="_blank" rel="noreferrer">
+      <SocialNetworkIconContainer
+        transition={{
+          delay: 0.3,
+        }}
+      >
         <FontAwesomeIcon icon={faEnvelope} className="w-[24px] h-[24px]" />
-      </Link>
-    </SocialNetworkIconContainer>
+      </SocialNetworkIconContainer>
+    </Link>
   </ul>
 );
 
