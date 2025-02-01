@@ -1,5 +1,5 @@
+import { faAward } from "@fortawesome/free-solid-svg-icons/faAward";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faNewspaper } from "@fortawesome/free-solid-svg-icons";
 import { useTranslations } from "next-intl";
 
 import githubFoundationsCredential from "@/../public/images/achievements/github-foundations-credential.png";
@@ -13,7 +13,7 @@ const GithubFoundationsCertification = () => {
   return (
     <Card
       description={`${t("This certification validates expertise in essential GitHub skills, including repositories, commits, branching, markdowns, and project management It's designed to showcase entry-level DevOps skills and modern development practices with GitHub tools like Actions, Codespaces, GitFlow and Projects Key Skills Validated: Git & GitHub Basics, Collaboration & Modern Development Features, Continuous Integration (CI), Continuous Delivery (CD), Secure Repository Management, GitHub Administration")}.`}
-      href="https://resources.github.com/learn/certifications/"
+      href="https://www.credly.com/badges/90bdfedb-5212-4a93-ae60-1c5ebedfdcd3/linked_in_profile"
       imgAlt="Github Foundations Certification credential"
       imgUrl={githubFoundationsCredential.src}
       title="Github Foundations Certification"
@@ -29,7 +29,7 @@ const GithubFoundationsCertification = () => {
         target="_blank"
       >
         <PrimaryButton>
-          <FontAwesomeIcon icon={faNewspaper} className="w-[24px] h-[24px]" />
+          <FontAwesomeIcon icon={faAward} className="w-[24px] h-[24px]" />
           <p className="text-center">{t("View credential")}</p>
         </PrimaryButton>
       </Link>
