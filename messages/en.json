@@ -88,6 +88,12 @@
         "Paper": "Paper",
         "In the realm of verbal communication, most common non-clinical speech disfluencies are filler words and filled pauses, which pose challenges for effective oral presentations Yet their detection is no easy task This article presents the usage of OpenAI’s Whisper for filled pauses and filler words detection in Spanish oral presentations, including on-the-wild usage with undergraduate students Preliminary results indicate that Whisper demonstrates promise as a valuable tool to identify a substantial amount of filler words and filled pauses Despite areas of improvement, Whisper serves as a diagnostic tool for assessing disfluences in oral communication": "In the realm of verbal communication, most common non-clinical speech disfluencies are filler words and filled pauses, which pose challenges for effective oral presentations. Yet their detection is no easy task. This article presents the usage of OpenAI’s Whisper for filled pauses and filler words detection in Spanish oral presentations, including on-the-wild usage with undergraduate students. Preliminary results indicate that Whisper demonstrates promise as a valuable tool to identify a substantial amount of filler words and filled pauses. Despite areas of improvement, Whisper serves as a diagnostic tool for assessing disfluences in oral communication",
         "Download paper": "Download paper"
+      },
+      "scientificMerit": {
+        "Research Merit - Scientific Research Orientation": "Research Merit - Scientific Research Orientation",
+        "Badge": "Badge",
+        "View badge": "View badge",
+        "The award is granted to graduates of degree programs who have focused their studies on scientific research, working for one year on the same research project or in collaboration with the same professor-researcher During this time, they address a pressing issue, successfully generating a positive impact on society and highlighting the esteemed reputation of ESPOL": "The award is granted to graduates of degree programs who have focused their studies on scientific research, working for one year on the same research project or in collaboration with the same professor-researcher. During this time, they address a pressing issue, successfully generating a positive impact on society and highlighting the esteemed reputation of ESPOL"
       }
     },
     "hobbies": {
