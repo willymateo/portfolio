@@ -100,6 +100,18 @@
       "Get in touch": "Get in touch",
       "Let's build something together": "Let's build something together",
       "Or": "Or"
+    },
+    "techCommunity": {
+      "Moments in the Tech Community": "Moments in the Tech Community",
+      "Opening of the AWS Community Day 2024": "Opening of the AWS Community Day 2024",
+      "First conference in the AWS Community Day 2024": "First conference in the AWS Community Day 2024",
+      "Closing of the AWS Community Day 2024": "Closing of the AWS Community Day 2024",
+      "Google DevFest 2024": "Google DevFest 2024",
+      "Receiving the Diploma for Scientific Merit": "Receiving the Diploma for Scientific Merit",
+      "Celebrating my Scientific Diploma": "Celebrating my Scientific Diploma",
+      "Welcome to the ESPOL Scientific Community": "Welcome to the ESPOL Scientific Community",
+      "Engineering Graduation at ESPOL": "Engineering Graduation at ESPOL",
+      "Christmas at Shippify Inc": "Christmas at Shippify Inc"
     }
   },
   "languageMenu": {

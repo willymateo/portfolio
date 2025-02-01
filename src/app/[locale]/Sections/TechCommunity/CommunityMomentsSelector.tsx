@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { useState } from "react";
 import Image from "next/image";
 
@@ -15,13 +16,14 @@ const CommunityMomentsSelector = ({ className = "" }: Props) => {
   const [selectedCommunityMoment, setSelectedCommunityMoment] = useState<CommunityMoment>(
     COMMUNITY_MOMENTS[0],
   );
+  const t = useTranslations();
 
   return (
     <div className={`lg:flex-row lg:justify-center ${className}`}>
       <Image
         className={`object-cover w-[700px] h-[700px] aspect-square ${selectedCommunityMoment?.className ?? ""}`}
         src={selectedCommunityMoment.imageSrc}
-        alt={selectedCommunityMoment.alt}
+        alt={t(selectedCommunityMoment.alt)}
         height={700}
         width={700}
       />
@@ -33,7 +35,7 @@ const CommunityMomentsSelector = ({ className = "" }: Props) => {
           initial={{ opacity: 0, x: 30 }}
           className="text-3xl"
         >
-          Moments in the Tech Community
+          {t("Moments in the Tech Community")}
         </MotionH2>
 
         <ul className="flex flex-col items-start justify-center w-full">
@@ -47,7 +49,7 @@ const CommunityMomentsSelector = ({ className = "" }: Props) => {
                 onClick={selectCommunityMoment}
                 key={communityMoment.id}
               >
-                {communityMoment.name}
+                {t(communityMoment.name)}
               </li>
             );
           })}

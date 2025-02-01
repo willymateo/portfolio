@@ -68,8 +68,8 @@ const COMMUNITY_MOMENTS: CommunityMoment[] = [
   },
   {
     imageSrc: shippifyChristmas1.src,
-    name: "Christmas at Shippify Inc.",
-    alt: "Christmas at Shippify Inc.",
+    name: "Christmas at Shippify Inc",
+    alt: "Christmas at Shippify Inc",
     className: "object-center",
     id: "shippifyChristmas1",
   },
