@@ -7,12 +7,13 @@ import "./index.css";
 
 const TechCommunity = () => {
   const messages = useMessages();
+  const homeMessages = messages.home as AbstractIntlMessages;
 
   return (
     <section className="tech-community-container">
       <CommunityMomentsSlider className="flex xl:hidden" />
 
-      <NextIntlClientProvider messages={messages.techCommunity as AbstractIntlMessages}>
+      <NextIntlClientProvider messages={homeMessages.techCommunity as AbstractIntlMessages}>
         <CommunityMomentsSelector className="hidden xl:flex" />
       </NextIntlClientProvider>
     </section>

@@ -7,7 +7,6 @@ import { useLocale } from "next-intl";
 import { LotusFlower } from "../Loaders/LotusFlower";
 import { useActive } from "@/hooks/useActive";
 import { Menu } from "./Menu";
-import "./types";
 
 const LanguageSwitcher = () => {
   const { disable: closeMenu, toggle: toggleMenu, isActive: menuIsOpen } = useActive();
