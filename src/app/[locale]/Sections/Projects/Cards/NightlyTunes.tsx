@@ -18,7 +18,7 @@ import { Card } from "./Card";
 const isDark = false;
 
 const NightlyTunes = () => {
-  const t = useTranslations("home.projects");
+  const t = useTranslations("home.projects.nightlyTunes");
 
   const technologies = [
     { name: "JavaScript", Icon: JavaScript },
@@ -40,7 +40,7 @@ const NightlyTunes = () => {
       )}
       imgUrl={isDark ? nightlyTunesDarkBanner.src : nightlyTunesLightBanner.src}
       websiteUrl="https://nightlytunes.netlify.app"
-      imgAlt="Nightly tunes website"
+      imgAlt={t("Nightly tunes website")}
       title="Nightly Tunes"
     >
       <Technologies technologies={technologies} />

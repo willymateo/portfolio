@@ -17,8 +17,8 @@ import { Card } from "./Card";
 
 const isDark = false;
 
-const NameGenius = () => {
-  const t = useTranslations("home.projects.namegenius");
+const Bizprofy = () => {
+  const t = useTranslations("home.projects.bizprofy");
 
   const technologies = [
     { name: "TypeScript", Icon: TypeScript },
@@ -40,7 +40,7 @@ const NameGenius = () => {
       )}
       imgUrl={isDark ? nameGeniusDarkBanner.src : nameGeniusLightBanner.src}
       websiteUrl="https://www.namegenius.app"
-      imgAlt={t("NameGenius website")}
+      imgAlt="NameGenius website"
       title="NameGenius"
     >
       <Technologies technologies={technologies} />
@@ -48,4 +48,4 @@ const NameGenius = () => {
   );
 };
 
-export { NameGenius };
+export { Bizprofy };

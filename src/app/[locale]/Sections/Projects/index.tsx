@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 
+import { CherryShopLanding } from "./Cards/CherryShopLanding";
 import { MIProjectManager } from "./Cards/MIProjectManager";
 import { NightlyTunes } from "./Cards/NightlyTunes";
 import { NameGenius } from "./Cards/NameGenius";
@@ -12,6 +13,7 @@ const Projects = () => {
   return (
     <Container id={SECTIONS.PROJECTS} title={t("Projects")}>
       <div className="flex flex-col gap-20">
+        <CherryShopLanding />
         <NameGenius />
         <NightlyTunes />
         <MIProjectManager />
