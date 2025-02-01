@@ -1,10 +1,10 @@
-import awsCommunityDay20242 from "@/../public/images/tech-community/aws-community-day-2024-2.jpeg";
-import awsCommunityDay20243 from "@/../public/images/tech-community/aws-community-day-2024-3.jpeg";
+import awsCommunityDay20242 from "@/../public/images/tech-community/aws-community-day-2024-2.jpg";
+import awsCommunityDay20243 from "@/../public/images/tech-community/aws-community-day-2024-3.jpg";
 import awsCommunityDay20241 from "@/../public/images/tech-community/aws-community-day-2024-1.jpg";
 import googleDevFest20241 from "@/../public/images/tech-community/google-devfest-2024-1.jpg";
 import shippifyChristmas1 from "@/../public/images/tech-community/shippify-christmas-1.jpg";
-import espolGraduation1 from "@/../public/images/tech-community/espol-graduation-1.jpeg";
-import scientificMerit1 from "@/../public/images/tech-community/scientific-merit-1.png";
+import espolGraduation1 from "@/../public/images/tech-community/espol-graduation-1.jpg";
+import scientificMerit1 from "@/../public/images/tech-community/scientific-merit-1.jpg";
 import scientificMerit2 from "@/../public/images/tech-community/scientific-merit-2.jpg";
 import scientificMerit3 from "@/../public/images/tech-community/scientific-merit-3.jpg";
 import { CommunityMoment } from "./types";
