@@ -44,7 +44,7 @@ const CommunityMomentsSelector = ({ className = "" }: Props) => {
 
             return (
               <li
-                className={`w-full px-5 py-2 cursor-pointer hover:bg-darkosPortfolio-gray-50 ${selectedCommunityMoment.id === communityMoment.id ? "font-bold bg-darkosPortfolio-gray-50" : ""}`}
+                className={`w-full px-5 py-2 cursor-pointer hover:bg-darkosPortfolio-gray-50 hover:dark:bg-darkosPortfolio-gray-500 ${selectedCommunityMoment.id === communityMoment.id ? "font-bold bg-darkosPortfolio-gray-50 dark:bg-darkosPortfolio-gray-500" : ""}`}
                 onMouseEnter={selectCommunityMoment}
                 onClick={selectCommunityMoment}
                 key={communityMoment.id}

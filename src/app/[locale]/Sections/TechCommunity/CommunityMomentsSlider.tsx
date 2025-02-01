@@ -14,7 +14,7 @@ const CommunityMomentsSlider = ({ className = "" }: Props) => {
 
   return (
     <div className={`flex-col w-full ${className}`}>
-      <h2 className="text-2xl sm:text-3xl px-5 py-5 sm:py-10 bg-darkosPortfolio-gray">
+      <h2 className="text-2xl sm:text-3xl px-5 py-5 sm:py-10 bg-darkosPortfolio-gray dark:bg-darkosPortfolio-black">
         {t("Moments in the Tech Community")}
       </h2>
 
@@ -33,7 +33,7 @@ const CommunityMomentsSlider = ({ className = "" }: Props) => {
             />
 
             <Link
-              className="text-xs sm:text-base text-center px-5 py-2 bg-darkosPortfolio-gray-50 bg-opacity-50 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+              className="text-xs sm:text-base text-center px-5 py-2 bg-darkosPortfolio-gray-50 dark:bg-darkosPortfolio-gray-500 bg-opacity-50 dark:bg-opacity-50 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
               href={SOCIAL_NETWORK_LINKS.LINKEDIN}
               rel="noreferrer"
               target="_blank"
