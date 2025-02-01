@@ -22,7 +22,7 @@ const Home = () => (
 
     <Header />
 
-    <div className="flex flex-col items-strech justify-center gap-96 px-10 lg:px-24 2xl:px-40 z-[1]">
+    <div className="flex flex-col items-strech justify-center gap-96 z-[1]">
       <Hero />
       <AboutMe />
       <TechStack />

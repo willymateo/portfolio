@@ -18,7 +18,7 @@ const Hero = () => {
   const t = useTranslations("home.hero");
 
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center justify-items-center gap-10 sm:grid sm:grid-cols-[5fr_4fr] pt-[49px] lg:pt-[65px] pb-[112px] sm:pb-[76px]">
+    <section className=" px-10 lg:px-24 2xl:px-40 min-h-screen flex flex-col items-center justify-center justify-items-center gap-10 sm:grid sm:grid-cols-[5fr_4fr] pt-[49px] lg:pt-[65px] pb-[112px] sm:pb-[76px]">
       <MotionDiv
         whileInView={{ opacity: 1, scale: 1 }}
         initial={{ opacity: 0, scale: 0.5 }}

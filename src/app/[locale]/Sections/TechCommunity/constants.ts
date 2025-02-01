@@ -56,22 +56,22 @@ const COMMUNITY_MOMENTS: CommunityMoment[] = [
     name: "Welcome to the ESPOL Scientific Community",
     alt: "Welcome to the ESPOL Scientific Community",
     imageSrc: scientificMerit1.src,
-    className: "object-top",
+    className: "object-left",
     id: "scientificMerit1",
   },
   {
     imageSrc: espolGraduation1.src,
     name: "Engineering Graduation at ESPOL",
     alt: "Engineering Graduation at ESPOL",
-    id: "espolGraduation1",
     className: "object-center object-left",
+    id: "espolGraduation1",
   },
   {
     imageSrc: shippifyChristmas1.src,
     name: "Christmas at Shippify Inc.",
     alt: "Christmas at Shippify Inc.",
-    id: "shippifyChristmas1",
     className: "object-center",
+    id: "shippifyChristmas1",
   },
 ];
 

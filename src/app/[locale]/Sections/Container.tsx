@@ -10,8 +10,8 @@ interface Props {
 
 const Container = ({ children, id, className = "", title = "" }: Readonly<Props>) => (
   <section
+    className={` px-10 lg:px-24 2xl:px-40 flex flex-col items-start gap-10 xl:flex-row xl:gap-44 ${className}`}
     id={id}
-    className={`flex flex-col items-start gap-10 xl:flex-row xl:gap-44 ${className}`}
   >
     <MotionH2
       className="text-2xl font-bold text-darkosPortfolio-gray-50 dark:text-darkosPortfolio-gray-500 sm:text-3xl xl:text-7xl xl:sticky xl:top-32 xl:[writing-mode:vertical-lr]"

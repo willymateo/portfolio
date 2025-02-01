@@ -19,7 +19,7 @@ const CommunityMomentsSelector = ({ className = "" }: Props) => {
   return (
     <div className={`lg:flex-row lg:justify-center ${className}`}>
       <Image
-        className={`object-cover w-[700px] h-[700px] ${selectedCommunityMoment?.className ?? ""}`}
+        className={`object-cover w-[700px] h-[700px] aspect-square ${selectedCommunityMoment?.className ?? ""}`}
         src={selectedCommunityMoment.imageSrc}
         alt={selectedCommunityMoment.alt}
         height={700}
