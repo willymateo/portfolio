@@ -1,4 +1,3 @@
-import { TechCommunity } from "./Sections/TechCommunity";
 import { Achievements } from "./Sections/Achievements";
 import { GetInTouch } from "./Sections/GetInTouch";
 import { Experience } from "./Sections/Experience";
@@ -16,7 +15,6 @@ const Home = () => (
     <Experience />
     <Education />
     <Achievements />
-    <TechCommunity />
     <Hobbies />
     <GetInTouch />
   </div>

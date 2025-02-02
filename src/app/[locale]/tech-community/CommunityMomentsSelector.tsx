@@ -4,9 +4,9 @@ import { useTranslations } from "next-intl";
 import { useState } from "react";
 import Image from "next/image";
 
-import { MotionLi } from "../../shared/Motion/Li";
-import { MotionH2 } from "../../shared/Motion/H2";
 import { COMMUNITY_MOMENTS } from "./constants";
+import { MotionH2 } from "../shared/Motion/H2";
+import { MotionLi } from "../shared/Motion/Li";
 import { CommunityMoment } from "./types";
 
 type Props = {

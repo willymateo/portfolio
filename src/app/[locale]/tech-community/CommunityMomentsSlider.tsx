@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
-import { SOCIAL_NETWORK_LINKS } from "../../shared/SocialNetworks/constants";
+import { SOCIAL_NETWORK_LINKS } from "../shared/SocialNetworks/constants";
 import { COMMUNITY_MOMENTS } from "./constants";
 import { Link } from "@/i18n/routing";
 
@@ -10,7 +10,7 @@ type Props = {
 };
 
 const CommunityMomentsSlider = ({ className = "" }: Props) => {
-  const t = useTranslations("home.techCommunity");
+  const t = useTranslations("techCommunity");
 
   return (
     <div className={`flex-col w-full ${className}`}>
