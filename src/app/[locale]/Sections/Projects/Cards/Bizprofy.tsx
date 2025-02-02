@@ -27,8 +27,6 @@ import { Git } from "@/app/[locale]/shared/Icons/Git";
 import { JWT } from "@/app/[locale]/shared/Icons/JWT";
 import { Card } from "./Card";
 
-const isDark = false;
-
 const Bizprofy = () => {
   const t = useTranslations("home.projects.bizprofy");
 
