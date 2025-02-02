@@ -5,12 +5,12 @@ import { ProgrammingLanguages } from "./Sections/ProgrammingLanguages";
 import { Databases } from "./Sections/DataBases";
 import { FrontEnd } from "./Sections/FrontEnd";
 import { BackEnd } from "./Sections/BackEnd";
+import { SECTIONS } from "../../constants";
 import { DevOps } from "./Sections/DevOps";
 import { Mobile } from "./Sections/Mobile";
 import { Cloud } from "./Sections/Cloud";
 import { Agile } from "./Sections/Agile";
 import { Container } from "../Container";
-import { SECTIONS } from "../constants";
 
 const TechStack = () => {
   const t = useTranslations("home.techStack");

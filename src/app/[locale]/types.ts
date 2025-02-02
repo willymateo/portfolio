@@ -14,3 +14,9 @@ export type GenerateMetadataProps = {
 type ParamsContent = {
   locale: LanguageCode;
 };
+
+export type Route = {
+  name: string;
+  href: string;
+  id: string;
+};

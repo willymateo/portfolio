@@ -5,8 +5,8 @@ import { useTranslations } from "next-intl";
 import { SocialNetworks } from "@/app/[locale]/shared/SocialNetworks";
 import { DinamicQuote } from "../../shared/DinamicQuote";
 import { EmailToCopy } from "./EmailToCopy";
+import { SECTIONS } from "../../constants";
 import { Container } from "../Container";
-import { SECTIONS } from "../constants";
 
 const GetInTouch = () => {
   const t = useTranslations("home.getInTouch");

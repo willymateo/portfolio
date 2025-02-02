@@ -12,6 +12,6 @@
   }
 
   .pt-children-routes {
-    @apply pt-[calc(49px_+_5rem)] lg:pt-[calc(65px_+_5rem)];
+    @apply pt-[calc(93px_+_5rem)] sm:pt-[calc(49px_+_5rem)] lg:pt-[calc(65px_+_5rem)];
   }
 }

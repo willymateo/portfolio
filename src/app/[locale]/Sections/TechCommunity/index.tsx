@@ -2,6 +2,7 @@ import { AbstractIntlMessages, NextIntlClientProvider, useMessages } from "next-
 
 import { CommunityMomentsSelector } from "./CommunityMomentsSelector";
 import { CommunityMomentsSlider } from "./CommunityMomentsSlider";
+import { SECTIONS } from "../../constants";
 
 import "./index.css";
 
@@ -10,7 +11,7 @@ const TechCommunity = () => {
   const homeMessages = messages.home as AbstractIntlMessages;
 
   return (
-    <section className="tech-community-container">
+    <section id={SECTIONS.TECH_COMMUNITY} className="tech-community-container">
       <CommunityMomentsSlider className="flex xl:hidden" />
 
       <NextIntlClientProvider messages={homeMessages.techCommunity as AbstractIntlMessages}>
