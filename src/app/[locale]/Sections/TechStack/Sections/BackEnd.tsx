@@ -5,8 +5,12 @@ import { Express as ExpressIcon } from "@/app/[locale]/shared/Icons/Express";
 import { ElasticSearch } from "@/app/[locale]/shared/Icons/ElasticSearch";
 import { NodeJs as NodeJsIcon } from "@/app/[locale]/shared/Icons/NodeJs";
 import { Technologies } from "@/app/[locale]/shared/Technologies";
+import { Sequelize } from "@/app/[locale]/shared/Icons/Sequelize";
+import { TypeORM } from "@/app/[locale]/shared/Icons/TypeORM";
 import { NestJs } from "@/app/[locale]/shared/Icons/NestJs";
 import { Django } from "@/app/[locale]/shared/Icons/Django";
+import { Resend } from "@/app/[locale]/shared/Icons/Resend";
+import { JWT } from "@/app/[locale]/shared/Icons/JWT";
 
 const BackEnd = () => {
   const technologies = [
@@ -19,8 +23,16 @@ const BackEnd = () => {
       Icon: ExpressIcon,
     },
     {
+      name: "Sequelize",
+      Icon: Sequelize,
+    },
+    {
       name: "NestJs",
       Icon: NestJs,
+    },
+    {
+      name: "TypeORM",
+      Icon: TypeORM,
     },
     {
       name: "Django",
@@ -31,12 +43,20 @@ const BackEnd = () => {
       Icon: ElasticSearch,
     },
     {
+      name: "Resend",
+      Icon: Resend,
+    },
+    {
       name: "REST APIs",
       Icon: () => <FontAwesomeIcon icon={faServer} className="w-[24px] h-[24px]" />,
     },
     {
       name: "Supertest",
       Icon: () => <FontAwesomeIcon icon={faServer} className="w-[24px] h-[24px]" />,
+    },
+    {
+      name: "JWT",
+      Icon: JWT,
     },
   ];
 
