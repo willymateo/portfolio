@@ -15,7 +15,7 @@ import { Git } from "@/app/[locale]/shared/Icons/Git";
 import { Card } from "./Card";
 
 const NameGenius = () => {
-  const t = useTranslations("home.projects.nameGenius");
+  const t = useTranslations("projects.nameGenius");
 
   const technologies = [
     { name: "TypeScript", Icon: TypeScript },

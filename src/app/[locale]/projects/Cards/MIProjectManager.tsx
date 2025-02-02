@@ -14,7 +14,7 @@ import { Git } from "@/app/[locale]/shared/Icons/Git";
 import { Card } from "./Card";
 
 const MIProjectManager = () => {
-  const t = useTranslations("home.projects.miProjectManager");
+  const t = useTranslations("projects.miProjectManager");
 
   const technologies = [
     { name: "JavaScript", Icon: JavaScript },

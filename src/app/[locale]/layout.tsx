@@ -3,8 +3,11 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import type { Metadata } from "next";
 
-import { GenerateMetadataProps, RootLayoutProps } from "./types";
+import { GenerateMetadataProps, LayoutProps } from "./types";
+import { Background } from "./components/Background";
 import { ralewayVariable } from "@/shared/fonts";
+import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
 import { Providers } from "./Providers";
 
 import "../globals.css";
@@ -25,7 +28,7 @@ const generateMetadata = async ({ params }: GenerateMetadataProps): Promise<Meta
   };
 };
 
-const RootLayout = async ({ children, params }: Readonly<RootLayoutProps>) => {
+const RootLayout = async ({ children, params }: Readonly<LayoutProps>) => {
   const { locale } = await params;
 
   if (!routing.locales.includes(locale)) {
@@ -37,7 +40,17 @@ const RootLayout = async ({ children, params }: Readonly<RootLayoutProps>) => {
   return (
     <html lang={locale} suppressHydrationWarning>
       <body className={ralewayVariable.className}>
-        <Providers>{children}</Providers>
+        <Providers>
+          <main className="min-h-screen flex flex-col gap-20 bg-darkosPortfolio-gray dark:bg-darkosPortfolio-black">
+            <Background />
+
+            <Header />
+
+            {children}
+
+            <Footer />
+          </main>
+        </Providers>
       </body>
     </html>
   );

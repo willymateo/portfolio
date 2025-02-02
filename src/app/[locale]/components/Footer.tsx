@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 
-import { DotLottie } from "./DotLottie";
+import { DotLottie } from "../shared/DotLottie";
 
 const Footer = () => {
   const t = useTranslations("footer");

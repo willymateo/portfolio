@@ -28,7 +28,7 @@ import { JWT } from "@/app/[locale]/shared/Icons/JWT";
 import { Card } from "./Card";
 
 const Bizprofy = () => {
-  const t = useTranslations("home.projects.bizprofy");
+  const t = useTranslations("projects.bizprofy");
 
   const technologies = [
     { name: "TypeScript", Icon: TypeScript },

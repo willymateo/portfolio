@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 
 import { LanguageCode } from "@/i18n/types";
 
-export type RootLayoutProps = {
+export type LayoutProps = {
   params: Promise<ParamsContent>;
   children: Readonly<ReactNode>;
 };

@@ -4,13 +4,13 @@ import { CherryShopLanding } from "./Cards/CherryShopLanding";
 import { MIProjectManager } from "./Cards/MIProjectManager";
 import { NightlyTunes } from "./Cards/NightlyTunes";
 import { RushMessage } from "./Cards/RushMessage";
+import { Container } from "../Sections/Container";
+import { SECTIONS } from "../Sections/constants";
 import { NameGenius } from "./Cards/NameGenius";
 import { Bizprofy } from "./Cards/Bizprofy";
-import { Container } from "../Container";
-import { SECTIONS } from "../constants";
 
 const Projects = () => {
-  const t = useTranslations("home.projects");
+  const t = useTranslations("projects");
 
   return (
     <Container id={SECTIONS.PROJECTS} title={t("Projects")}>
@@ -26,4 +26,4 @@ const Projects = () => {
   );
 };
 
-export { Projects };
+export default Projects;
