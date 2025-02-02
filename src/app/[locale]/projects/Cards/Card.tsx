@@ -46,7 +46,7 @@ const Card = ({
           target="_blank"
         >
           <Image
-            className="object-contain rounded-xl"
+            className="object-contain rounded-xl max-h-[300px] w-full"
             src={imgUrl}
             alt={imgAlt}
             height={300}
