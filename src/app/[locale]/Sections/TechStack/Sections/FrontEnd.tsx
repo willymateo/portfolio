@@ -19,6 +19,7 @@ import { Jest } from "@/app/[locale]/shared/Icons/Jest";
 import { CSS3 } from "@/app/[locale]/shared/Icons/CSS3";
 import { Sass } from "@/app/[locale]/shared/Icons/Sass";
 import { NPM } from "@/app/[locale]/shared/Icons/NPM";
+import { SWR } from "@/app/[locale]/shared/Icons/SWR";
 
 const FrontEnd = () => {
   const technologies = [
@@ -30,6 +31,7 @@ const FrontEnd = () => {
     { name: "Vitest", Icon: Vitest },
     { name: "Jest", Icon: Jest },
     { name: "React testing library", Icon: ReactIcon },
+    { name: "SWR", Icon: SWR },
     {
       name: "SSR",
       Icon: () => <FontAwesomeIcon icon={faLaptopCode} className="w-[24px] h-[24px]" />,

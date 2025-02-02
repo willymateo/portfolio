@@ -29,7 +29,7 @@ const CommunityMomentsSelector = ({ className = "" }: Props) => {
         width={700}
       />
 
-      <div className="w-[500px] flex flex-col items-end justify-between gap-10 p-10 bg-darkosPortfolio-gray dark:bg-darkosPortfolio-black">
+      <div className="w-[500px] flex flex-col items-end justify-between gap-10 p-10">
         <MotionH2
           transition={{ delay: 0.1, duration: 0.5 }}
           whileInView={{ opacity: 1, x: 0 }}
