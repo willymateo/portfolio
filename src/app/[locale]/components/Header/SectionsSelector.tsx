@@ -15,8 +15,11 @@ const SectionsSelector = () => {
         const isActive = pathname === route.href;
 
         return (
-          <li key={route.id} className={`text-center ${isActive ? "font-bold" : ""}`}>
-            <Link href={route.href}>{t(route.name)}</Link>
+          <li
+            className={`text-center ${isActive ? "font-bold pointer-events-none" : ""}`}
+            key={route.id}
+          >
+            <Link href={isActive ? "" : route.href}>{t(route.name)}</Link>
           </li>
         );
       })}
