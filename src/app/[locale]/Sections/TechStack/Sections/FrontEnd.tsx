@@ -8,6 +8,8 @@ import { TailwindCss } from "@/app/[locale]/shared/Icons/TailwindCss";
 import { MaterialUI } from "@/app/[locale]/shared/Icons/MaterialUI";
 import { Technologies } from "@/app/[locale]/shared/Technologies";
 import { ChakraUI } from "@/app/[locale]/shared/Icons/ChakraUI";
+import { Motion } from "@/app/[locale]/shared/Icons/Motion";
+import { Lottie } from "@/app/[locale]/shared/Icons/Lottie";
 import { NextJs } from "@/app/[locale]/shared/Icons/NextJs";
 import { Vitest } from "@/app/[locale]/shared/Icons/Vitest";
 import { HTML5 } from "@/app/[locale]/shared/Icons/HTML5";
@@ -41,6 +43,8 @@ const FrontEnd = () => {
     { name: "Webpack", Icon: NPM },
     { name: "Rollup", Icon: NPM },
     { name: "i18next", Icon: NPM },
+    { name: "Lottie", Icon: Lottie },
+    { name: "Motion", Icon: Motion },
   ];
 
   return <Technologies title="Front-end" technologies={technologies} />;

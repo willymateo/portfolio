@@ -30,9 +30,9 @@ const MIProjectManager = () => {
 
   return (
     <Card
-      description={t(
+      description={`${t(
         "This project was designed to streamline the process of handling thesis proposals and evaluations It addresses the challenge of coordinating between students, professors, and course coordinators by allowing clients to submit proposals, professors to manage and evaluate them, and coordinators to distribute projects efficiently This project enhances visibility and organization through a dashboard, simplifying the tracking and management of thesis progress It was developed in collaboration with key stakeholders, demonstrating a comprehensive application of computer science engineering skills to solve real-world administrative problems",
-      )}
+      )}.`}
       websiteUrl="https://idear.espol.edu.ec/sites/default/files/posters/edicion_x/TECH_350_Desarrollo%20de%20una%20versi%C3%B3n%20mejorada%20del%20m%C3%B3dulo%20de%20gesti%C3%B3n%20de%20proyectos%20de%20materia%20integradora%20de%20la%20ESPOL.pdf"
       imgAlt={t("System for managing ESPOL thesis projects")}
       title={t("System for managing ESPOL thesis projects")}

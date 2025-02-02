@@ -4,6 +4,7 @@ import { CherryShopLanding } from "./Cards/CherryShopLanding";
 import { MIProjectManager } from "./Cards/MIProjectManager";
 import { NightlyTunes } from "./Cards/NightlyTunes";
 import { NameGenius } from "./Cards/NameGenius";
+import { Bizprofy } from "./Cards/Bizprofy";
 import { Container } from "../Container";
 import { SECTIONS } from "../constants";
 
@@ -17,6 +18,7 @@ const Projects = () => {
         <NameGenius />
         <NightlyTunes />
         <MIProjectManager />
+        <Bizprofy />
       </div>
     </Container>
   );

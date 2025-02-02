@@ -35,9 +35,9 @@ const NightlyTunes = () => {
 
   return (
     <Card
-      description={t(
+      description={`${t(
         "Nightly Tunes is a music library designed to make discovering and enjoying music easier By offering a platform where users can listen to their favorite songs and explore new ones, it addresses the challenge of finding fresh music With support for multiple languages and light or dark modes, it provides a personalized and user-friendly experience, simplifying the process of music discovery and playback",
-      )}
+      )}.`}
       imgUrl={isDark ? nightlyTunesDarkBanner.src : nightlyTunesLightBanner.src}
       websiteUrl="https://nightlytunes.netlify.app"
       imgAlt={t("Nightly tunes website")}

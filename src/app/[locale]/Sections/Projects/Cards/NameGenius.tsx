@@ -18,7 +18,7 @@ import { Card } from "./Card";
 const isDark = false;
 
 const NameGenius = () => {
-  const t = useTranslations("home.projects.namegenius");
+  const t = useTranslations("home.projects.nameGenius");
 
   const technologies = [
     { name: "TypeScript", Icon: TypeScript },
@@ -35,9 +35,9 @@ const NameGenius = () => {
 
   return (
     <Card
-      description={t(
+      description={`${t(
         "NameGenius is a free web application designed to solve the challenge of finding creative and unique names for businesses, projects, or teams By leveraging artificial intelligence, it generates tailored name suggestions, streamlining a process that can be time-consuming and difficult The application offers an intuitive user experience with features like dark and light modes, making it accessible for a wide range of users NameGenius simplifies the naming process by utilizing cutting-edge technology to inspire creativity and save time",
-      )}
+      )}.`}
       imgUrl={isDark ? nameGeniusDarkBanner.src : nameGeniusLightBanner.src}
       websiteUrl="https://www.namegenius.app"
       imgAlt={t("NameGenius website")}
