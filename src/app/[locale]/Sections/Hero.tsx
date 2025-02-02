@@ -19,7 +19,7 @@ const Hero = () => {
 
   return (
     <section
-      className="px-body min-h-screen flex flex-col items-center justify-center justify-items-center gap-10 sm:grid sm:grid-cols-[5fr_4fr] pt-[49px] lg:pt-[65px] pb-[112px] sm:pb-[76px]"
+      className="px-body min-h-screen flex flex-col items-center justify-center justify-items-center gap-10 sm:grid sm:grid-cols-[5fr_4fr] pb-[112px] sm:pb-[76px] pt-hero-route"
       id={SECTIONS.HERO}
     >
       <MotionDiv
