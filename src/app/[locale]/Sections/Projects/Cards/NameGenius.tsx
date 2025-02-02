@@ -1,7 +1,6 @@
 import { useTranslations } from "next-intl";
 
-import nameGeniusLightBanner from "@/../public/images/projects/namegenius-light-banner.jpg";
-import nameGeniusDarkBanner from "@/../public/images/projects/namegenius-dark-banner.jpg";
+import nameGenius from "@/../public/images/projects/namegenius.png";
 import { React as ReactIcon } from "@/app/[locale]/shared/Icons/React";
 import { Redux as ReduxIcon } from "@/app/[locale]/shared/Icons/Redux";
 import { TypeScript } from "@/app/[locale]/shared/Icons/TypeScript";
@@ -14,8 +13,6 @@ import { HTML5 } from "@/app/[locale]/shared/Icons/HTML5";
 import { CSS3 } from "@/app/[locale]/shared/Icons/CSS3";
 import { Git } from "@/app/[locale]/shared/Icons/Git";
 import { Card } from "./Card";
-
-const isDark = false;
 
 const NameGenius = () => {
   const t = useTranslations("home.projects.nameGenius");
@@ -38,9 +35,9 @@ const NameGenius = () => {
       description={`${t(
         "NameGenius is a free web application designed to solve the challenge of finding creative and unique names for businesses, projects, or teams By leveraging artificial intelligence, it generates tailored name suggestions, streamlining a process that can be time-consuming and difficult The application offers an intuitive user experience with features like dark and light modes, making it accessible for a wide range of users NameGenius simplifies the naming process by utilizing cutting-edge technology to inspire creativity and save time",
       )}.`}
-      imgUrl={isDark ? nameGeniusDarkBanner.src : nameGeniusLightBanner.src}
       websiteUrl="https://www.namegenius.app"
       imgAlt={t("NameGenius website")}
+      imgUrl={nameGenius.src}
       title="NameGenius"
     >
       <Technologies technologies={technologies} />

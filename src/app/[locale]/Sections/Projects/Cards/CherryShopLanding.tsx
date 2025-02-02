@@ -1,8 +1,7 @@
 import { useTranslations } from "next-intl";
 
-import nameGeniusLightBanner from "@/../public/images/projects/namegenius-light-banner.jpg";
-import nameGeniusDarkBanner from "@/../public/images/projects/namegenius-dark-banner.jpg";
 import { React as ReactIcon } from "@/app/[locale]/shared/Icons/React";
+import cherryShop from "@/../public/images/projects/cherry-shop.png";
 import { TypeScript } from "@/app/[locale]/shared/Icons/TypeScript";
 import { Technologies } from "@/app/[locale]/shared/Technologies";
 import { Vercel } from "@/app/[locale]/shared/Icons/Vercel";
@@ -14,8 +13,6 @@ import { HTML5 } from "@/app/[locale]/shared/Icons/HTML5";
 import { CSS3 } from "@/app/[locale]/shared/Icons/CSS3";
 import { Git } from "@/app/[locale]/shared/Icons/Git";
 import { Card } from "./Card";
-
-const isDark = false;
 
 const CherryShopLanding = () => {
   const t = useTranslations("home.projects.cherryShopLanding");
@@ -36,10 +33,10 @@ const CherryShopLanding = () => {
   return (
     <Card
       description={`${t("Cherry Shop is a vibrant e-commerce platform specializing in the latest fashion clothing, designed to reflect the founder's love for pink, cute aesthetics, and modern fashion As the developer, I created a visually engaging and user-friendly landing page that captures the brand's unique identity The design emphasizes bold, playful visuals, seamless navigation, and a responsive layout to ensure an enjoyable shopping experience across all devices This project showcases my ability to blend creativity with technical expertise to bring a brand's vision to life")}.`}
-      imgUrl={isDark ? nameGeniusDarkBanner.src : nameGeniusLightBanner.src}
       websiteUrl="https://cherryshop.vercel.app"
       imgAlt={t("Cherry Shop Landing Page")}
       title={t("Cherry Shop Landing Page")}
+      imgUrl={cherryShop.src}
     >
       <Technologies technologies={technologies} />
     </Card>

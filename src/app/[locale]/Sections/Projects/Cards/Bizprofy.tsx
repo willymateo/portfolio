@@ -2,8 +2,6 @@ import { faClipboardList } from "@fortawesome/free-solid-svg-icons/faClipboardLi
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useTranslations } from "next-intl";
 
-import nameGeniusLightBanner from "@/../public/images/projects/namegenius-light-banner.jpg";
-import nameGeniusDarkBanner from "@/../public/images/projects/namegenius-dark-banner.jpg";
 import { Express as ExpressIcon } from "@/app/[locale]/shared/Icons/Express";
 import { NodeJs as NodeJsIcon } from "@/app/[locale]/shared/Icons/NodeJs";
 import { React as ReactIcon } from "@/app/[locale]/shared/Icons/React";
@@ -15,6 +13,7 @@ import { TypeScript } from "@/app/[locale]/shared/Icons/TypeScript";
 import { PostgreSQL } from "@/app/[locale]/shared/Icons/PostgreSQL";
 import { Sequelize } from "@/app/[locale]/shared/Icons/Sequelize";
 import { Technologies } from "@/app/[locale]/shared/Technologies";
+import bizprofy from "@/../public/images/projects/bizprofy.png";
 import { TypeORM } from "@/app/[locale]/shared/Icons/TypeORM";
 import { Resend } from "@/app/[locale]/shared/Icons/Resend";
 import { NestJs } from "@/app/[locale]/shared/Icons/NestJs";
@@ -88,8 +87,8 @@ const Bizprofy = () => {
   return (
     <Card
       description={`${t("Bizprofy is a comprehensive SAAS platform designed to streamline inventory management for businesses The system allows users to manage stock in, stock out, and real-time stock levels across multiple warehouses With features like user management, product categorization, customer and provider tracking, and real-time stock updates, Bizprofy provides a centralized solution for all inventory needs This project highlights my ability to develop robust, scalable, and user-friendly applications that address complex business requirements")}.`}
-      imgUrl={isDark ? nameGeniusDarkBanner.src : nameGeniusLightBanner.src}
       imgAlt={t("Bizprofy website")}
+      imgUrl={bizprofy.src}
       title="Bizprofy"
     >
       <Technologies technologies={technologies} />
