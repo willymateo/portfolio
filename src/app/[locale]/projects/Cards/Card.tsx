@@ -25,7 +25,7 @@ const Card = ({
   title = "",
   children,
 }: Props) => {
-  const t = useTranslations("home.projects");
+  const t = useTranslations("projects");
 
   return (
     <div className="grid auto-rows-min grid-cols-1 justify-items-center gap-x-16 gap-y-10 xl:grid-rows-1 xl:grid-cols-5">

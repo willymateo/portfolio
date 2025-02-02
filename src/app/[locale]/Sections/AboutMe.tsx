@@ -4,8 +4,8 @@ import { useTranslations } from "next-intl";
 
 import { PrimaryButton } from "../shared/Buttons/Primary";
 import { DinamicQuote } from "../shared/DinamicQuote";
+import { SECTIONS } from "../constants";
 import { Container } from "./Container";
-import { SECTIONS } from "./constants";
 import { Link } from "@/i18n/routing";
 
 const AboutMe = () => {

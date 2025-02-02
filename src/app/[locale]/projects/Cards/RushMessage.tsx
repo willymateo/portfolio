@@ -14,7 +14,7 @@ import { Git } from "@/app/[locale]/shared/Icons/Git";
 import { Card } from "./Card";
 
 const RushMessage = () => {
-  const t = useTranslations("home.projects.rushMessage");
+  const t = useTranslations("projects.rushMessage");
 
   const technologies = [
     { name: "JavaScript", Icon: JavaScript },

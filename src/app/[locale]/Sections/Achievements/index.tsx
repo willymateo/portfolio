@@ -3,8 +3,8 @@ import { useTranslations } from "next-intl";
 import { GithubFoundationsCertification } from "./Cards/GithubFoundationsCertification";
 import { ScientificMerit } from "./Cards/ScientificMerit";
 import { PaperRAP } from "./Cards/PaperRAP";
+import { SECTIONS } from "../../constants";
 import { Container } from "../Container";
-import { SECTIONS } from "../constants";
 
 const Achievements = () => {
   const t = useTranslations("home.achievements");

@@ -2,8 +2,8 @@ import { useTranslations } from "next-intl";
 
 import { ShippifyInc } from "./Cards/ShippifyInc";
 import { JamaSana } from "./Cards/JamaSana";
+import { SECTIONS } from "../../constants";
 import { Container } from "../Container";
-import { SECTIONS } from "../constants";
 import { SASF } from "./Cards/SASF";
 
 const Experience = () => {

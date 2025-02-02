@@ -5,3 +5,13 @@
 * {
   box-sizing: border-box;
 }
+
+@layer components {
+  .px-body {
+    @apply px-10 lg:px-24 2xl:px-40;
+  }
+
+  .pt-children-routes {
+    @apply pt-[calc(93px_+_5rem)] sm:pt-[calc(49px_+_5rem)] lg:pt-[calc(65px_+_5rem)];
+  }
+}

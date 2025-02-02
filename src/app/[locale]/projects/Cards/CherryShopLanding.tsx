@@ -15,7 +15,7 @@ import { Git } from "@/app/[locale]/shared/Icons/Git";
 import { Card } from "./Card";
 
 const CherryShopLanding = () => {
-  const t = useTranslations("home.projects.cherryShopLanding");
+  const t = useTranslations("projects.cherryShopLanding");
 
   const technologies = [
     { name: "TypeScript", Icon: TypeScript },

@@ -15,7 +15,7 @@ import { Git } from "@/app/[locale]/shared/Icons/Git";
 import { Card } from "./Card";
 
 const NightlyTunes = () => {
-  const t = useTranslations("home.projects.nightlyTunes");
+  const t = useTranslations("projects.nightlyTunes");
 
   const technologies = [
     { name: "JavaScript", Icon: JavaScript },

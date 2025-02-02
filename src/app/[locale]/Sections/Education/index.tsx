@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 
+import { SECTIONS } from "../../constants";
 import { Container } from "../Container";
-import { SECTIONS } from "../constants";
 import { ESPOL } from "./Cards/ESPOL";
 import { CSB } from "./Cards/CSB";
 
