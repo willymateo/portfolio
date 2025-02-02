@@ -1,3 +1,4 @@
+import { faClipboardList } from "@fortawesome/free-solid-svg-icons/faClipboardList";
 import { faLaptopCode } from "@fortawesome/free-solid-svg-icons/faLaptopCode";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -45,6 +46,10 @@ const FrontEnd = () => {
     { name: "i18next", Icon: NPM },
     { name: "Lottie", Icon: Lottie },
     { name: "Motion", Icon: Motion },
+    {
+      name: "React Hook Form",
+      Icon: () => <FontAwesomeIcon icon={faClipboardList} className="w-[24px] h-[24px]" />,
+    },
   ];
 
   return <Technologies title="Front-end" technologies={technologies} />;
