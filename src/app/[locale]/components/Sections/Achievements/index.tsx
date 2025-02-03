@@ -2,8 +2,8 @@ import { useTranslations } from "next-intl";
 
 import { GithubFoundationsCertification } from "./Cards/GithubFoundationsCertification";
 import { ScientificMerit } from "./Cards/ScientificMerit";
+import { SECTIONS } from "@/app/[locale]/constants";
 import { PaperRAP } from "./Cards/PaperRAP";
-import { SECTIONS } from "../../constants";
 import { Container } from "../Container";
 
 const Achievements = () => {

@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 
-import { SECTIONS } from "../../constants";
+import { SECTIONS } from "@/app/[locale]/constants";
 import { Container } from "../Container";
 import { ESPOL } from "./Cards/ESPOL";
 import { CSB } from "./Cards/CSB";

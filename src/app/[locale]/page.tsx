@@ -1,11 +1,11 @@
-import { Achievements } from "./Sections/Achievements";
-import { GetInTouch } from "./Sections/GetInTouch";
-import { Experience } from "./Sections/Experience";
-import { Education } from "./Sections/Education";
-import { TechStack } from "./Sections/TechStack";
-import { AboutMe } from "./Sections/AboutMe";
-import { Hobbies } from "./Sections/Hobbies";
-import { Hero } from "./Sections/Hero";
+import { Achievements } from "./components/Sections/Achievements";
+import { GetInTouch } from "./components/Sections/GetInTouch";
+import { Experience } from "./components/Sections/Experience";
+import { Education } from "./components/Sections/Education";
+import { TechStack } from "./components/Sections/TechStack";
+import { AboutMe } from "./components/Sections/AboutMe";
+import { Hobbies } from "./components/Sections/Hobbies";
+import { Hero } from "./components/Sections/Hero";
 
 const Home = () => (
   <div className="flex flex-col items-strech justify-center gap-96 z-[1]">
