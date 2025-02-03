@@ -1,8 +1,8 @@
 import { useTranslations } from "next-intl";
 
+import { SECTIONS } from "@/app/[locale]/constants";
 import { ShippifyInc } from "./Cards/ShippifyInc";
 import { JamaSana } from "./Cards/JamaSana";
-import { SECTIONS } from "../../constants";
 import { Container } from "../Container";
 import { SASF } from "./Cards/SASF";
 

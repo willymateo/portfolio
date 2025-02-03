@@ -4,14 +4,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
-import { PrimaryButton } from "../shared/Buttons/Primary";
+import { PrimaryButton } from "../../shared/Buttons/Primary";
 import profile from "@/../public/images/profile.jpg";
-import { MotionDiv } from "../shared/Motion/Div";
-import { DotLottie } from "../shared/DotLottie";
+import { MotionDiv } from "../../shared/Motion/Div";
+import { DotLottie } from "../../shared/DotLottie";
+import { MotionH1 } from "../../shared/Motion/H1";
+import { MotionH2 } from "../../shared/Motion/H2";
 import { animaticSCBold } from "@/shared/fonts";
-import { MotionH1 } from "../shared/Motion/H1";
-import { MotionH2 } from "../shared/Motion/H2";
-import { SECTIONS } from "../constants";
+import { SECTIONS } from "../../constants";
 import { Link } from "@/i18n/routing";
 
 const Hero = () => {

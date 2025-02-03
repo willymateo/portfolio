@@ -7,8 +7,8 @@ import Image from "next/image";
 
 import { MotionDiv } from "@/app/[locale]/shared/Motion/Div";
 import surf from "@/../public/images/hobbies/surf.jpg";
+import { SECTIONS } from "../../constants";
 import { Container } from "./Container";
-import { SECTIONS } from "../constants";
 
 const Hobbies = () => {
   const t = useTranslations("home.hobbies");

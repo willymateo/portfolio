@@ -2,10 +2,10 @@ import { useTranslations } from "next-intl";
 
 import { DevelopmentEnvironment } from "./Sections/DevelopmentEnvironment";
 import { ProgrammingLanguages } from "./Sections/ProgrammingLanguages";
+import { SECTIONS } from "@/app/[locale]/constants";
 import { Databases } from "./Sections/DataBases";
 import { FrontEnd } from "./Sections/FrontEnd";
 import { BackEnd } from "./Sections/BackEnd";
-import { SECTIONS } from "../../constants";
 import { DevOps } from "./Sections/DevOps";
 import { Mobile } from "./Sections/Mobile";
 import { Cloud } from "./Sections/Cloud";

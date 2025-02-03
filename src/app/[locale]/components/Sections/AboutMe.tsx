@@ -2,9 +2,9 @@ import { faNewspaper } from "@fortawesome/free-regular-svg-icons/faNewspaper";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useTranslations } from "next-intl";
 
-import { PrimaryButton } from "../shared/Buttons/Primary";
-import { DinamicQuote } from "../shared/DinamicQuote";
-import { SECTIONS } from "../constants";
+import { PrimaryButton } from "../../shared/Buttons/Primary";
+import { DinamicQuote } from "../../shared/DinamicQuote";
+import { SECTIONS } from "../../constants";
 import { Container } from "./Container";
 import { Link } from "@/i18n/routing";
 

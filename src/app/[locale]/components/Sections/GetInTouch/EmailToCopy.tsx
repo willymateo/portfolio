@@ -5,9 +5,9 @@ import { faEnvelope } from "@fortawesome/free-regular-svg-icons/faEnvelope";
 import { faPaste } from "@fortawesome/free-regular-svg-icons/faPaste";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { SOCIAL_NETWORK_LINKS } from "../../shared/SocialNetworks/constants";
+import { SOCIAL_NETWORK_LINKS } from "@/app/[locale]/shared/SocialNetworks/constants";
+import { MotionDiv } from "@/app/[locale]/shared/Motion/Div";
 import { copyTextToClipBoard } from "@/shared/utils";
-import { MotionDiv } from "../../shared/Motion/Div";
 import { useActive } from "@/hooks/useActive";
 import { Link } from "@/i18n/routing";
 

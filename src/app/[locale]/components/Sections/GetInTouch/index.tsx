@@ -3,9 +3,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useTranslations } from "next-intl";
 
 import { SocialNetworks } from "@/app/[locale]/shared/SocialNetworks";
-import { DinamicQuote } from "../../shared/DinamicQuote";
+import { DinamicQuote } from "@/app/[locale]/shared/DinamicQuote";
+import { SECTIONS } from "@/app/[locale]/constants";
 import { EmailToCopy } from "./EmailToCopy";
-import { SECTIONS } from "../../constants";
 import { Container } from "../Container";
 
 const GetInTouch = () => {

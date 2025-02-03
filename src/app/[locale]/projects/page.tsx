@@ -1,10 +1,10 @@
 import { useTranslations } from "next-intl";
 
 import { CherryShopLanding } from "./Cards/CherryShopLanding";
+import { Container } from "../components/Sections/Container";
 import { MIProjectManager } from "./Cards/MIProjectManager";
 import { NightlyTunes } from "./Cards/NightlyTunes";
 import { RushMessage } from "./Cards/RushMessage";
-import { Container } from "../Sections/Container";
 import { NameGenius } from "./Cards/NameGenius";
 import { Bizprofy } from "./Cards/Bizprofy";
 import { Titi } from "./Cards/titi";
